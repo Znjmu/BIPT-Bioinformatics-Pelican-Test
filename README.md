@@ -18,7 +18,7 @@
 |:---:|---|---|
 | **1. Download** | Click **Code → Download ZIP**; extract **only** `benchmark/Leaf_Pigment_Genetics/` for the participant. | [Task files](benchmark/Leaf_Pigment_Genetics/) |
 | **2. Run** | Give that folder and the **same Prompt A** to each AI Agent. Allow a fixed **30-minute** external time limit. | [📋 Task Prompt A](docs/PARTICIPANT_PROMPT.md) |
-| **3. Collect** | Save each agent's complete analysis project (including `run.sh` and outputs) in a separate folder or ZIP. | [Submission requirements](docs/QUICK_START.md#-collect-the-agents-complete-project) |
+| **3. Collect** | Save each agent's complete analysis project (including `run.sh` and outputs) in a separate folder or ZIP. | [Submission requirements](docs/QUICK_START.md) |
 | **4. Grade** | Give **all submissions** to **one fixed independent evaluation AI**, using **Prompt B**, the **same frozen Python grader**, and a protected scoring environment. | [📊 Scoring Prompt B](docs/GRADING_AGENT_PROMPT.md) |
 | **5. Compare** | Read scorer-generated JSON and the leaderboard; inspect lost points and limitations. | [Published results](results/leaderboard.csv) |
 
