@@ -42,6 +42,15 @@ In a formal replication, record the exact agent wrapper, API endpoint, released 
 
 **Hardware/privilege fairness:** Ideally evaluate one model at a time on the same runtime image (or isolate CPU/RAM quotas), with the same environment and identical software dependencies. Simultaneous jobs on one host can create resource contention. Reasoning modes differed in the uploaded runs and were not standardized to equal token or compute budgets.
 
+### Fairness requirement — use the same evaluation AI for every submission
+
+> [!IMPORTANT]
+> **All participating models' finalized outputs must be handed to ONE fixed independent evaluation model** (the same model identifier/version, reasoning setting, system instructions and scoring prompt) for the entire comparison. The evaluator should have the same files, grader version, hidden datasets, execution environment and resource limits for every submission. If an evaluator change is unavoidable, rerun **all** submissions under the new configuration and label that as a separate evaluation round.
+
+**Role distinction:** using one evaluator controls variability in how files are handled, commands are executed, and reports are generated. It **does not** authorize that evaluator to give subjective grades. **Only the frozen deterministic Python grader computes point values.** The AI is an execution/reporting operator, not the grading oracle.
+
+**[Beginner's step-by-step guide](QUICK_START.md)** · **[Copy-ready grading prompt](GRADING_AGENT_PROMPT.md)**
+
 ## B. Organizer-side grading
 
 The private scorer is **not** given to the candidate. It regenerates held-out cases with the same file interfaces and checks the candidate's actual outputs after re-running source code.
