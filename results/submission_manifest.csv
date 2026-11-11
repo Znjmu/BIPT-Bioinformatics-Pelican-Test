@@ -1,0 +1,12 @@
+id,model,reasoning_mode,source_archive_name,effective_submission_folder,status,note
+6dpv4pro,DeepSeek V4 Pro,Ultra-high,6dpv4pro.zip,6dpv4pro,valid,Rerun on released and both held-out instances succeeded
+8gpt6_luna,GPT-6 Luna (Codex Max),Max,8gpt6 luna.zip,8gpt6 luna,valid,Rerun on released and both held-out instances succeeded
+11gpt6.1_sol,GPT-6.1 Sol (Codex High),High,11 gpt6.1sol high.zip,11 gpt6.1sol high,valid,Rerun on released and both held-out instances succeeded
+5H,HY4,High,5H(1).zip,5H,valid,Rerun on released and both held-out instances succeeded
+9kimi,Kimi K3.1 Pro,Extreme,9kimik3.1pro.zip,9kimik3.1pro,valid,Rerun on released and both held-out instances succeeded
+2M,MiniMax M3.1 Flash,Extreme,2M(1).zip,2M,valid,Rerun on released and both held-out instances succeeded
+7space,Space-Bunny,Extreme,7space.zip,7space,valid,Rerun on released and both held-out instances succeeded
+3g,GLM-5.3 Flash,Extreme,3g(1).zip,3g,valid,Rerun on released and both held-out instances succeeded
+4X,Xiaomi MiMo V2.6 Pro,Default,4X(1).zip,4X,valid,Rerun on released and both held-out instances succeeded
+1w,DeepSeek V4.1 Flash,Extreme,1w(2).zip,1w,valid,Rerun on released and both held-out instances succeeded
+10gpt5.6_light,GPT-5.6 Luna (Codex Light),Light,10 gpt5.6luna-light.zip,10 gpt5.6luna-light,missing_delivery,No analysis source or outputs in supplied archive

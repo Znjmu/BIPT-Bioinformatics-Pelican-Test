@@ -1,0 +1,12 @@
+﻿rank,model,folder,reasoning_mode,score,score_status,public_science,hidden1_science,hidden2_science,public_top_correct,hidden1_top_correct,hidden2_top_correct,annotation_35,qc_13,haplotype_23,prioritization_14,interpretation_8,reexecution_4,integrity_3,runnable_all,critical_caps,id,raw_score
+1,DeepSeek V4 Pro,6dpv4pro,Ultra-high,99.62,valid,93.0,92.0,93.0,True,True,True,35.0,13.0,23.0,14.0,7.625,4.0,3.0,True,,6dpv4pro,99.62
+2,GPT-6 Luna (Codex Max),8gpt6 luna,Max,97.56,valid,90.5556,90.5556,90.5556,True,True,True,32.556,13.0,23.0,14.0,8.0,4.0,3.0,True,,8gpt6_luna,97.56
+3,GPT-6.1 Sol (Codex High),11 gpt6.1sol high,High,93.25,valid,93.0,75.0,93.0,True,False,True,35.0,13.0,23.0,8.75,6.5,4.0,3.0,True,,11gpt6.1_sol,93.25
+3,HY4,5H,High,93.25,valid,93.0,75.0,93.0,True,False,True,35.0,13.0,23.0,8.75,6.5,4.0,3.0,True,,5H,93.25
+3,Kimi K3.1 Pro,9kimik3.1pro,Extreme,93.25,valid,93.0,75.0,93.0,True,False,True,35.0,13.0,23.0,8.75,6.5,4.0,3.0,True,,9kimi,93.25
+3,MiniMax M3.1 Flash,2M,Extreme,93.25,valid,93.0,75.0,93.0,True,False,True,35.0,13.0,23.0,8.75,6.5,4.0,3.0,True,,2M,93.25
+3,Space-Bunny,7space,Extreme,93.25,valid,93.0,75.0,93.0,True,False,True,35.0,13.0,23.0,8.75,6.5,4.0,3.0,True,,7space,93.25
+8,GLM-5.3 Flash,3g,Extreme,91.26,valid,90.5556,73.7778,90.5556,True,False,True,33.013999999999996,13.0,23.0,8.75,6.5,4.0,3.0,True,,3g,91.26
+9,Xiaomi MiMo V2.6 Pro,4X,Default,90.81,valid,90.5556,72.5556,90.5556,True,False,True,32.556,13.0,23.0,8.75,6.5,4.0,3.0,True,,4X,90.81
+10,DeepSeek V4.1 Flash,1w,Extreme,89.58,valid,89.3333,71.3333,89.3333,True,False,True,31.333,13.0,23.0,8.75,6.5,4.0,3.0,True,,1w,89.58
+11,GPT-5.6 Luna (Codex Light),10 gpt5.6luna-light,Light,0.0,missing_delivery,0.0,0.0,0.0,False,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,False,Wrong top candidate in >=2 datasets | Both hidden reruns failed,10gpt5.6_light,0.0

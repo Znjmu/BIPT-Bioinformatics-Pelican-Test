@@ -1,0 +1,1402 @@
+{
+  "benchmark": "BIPT v1.0",
+  "n_archives": 11,
+  "n_valid_submissions": 10,
+  "results": [
+    {
+      "id": "6dpv4pro",
+      "model": "DeepSeek V4 Pro",
+      "folder": "6dpv4pro",
+      "reasoning_mode": "Ultra-high",
+      "score": 99.62,
+      "raw_score": 99.62,
+      "public_science": 93.0,
+      "hidden1_science": 92.0,
+      "hidden2_science": 93.0,
+      "public_top_correct": true,
+      "hidden1_top_correct": true,
+      "hidden2_top_correct": true,
+      "runnable_all": true,
+      "score_status": "valid",
+      "annotation_35": 35.0,
+      "qc_13": 13.0,
+      "haplotype_23": 23.0,
+      "prioritization_14": 14.0,
+      "interpretation_8": 7.625,
+      "reexecution_4": 4.0,
+      "integrity_3": 3.0,
+      "critical_caps": "",
+      "rank": 1
+    },
+    {
+      "id": "8gpt6_luna",
+      "model": "GPT-6 Luna (Codex Max)",
+      "folder": "8gpt6 luna",
+      "reasoning_mode": "Max",
+      "score": 97.56,
+      "raw_score": 97.56,
+      "public_science": 90.5556,
+      "hidden1_science": 90.5556,
+      "hidden2_science": 90.5556,
+      "public_top_correct": true,
+      "hidden1_top_correct": true,
+      "hidden2_top_correct": true,
+      "runnable_all": true,
+      "score_status": "valid",
+      "annotation_35": 32.556,
+      "qc_13": 13.0,
+      "haplotype_23": 23.0,
+      "prioritization_14": 14.0,
+      "interpretation_8": 8.0,
+      "reexecution_4": 4.0,
+      "integrity_3": 3.0,
+      "critical_caps": "",
+      "rank": 2
+    },
+    {
+      "id": "11gpt6.1_sol",
+      "model": "GPT-6.1 Sol (Codex High)",
+      "folder": "11 gpt6.1sol high",
+      "reasoning_mode": "High",
+      "score": 93.25,
+      "raw_score": 93.25,
+      "public_science": 93.0,
+      "hidden1_science": 75.0,
+      "hidden2_science": 93.0,
+      "public_top_correct": true,
+      "hidden1_top_correct": false,
+      "hidden2_top_correct": true,
+      "runnable_all": true,
+      "score_status": "valid",
+      "annotation_35": 35.0,
+      "qc_13": 13.0,
+      "haplotype_23": 23.0,
+      "prioritization_14": 8.75,
+      "interpretation_8": 6.5,
+      "reexecution_4": 4.0,
+      "integrity_3": 3.0,
+      "critical_caps": "",
+      "rank": 3
+    },
+    {
+      "id": "5H",
+      "model": "HY4",
+      "folder": "5H",
+      "reasoning_mode": "High",
+      "score": 93.25,
+      "raw_score": 93.25,
+      "public_science": 93.0,
+      "hidden1_science": 75.0,
+      "hidden2_science": 93.0,
+      "public_top_correct": true,
+      "hidden1_top_correct": false,
+      "hidden2_top_correct": true,
+      "runnable_all": true,
+      "score_status": "valid",
+      "annotation_35": 35.0,
+      "qc_13": 13.0,
+      "haplotype_23": 23.0,
+      "prioritization_14": 8.75,
+      "interpretation_8": 6.5,
+      "reexecution_4": 4.0,
+      "integrity_3": 3.0,
+      "critical_caps": "",
+      "rank": 3
+    },
+    {
+      "id": "9kimi",
+      "model": "Kimi K3.1 Pro",
+      "folder": "9kimik3.1pro",
+      "reasoning_mode": "Extreme",
+      "score": 93.25,
+      "raw_score": 93.25,
+      "public_science": 93.0,
+      "hidden1_science": 75.0,
+      "hidden2_science": 93.0,
+      "public_top_correct": true,
+      "hidden1_top_correct": false,
+      "hidden2_top_correct": true,
+      "runnable_all": true,
+      "score_status": "valid",
+      "annotation_35": 35.0,
+      "qc_13": 13.0,
+      "haplotype_23": 23.0,
+      "prioritization_14": 8.75,
+      "interpretation_8": 6.5,
+      "reexecution_4": 4.0,
+      "integrity_3": 3.0,
+      "critical_caps": "",
+      "rank": 3
+    },
+    {
+      "id": "2M",
+      "model": "MiniMax M3.1 Flash",
+      "folder": "2M",
+      "reasoning_mode": "Extreme",
+      "score": 93.25,
+      "raw_score": 93.25,
+      "public_science": 93.0,
+      "hidden1_science": 75.0,
+      "hidden2_science": 93.0,
+      "public_top_correct": true,
+      "hidden1_top_correct": false,
+      "hidden2_top_correct": true,
+      "runnable_all": true,
+      "score_status": "valid",
+      "annotation_35": 35.0,
+      "qc_13": 13.0,
+      "haplotype_23": 23.0,
+      "prioritization_14": 8.75,
+      "interpretation_8": 6.5,
+      "reexecution_4": 4.0,
+      "integrity_3": 3.0,
+      "critical_caps": "",
+      "rank": 3
+    },
+    {
+      "id": "7space",
+      "model": "Space-Bunny",
+      "folder": "7space",
+      "reasoning_mode": "Extreme",
+      "score": 93.25,
+      "raw_score": 93.25,
+      "public_science": 93.0,
+      "hidden1_science": 75.0,
+      "hidden2_science": 93.0,
+      "public_top_correct": true,
+      "hidden1_top_correct": false,
+      "hidden2_top_correct": true,
+      "runnable_all": true,
+      "score_status": "valid",
+      "annotation_35": 35.0,
+      "qc_13": 13.0,
+      "haplotype_23": 23.0,
+      "prioritization_14": 8.75,
+      "interpretation_8": 6.5,
+      "reexecution_4": 4.0,
+      "integrity_3": 3.0,
+      "critical_caps": "",
+      "rank": 3
+    },
+    {
+      "id": "3g",
+      "model": "GLM-5.3 Flash",
+      "folder": "3g",
+      "reasoning_mode": "Extreme",
+      "score": 91.26,
+      "raw_score": 91.26,
+      "public_science": 90.5556,
+      "hidden1_science": 73.7778,
+      "hidden2_science": 90.5556,
+      "public_top_correct": true,
+      "hidden1_top_correct": false,
+      "hidden2_top_correct": true,
+      "runnable_all": true,
+      "score_status": "valid",
+      "annotation_35": 33.013999999999996,
+      "qc_13": 13.0,
+      "haplotype_23": 23.0,
+      "prioritization_14": 8.75,
+      "interpretation_8": 6.5,
+      "reexecution_4": 4.0,
+      "integrity_3": 3.0,
+      "critical_caps": "",
+      "rank": 8
+    },
+    {
+      "id": "4X",
+      "model": "Xiaomi MiMo V2.6 Pro",
+      "folder": "4X",
+      "reasoning_mode": "Default",
+      "score": 90.81,
+      "raw_score": 90.81,
+      "public_science": 90.5556,
+      "hidden1_science": 72.5556,
+      "hidden2_science": 90.5556,
+      "public_top_correct": true,
+      "hidden1_top_correct": false,
+      "hidden2_top_correct": true,
+      "runnable_all": true,
+      "score_status": "valid",
+      "annotation_35": 32.556,
+      "qc_13": 13.0,
+      "haplotype_23": 23.0,
+      "prioritization_14": 8.75,
+      "interpretation_8": 6.5,
+      "reexecution_4": 4.0,
+      "integrity_3": 3.0,
+      "critical_caps": "",
+      "rank": 9
+    },
+    {
+      "id": "1w",
+      "model": "DeepSeek V4.1 Flash",
+      "folder": "1w",
+      "reasoning_mode": "Extreme",
+      "score": 89.58,
+      "raw_score": 89.58,
+      "public_science": 89.3333,
+      "hidden1_science": 71.3333,
+      "hidden2_science": 89.3333,
+      "public_top_correct": true,
+      "hidden1_top_correct": false,
+      "hidden2_top_correct": true,
+      "runnable_all": true,
+      "score_status": "valid",
+      "annotation_35": 31.333,
+      "qc_13": 13.0,
+      "haplotype_23": 23.0,
+      "prioritization_14": 8.75,
+      "interpretation_8": 6.5,
+      "reexecution_4": 4.0,
+      "integrity_3": 3.0,
+      "critical_caps": "",
+      "rank": 10
+    },
+    {
+      "id": "10gpt5.6_light",
+      "model": "GPT-5.6 Luna (Codex Light)",
+      "folder": "10 gpt5.6luna-light",
+      "reasoning_mode": "Light",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "public_science": 0.0,
+      "hidden1_science": 0.0,
+      "hidden2_science": 0.0,
+      "public_top_correct": false,
+      "hidden1_top_correct": false,
+      "hidden2_top_correct": false,
+      "runnable_all": false,
+      "score_status": "missing_delivery",
+      "annotation_35": 0.0,
+      "qc_13": 0.0,
+      "haplotype_23": 0.0,
+      "prioritization_14": 0.0,
+      "interpretation_8": 0.0,
+      "reexecution_4": 0.0,
+      "integrity_3": 0.0,
+      "critical_caps": "Wrong top candidate in >=2 datasets | Both hidden reruns failed",
+      "rank": 11
+    }
+  ],
+  "score_files": {
+    "1w": {
+      "score": 89.58,
+      "raw_score_before_caps": 89.58,
+      "critical_errors": [],
+      "max_score": 100,
+      "components": {
+        "key_annotation": 18.333,
+        "background_annotation": 13.0,
+        "reference_qc": 7.0,
+        "genotype_qc": 6.0,
+        "phased_primary": 13.0,
+        "phased_cis": 7.0,
+        "burden_background": 3.0,
+        "gene_prioritization": 8.75,
+        "interpretation": 6.5,
+        "hidden_reexecution": 4.0,
+        "artifact_integrity": 3.0
+      },
+      "cases": {
+        "public": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 89.3333,
+          "details": {
+            "key_annotation": 18.3333,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 86,
+            "rows_submitted": 86,
+            "case_count": 10,
+            "total": 89.3333,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden1": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 71.3333,
+          "details": {
+            "key_annotation": 18.3333,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 0.0,
+            "interpretation": 4.0
+          },
+          "qa": {
+            "rows_reference": 84,
+            "rows_submitted": 84,
+            "case_count": 12,
+            "total": 71.3333,
+            "top_gene_correct": false,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden2": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 89.3333,
+          "details": {
+            "key_annotation": 18.3333,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 88,
+            "rows_submitted": 88,
+            "case_count": 8,
+            "total": 89.3333,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        }
+      },
+      "artifact_integrity": {
+        "png_valid": true,
+        "notes_present": true
+      },
+      "method": "Deterministic hidden dataset replay; no LLM judgments."
+    },
+    "2M": {
+      "score": 93.25,
+      "raw_score_before_caps": 93.25,
+      "critical_errors": [],
+      "max_score": 100,
+      "components": {
+        "key_annotation": 22.0,
+        "background_annotation": 13.0,
+        "reference_qc": 7.0,
+        "genotype_qc": 6.0,
+        "phased_primary": 13.0,
+        "phased_cis": 7.0,
+        "burden_background": 3.0,
+        "gene_prioritization": 8.75,
+        "interpretation": 6.5,
+        "hidden_reexecution": 4.0,
+        "artifact_integrity": 3.0
+      },
+      "cases": {
+        "public": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 93.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 86,
+            "rows_submitted": 86,
+            "case_count": 10,
+            "total": 93.0,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden1": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 75.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 0.0,
+            "interpretation": 4.0
+          },
+          "qa": {
+            "rows_reference": 84,
+            "rows_submitted": 84,
+            "case_count": 12,
+            "total": 75.0,
+            "top_gene_correct": false,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden2": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 93.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 88,
+            "rows_submitted": 88,
+            "case_count": 8,
+            "total": 93.0,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        }
+      },
+      "artifact_integrity": {
+        "png_valid": true,
+        "notes_present": true
+      },
+      "method": "Deterministic hidden dataset replay; no LLM judgments."
+    },
+    "3g": {
+      "score": 91.26,
+      "raw_score_before_caps": 91.26,
+      "critical_errors": [],
+      "max_score": 100,
+      "components": {
+        "key_annotation": 20.014,
+        "background_annotation": 13.0,
+        "reference_qc": 7.0,
+        "genotype_qc": 6.0,
+        "phased_primary": 13.0,
+        "phased_cis": 7.0,
+        "burden_background": 3.0,
+        "gene_prioritization": 8.75,
+        "interpretation": 6.5,
+        "hidden_reexecution": 4.0,
+        "artifact_integrity": 3.0
+      },
+      "cases": {
+        "public": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 90.5556,
+          "details": {
+            "key_annotation": 19.5556,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 86,
+            "rows_submitted": 86,
+            "case_count": 10,
+            "total": 90.5556,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden1": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 73.7778,
+          "details": {
+            "key_annotation": 20.7778,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 0.0,
+            "interpretation": 4.0
+          },
+          "qa": {
+            "rows_reference": 84,
+            "rows_submitted": 84,
+            "case_count": 12,
+            "total": 73.7778,
+            "top_gene_correct": false,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden2": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 90.5556,
+          "details": {
+            "key_annotation": 19.5556,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 88,
+            "rows_submitted": 88,
+            "case_count": 8,
+            "total": 90.5556,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        }
+      },
+      "artifact_integrity": {
+        "png_valid": true,
+        "notes_present": true
+      },
+      "method": "Deterministic hidden dataset replay; no LLM judgments."
+    },
+    "4X": {
+      "score": 90.81,
+      "raw_score_before_caps": 90.81,
+      "critical_errors": [],
+      "max_score": 100,
+      "components": {
+        "key_annotation": 19.556,
+        "background_annotation": 13.0,
+        "reference_qc": 7.0,
+        "genotype_qc": 6.0,
+        "phased_primary": 13.0,
+        "phased_cis": 7.0,
+        "burden_background": 3.0,
+        "gene_prioritization": 8.75,
+        "interpretation": 6.5,
+        "hidden_reexecution": 4.0,
+        "artifact_integrity": 3.0
+      },
+      "cases": {
+        "public": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 90.5556,
+          "details": {
+            "key_annotation": 19.5556,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 86,
+            "rows_submitted": 86,
+            "case_count": 10,
+            "total": 90.5556,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden1": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 72.5556,
+          "details": {
+            "key_annotation": 19.5556,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 0.0,
+            "interpretation": 4.0
+          },
+          "qa": {
+            "rows_reference": 84,
+            "rows_submitted": 84,
+            "case_count": 12,
+            "total": 72.5556,
+            "top_gene_correct": false,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden2": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 90.5556,
+          "details": {
+            "key_annotation": 19.5556,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 88,
+            "rows_submitted": 88,
+            "case_count": 8,
+            "total": 90.5556,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        }
+      },
+      "artifact_integrity": {
+        "png_valid": true,
+        "notes_present": true
+      },
+      "method": "Deterministic hidden dataset replay; no LLM judgments."
+    },
+    "5H": {
+      "score": 93.25,
+      "raw_score_before_caps": 93.25,
+      "critical_errors": [],
+      "max_score": 100,
+      "components": {
+        "key_annotation": 22.0,
+        "background_annotation": 13.0,
+        "reference_qc": 7.0,
+        "genotype_qc": 6.0,
+        "phased_primary": 13.0,
+        "phased_cis": 7.0,
+        "burden_background": 3.0,
+        "gene_prioritization": 8.75,
+        "interpretation": 6.5,
+        "hidden_reexecution": 4.0,
+        "artifact_integrity": 3.0
+      },
+      "cases": {
+        "public": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 93.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 86,
+            "rows_submitted": 86,
+            "case_count": 10,
+            "total": 93.0,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden1": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 75.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 0.0,
+            "interpretation": 4.0
+          },
+          "qa": {
+            "rows_reference": 84,
+            "rows_submitted": 84,
+            "case_count": 12,
+            "total": 75.0,
+            "top_gene_correct": false,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden2": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 93.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 88,
+            "rows_submitted": 88,
+            "case_count": 8,
+            "total": 93.0,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        }
+      },
+      "artifact_integrity": {
+        "png_valid": true,
+        "notes_present": true
+      },
+      "method": "Deterministic hidden dataset replay; no LLM judgments."
+    },
+    "6dpv4pro": {
+      "score": 99.62,
+      "raw_score_before_caps": 99.62,
+      "critical_errors": [],
+      "max_score": 100,
+      "components": {
+        "key_annotation": 22.0,
+        "background_annotation": 13.0,
+        "reference_qc": 7.0,
+        "genotype_qc": 6.0,
+        "phased_primary": 13.0,
+        "phased_cis": 7.0,
+        "burden_background": 3.0,
+        "gene_prioritization": 14.0,
+        "interpretation": 7.625,
+        "hidden_reexecution": 4.0,
+        "artifact_integrity": 3.0
+      },
+      "cases": {
+        "public": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 93.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 86,
+            "rows_submitted": 86,
+            "case_count": 10,
+            "total": 93.0,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden1": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 92.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 7.0
+          },
+          "qa": {
+            "rows_reference": 84,
+            "rows_submitted": 84,
+            "case_count": 12,
+            "total": 92.0,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden2": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 93.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 88,
+            "rows_submitted": 88,
+            "case_count": 8,
+            "total": 93.0,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        }
+      },
+      "artifact_integrity": {
+        "png_valid": true,
+        "notes_present": true
+      },
+      "method": "Deterministic hidden dataset replay; no LLM judgments."
+    },
+    "7space": {
+      "score": 93.25,
+      "raw_score_before_caps": 93.25,
+      "critical_errors": [],
+      "max_score": 100,
+      "components": {
+        "key_annotation": 22.0,
+        "background_annotation": 13.0,
+        "reference_qc": 7.0,
+        "genotype_qc": 6.0,
+        "phased_primary": 13.0,
+        "phased_cis": 7.0,
+        "burden_background": 3.0,
+        "gene_prioritization": 8.75,
+        "interpretation": 6.5,
+        "hidden_reexecution": 4.0,
+        "artifact_integrity": 3.0
+      },
+      "cases": {
+        "public": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 93.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 86,
+            "rows_submitted": 86,
+            "case_count": 10,
+            "total": 93.0,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden1": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 75.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 0.0,
+            "interpretation": 4.0
+          },
+          "qa": {
+            "rows_reference": 84,
+            "rows_submitted": 84,
+            "case_count": 12,
+            "total": 75.0,
+            "top_gene_correct": false,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden2": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 93.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 88,
+            "rows_submitted": 88,
+            "case_count": 8,
+            "total": 93.0,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        }
+      },
+      "artifact_integrity": {
+        "png_valid": true,
+        "notes_present": true
+      },
+      "method": "Deterministic hidden dataset replay; no LLM judgments."
+    },
+    "8gpt6_luna": {
+      "score": 97.56,
+      "raw_score_before_caps": 97.56,
+      "critical_errors": [],
+      "max_score": 100,
+      "components": {
+        "key_annotation": 19.556,
+        "background_annotation": 13.0,
+        "reference_qc": 7.0,
+        "genotype_qc": 6.0,
+        "phased_primary": 13.0,
+        "phased_cis": 7.0,
+        "burden_background": 3.0,
+        "gene_prioritization": 14.0,
+        "interpretation": 8.0,
+        "hidden_reexecution": 4.0,
+        "artifact_integrity": 3.0
+      },
+      "cases": {
+        "public": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 90.5556,
+          "details": {
+            "key_annotation": 19.5556,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 86,
+            "rows_submitted": 86,
+            "case_count": 10,
+            "total": 90.5556,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden1": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 90.5556,
+          "details": {
+            "key_annotation": 19.5556,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 84,
+            "rows_submitted": 84,
+            "case_count": 12,
+            "total": 90.5556,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden2": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 90.5556,
+          "details": {
+            "key_annotation": 19.5556,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 88,
+            "rows_submitted": 88,
+            "case_count": 8,
+            "total": 90.5556,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        }
+      },
+      "artifact_integrity": {
+        "png_valid": true,
+        "notes_present": true
+      },
+      "method": "Deterministic hidden dataset replay; no LLM judgments."
+    },
+    "9kimi": {
+      "score": 93.25,
+      "raw_score_before_caps": 93.25,
+      "critical_errors": [],
+      "max_score": 100,
+      "components": {
+        "key_annotation": 22.0,
+        "background_annotation": 13.0,
+        "reference_qc": 7.0,
+        "genotype_qc": 6.0,
+        "phased_primary": 13.0,
+        "phased_cis": 7.0,
+        "burden_background": 3.0,
+        "gene_prioritization": 8.75,
+        "interpretation": 6.5,
+        "hidden_reexecution": 4.0,
+        "artifact_integrity": 3.0
+      },
+      "cases": {
+        "public": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 93.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 86,
+            "rows_submitted": 86,
+            "case_count": 10,
+            "total": 93.0,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden1": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 75.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 0.0,
+            "interpretation": 4.0
+          },
+          "qa": {
+            "rows_reference": 84,
+            "rows_submitted": 84,
+            "case_count": 12,
+            "total": 75.0,
+            "top_gene_correct": false,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden2": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 93.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 88,
+            "rows_submitted": 88,
+            "case_count": 8,
+            "total": 93.0,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        }
+      },
+      "artifact_integrity": {
+        "png_valid": true,
+        "notes_present": true
+      },
+      "method": "Deterministic hidden dataset replay; no LLM judgments."
+    },
+    "10gpt5.6_light": {
+      "score": 0.0,
+      "raw_score_before_caps": 0.0,
+      "critical_errors": [
+        "Wrong top candidate in >=2 datasets",
+        "Both hidden reruns failed"
+      ],
+      "max_score": 100,
+      "components": {
+        "key_annotation": 0.0,
+        "background_annotation": 0.0,
+        "reference_qc": 0.0,
+        "genotype_qc": 0.0,
+        "phased_primary": 0.0,
+        "phased_cis": 0.0,
+        "burden_background": 0.0,
+        "gene_prioritization": 0.0,
+        "interpretation": 0.0,
+        "hidden_reexecution": 0.0,
+        "artifact_integrity": 0.0
+      },
+      "cases": {
+        "public": {
+          "executed": false,
+          "status": "run.sh missing",
+          "science_score_out_of_93": 0.0,
+          "details": {
+            "key_annotation": 0.0,
+            "background_annotation": 0.0,
+            "reference_qc": 0,
+            "genotype_qc": 0.0,
+            "phased_primary": 0.0,
+            "phased_cis": 0.0,
+            "burden_background": 0.0,
+            "gene_prioritization": 0.0,
+            "interpretation": 0.0
+          },
+          "qa": {
+            "rows_reference": 86,
+            "rows_submitted": 0,
+            "case_count": 10,
+            "total": 0.0,
+            "top_gene_correct": false,
+            "unsupported_causality_claim": false,
+            "required_files_present": false
+          }
+        },
+        "hidden1": {
+          "executed": false,
+          "status": "run.sh missing",
+          "science_score_out_of_93": 0.0,
+          "details": {
+            "key_annotation": 0.0,
+            "background_annotation": 0.0,
+            "reference_qc": 0,
+            "genotype_qc": 0.0,
+            "phased_primary": 0.0,
+            "phased_cis": 0.0,
+            "burden_background": 0.0,
+            "gene_prioritization": 0.0,
+            "interpretation": 0.0
+          },
+          "qa": {
+            "rows_reference": 84,
+            "rows_submitted": 0,
+            "case_count": 12,
+            "total": 0.0,
+            "top_gene_correct": false,
+            "unsupported_causality_claim": false,
+            "required_files_present": false
+          }
+        },
+        "hidden2": {
+          "executed": false,
+          "status": "run.sh missing",
+          "science_score_out_of_93": 0.0,
+          "details": {
+            "key_annotation": 0.0,
+            "background_annotation": 0.0,
+            "reference_qc": 0,
+            "genotype_qc": 0.0,
+            "phased_primary": 0.0,
+            "phased_cis": 0.0,
+            "burden_background": 0.0,
+            "gene_prioritization": 0.0,
+            "interpretation": 0.0
+          },
+          "qa": {
+            "rows_reference": 88,
+            "rows_submitted": 0,
+            "case_count": 8,
+            "total": 0.0,
+            "top_gene_correct": false,
+            "unsupported_causality_claim": false,
+            "required_files_present": false
+          }
+        }
+      },
+      "artifact_integrity": {
+        "png_valid": false,
+        "notes_present": false
+      },
+      "method": "Deterministic hidden dataset replay; no LLM judgments."
+    },
+    "11gpt6.1_sol": {
+      "score": 93.25,
+      "raw_score_before_caps": 93.25,
+      "critical_errors": [],
+      "max_score": 100,
+      "components": {
+        "key_annotation": 22.0,
+        "background_annotation": 13.0,
+        "reference_qc": 7.0,
+        "genotype_qc": 6.0,
+        "phased_primary": 13.0,
+        "phased_cis": 7.0,
+        "burden_background": 3.0,
+        "gene_prioritization": 8.75,
+        "interpretation": 6.5,
+        "hidden_reexecution": 4.0,
+        "artifact_integrity": 3.0
+      },
+      "cases": {
+        "public": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 93.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 86,
+            "rows_submitted": 86,
+            "case_count": 10,
+            "total": 93.0,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden1": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 75.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 0.0,
+            "interpretation": 4.0
+          },
+          "qa": {
+            "rows_reference": 84,
+            "rows_submitted": 84,
+            "case_count": 12,
+            "total": 75.0,
+            "top_gene_correct": false,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        },
+        "hidden2": {
+          "executed": true,
+          "status": "exit 0",
+          "science_score_out_of_93": 93.0,
+          "details": {
+            "key_annotation": 22.0,
+            "background_annotation": 13.0,
+            "reference_qc": 7,
+            "genotype_qc": 6.0,
+            "phased_primary": 13.0,
+            "phased_cis": 7.0,
+            "burden_background": 3.0,
+            "gene_prioritization": 14.0,
+            "interpretation": 8.0
+          },
+          "qa": {
+            "rows_reference": 88,
+            "rows_submitted": 88,
+            "case_count": 8,
+            "total": 93.0,
+            "top_gene_correct": true,
+            "unsupported_causality_claim": false,
+            "required_files_present": true
+          }
+        }
+      },
+      "artifact_integrity": {
+        "png_valid": true,
+        "notes_present": true
+      },
+      "method": "Deterministic hidden dataset replay; no LLM judgments."
+    }
+  },
+  "source_sha256": {
+    "grade.py": "c7aae707de52afcee0771e47b62eae274a8d9c9255494606fd296046db85dca9",
+    "core.py": "1c8fcacf2cec8d841d9d47599e30801d38ee420d4d3646be9a3d15bf8a0b040b"
+  }
+}
