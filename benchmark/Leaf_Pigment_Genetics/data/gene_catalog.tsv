@@ -1,0 +1,15 @@
+gene_id	short_label	functional_annotation	primary_transcript_id	secondary_transcript_id	primary_isoform_fraction
+LGSUWR3X7	THYLAKOID_SCAFFOLD	Thylakoid membrane assembly-associated protein	TXRQBUBZD	TXF7EEQPW	0.88
+LGCGZP8KE	CELL_WALL	Cell wall structural biosynthesis associated protein	TXAJUP3GU		1.0
+LG4G7JMX9	RUBISCO_CHAPERONE	Carbon-fixation assembly chaperone-like protein	TXH2HAG6F		1.0
+LG6H79U8F	PLASTID_RNA	Plastid RNA processing and stability factor	TX7TUF3CP		1.0
+LGGMZ3BW6	RIBOSOMAL	Ribosomal structural protein-like gene	TXS2KEYDH		1.0
+LGF824HKT	UNKNOWN	Uncharacterized conserved protein	TXZAXXFCD		1.0
+LG2N7KHUL	PLASTID_TRANSPORTER	Chloroplast envelope transporter-like protein	TXPWFSAW7	TX4XCQZNB	0.88
+LGBV9JLZG	FLAVONOID	Flavonoid biosynthesis-associated protein	TXWBSDCKF		1.0
+LGE46JM8J	PLASTID_PROTEASE	Plastid proteostasis-associated protease	TXTMFVKTZ		1.0
+LGNV3BM6Y	NITRATE	Nitrate assimilation associated transporter	TXALHED74		1.0
+LGGYXJ8BR	REDOX	Redox homeostasis protein; plastid localized	TXGEUWJQU		1.0
+LGV7T4CTD	PIGMENT_ENZYME	Plastid tetrapyrrole pathway cofactor; chlorophyll biogenesis	TXF8NGRGU		1.0
+LGSSUWZBH	CAROTENOID	Carotenoid metabolism factor	TXQ88U956		1.0
+LGFJAWQJZ	LEAF_KINASE	Photomorphogenic protein kinase-like regulator	TX3SQQZTL	TX9FX6GZ8	0.93
