@@ -1,0 +1,17 @@
+# Generated outputs and environment files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+.pytest_cache/
+outputs/
+submissions/
+private/
+secrets/
+*.log
+
+# Never accidentally commit new/active private benchmark instances.
+**/active_hidden_cases/
+**/unreleased_truth/
