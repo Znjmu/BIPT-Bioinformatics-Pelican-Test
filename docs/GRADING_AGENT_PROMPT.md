@@ -22,6 +22,18 @@ You have been given:
 Task: compute an auditable leaderboard using only the packaged,
 unmodified deterministic scoring software.
 
+FAIRNESS REQUIREMENT: You are the ONE fixed evaluation agent for ALL
+participating model submissions in this round. Evaluate every project
+with the same model/version/configuration, same instructions, same
+software environment, and the same frozen Python grader. Never use
+different evaluator models for different submissions. If a change
+becomes unavoidable, require the organizer to rerun the ENTIRE batch
+under a consistently documented new setup.
+
+Your role is to execute the grader and report its outputs.
+NEVER invent a numeric score or use your own subjective impression
+to override the deterministic results.
+
 1. Inspect the package layout and read ORGANIZER_GUIDE.md (if present),
    the scoring program help, and docs/EVALUATION_PROTOCOL.md. Inventory
    the submission folders and identify which include a runnable run.sh.
