@@ -3,6 +3,16 @@
 **An author-led, reproducible stress test for AI agents conducting bioinformatics research**  
 *Retrospective evaluation: 11 submitted configurations · 10 valid submissions · 1 synthetic plant-genetics task · 100-point automatic rubric*
 
+## 🚀 START HERE — Two essential prompts
+
+| ① **For the AI being tested** | ② **For the independent evaluator** |
+|:---|:---|
+| **[📋 OPEN THE TASK PROMPT →](docs/PARTICIPANT_PROMPT.md)** | **[📊 OPEN THE SCORING PROMPT →](docs/GRADING_AGENT_PROMPT.md)** |
+| Copy and send this neutral research instruction to a participating AI agent, together with the [task files](benchmark/Leaf_Pigment_Genetics/). | Give this instruction to an **independent scoring agent** after collecting submissions. It runs the frozen automatic grader; **the private scoring package is required and is not in this public repository**. |
+
+> [!CAUTION]
+> **KEEP THE TWO ROLES SEPARATE.** Do **not** show Prompt ②, hidden data, the scorer, or this repository's benchmark explanations to an agent during a blind evaluation. The original v1.0 task is already public; new blind trials require new undisclosed instances.
+
 > [!IMPORTANT]
 > **Author's views disclaimer:** All scores, rankings, conclusions, and interpretations reported here **represent the author's views only**. BIPT is an **independent evaluation** and is **not an official judgment, endorsement, or certification** by any model provider, university, journal, or other organization. A score on one synthetic task is **not a general measure** of scientific or bioinformatics ability.
 
@@ -129,15 +139,9 @@ where `S` is scored out of 93, `R` is **hidden re-execution (0–4)**, and `A` i
 > [!IMPORTANT]
 > **Scientific quality takes priority over presentation.** The grade intentionally focuses on sequence interpretation and evidence reconciliation. Only **3/100 points** measure file/figure delivery integrity, and **none** constitute a subjective visual-design rating.
 
-## Copy-ready prompts for reproducible evaluation
+## Prompt files and reproduction
 
-Use the two separate templates below. **The participant receives only the neutral research request and task data; the independent grading agent receives the private scoring package only after submissions have been frozen.** These are reusable instructions, **not independently verified verbatim transcripts** of the historical model sessions.
-
-- **[Prompt A — Send the research task to a participant AI](docs/PARTICIPANT_PROMPT.md)** (neutral project language; no benchmark answers or scoring weights)
-- **[Prompt B — Ask an independent coding AI to execute the deterministic grader](docs/GRADING_AGENT_PROMPT.md)** (organizer-side only; do not replace the scoring program with LLM judgment)
-
-> [!WARNING]
-> **Do not send both prompts to the same participating agent.** BIPT v1.0's historical task is now publicly available, so a genuinely fresh blind test must use a new unseen task and hidden instances.
+The two copy-ready prompts are highlighted in **[START HERE](#-start-here--two-essential-prompts)** at the top of this README. They are reusable templates, not verified verbatim transcripts of historical model conversations. Consult the [evaluation protocol](docs/EVALUATION_PROTOCOL.md) for controlled execution and scoring details.
 
 ## How to run the supplied research task
 
