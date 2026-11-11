@@ -10,6 +10,26 @@
 | **[📋 OPEN THE TASK PROMPT →](docs/PARTICIPANT_PROMPT.md)** | **[📊 OPEN THE SCORING PROMPT →](docs/GRADING_AGENT_PROMPT.md)** |
 | Copy and send this neutral research instruction to a participating AI agent, together with the [task files](benchmark/Leaf_Pigment_Genetics/). | Give this instruction to an **independent scoring agent** after collecting submissions. It runs the frozen automatic grader; **the private scoring package is required and is not in this public repository**. |
 
+## 🧭 Quick Start — Beginner's 5-Step Guide
+
+**New to AI-agent benchmarking? Follow these five steps.** No need to read the full methodology first.
+
+| Step | What to do | Open |
+|:---:|---|---|
+| **1. Download** | Click **Code → Download ZIP**; extract **only** `benchmark/Leaf_Pigment_Genetics/` for the participant. | [Task files](benchmark/Leaf_Pigment_Genetics/) |
+| **2. Run** | Give that folder and the **same Prompt A** to each AI Agent. Allow a fixed **30-minute** external time limit. | [📋 Task Prompt A](docs/PARTICIPANT_PROMPT.md) |
+| **3. Collect** | Save each agent's complete analysis project (including `run.sh` and outputs) in a separate folder or ZIP. | [Submission requirements](docs/QUICK_START.md#-collect-the-agents-complete-project) |
+| **4. Grade** | Give **all submissions** to **one fixed independent evaluation AI**, using **Prompt B**, the **same frozen Python grader**, and a protected scoring environment. | [📊 Scoring Prompt B](docs/GRADING_AGENT_PROMPT.md) |
+| **5. Compare** | Read scorer-generated JSON and the leaderboard; inspect lost points and limitations. | [Published results](results/leaderboard.csv) |
+
+**👉 [OPEN THE FULL BEGINNER-FRIENDLY TUTORIAL — CLICK HERE](docs/QUICK_START.md)**
+
+> [!IMPORTANT]
+> **FAIRNESS RULE — ONE EVALUATION MODEL FOR EVERY SUBMISSION.** Send **all tested models' final artifacts to the same independent evaluating model** (same version, reasoning mode, system instructions, and Prompt B). Keep **identical grading software, hidden cases, computing environment, and scoring rules** throughout. **The evaluation AI runs and summarizes the tests; it does not subjectively assign marks. Only the deterministic grader calculates numeric scores.**
+
+> [!WARNING]
+> **Important availability limitation:** the public GitHub repository contains the **task**, but **not the private hidden-data scoring package**. You can try the task without it; official hidden-data scores require the organizer's scoring environment. Since historical v1.0 is now public, a genuinely new blind test requires new undisclosed cases.
+
 > [!CAUTION]
 > **KEEP THE TWO ROLES SEPARATE.** Do **not** show Prompt ②, hidden data, the scorer, or this repository's benchmark explanations to an agent during a blind evaluation. The original v1.0 task is already public; new blind trials require new undisclosed instances.
 
