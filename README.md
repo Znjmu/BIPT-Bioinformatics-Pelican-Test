@@ -129,6 +129,16 @@ where `S` is scored out of 93, `R` is **hidden re-execution (0–4)**, and `A` i
 > [!IMPORTANT]
 > **Scientific quality takes priority over presentation.** The grade intentionally focuses on sequence interpretation and evidence reconciliation. Only **3/100 points** measure file/figure delivery integrity, and **none** constitute a subjective visual-design rating.
 
+## Copy-ready prompts for reproducible evaluation
+
+Use the two separate templates below. **The participant receives only the neutral research request and task data; the independent grading agent receives the private scoring package only after submissions have been frozen.** These are reusable instructions, **not independently verified verbatim transcripts** of the historical model sessions.
+
+- **[Prompt A — Send the research task to a participant AI](docs/PARTICIPANT_PROMPT.md)** (neutral project language; no benchmark answers or scoring weights)
+- **[Prompt B — Ask an independent coding AI to execute the deterministic grader](docs/GRADING_AGENT_PROMPT.md)** (organizer-side only; do not replace the scoring program with LLM judgment)
+
+> [!WARNING]
+> **Do not send both prompts to the same participating agent.** BIPT v1.0's historical task is now publicly available, so a genuinely fresh blind test must use a new unseen task and hidden instances.
+
 ## How to run the supplied research task
 
 Download or clone the repository. The input task is under:
