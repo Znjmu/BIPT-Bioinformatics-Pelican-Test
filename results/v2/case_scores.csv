@@ -5,6 +5,21 @@ DS_FLASH_DEV,DeepSeek-V4.1-Flash,DeepSeek,Flash,development_calibration_baseline
 R01,DeepSeek-V4-Pro,DeepSeek,Pro,prospective_comparison,public,0.2,60.0,22.75,5,87.75,0,0
 R01,DeepSeek-V4-Pro,DeepSeek,Pro,prospective_comparison,hidden1,0.4,0.0,0,0,0.0,1,15
 R01,DeepSeek-V4-Pro,DeepSeek,Pro,prospective_comparison,hidden2,0.4,60.0,1.75,5,66.75,0,0
+R02,GLM-5.3-Flash,GLM,Flash,completion_after_external_interruption,public,0.2,59.84,22.75,5,87.59,0,0
+R02,GLM-5.3-Flash,GLM,Flash,completion_after_external_interruption,hidden1,0.4,59.34,3.5,5,67.84,0,0
+R02,GLM-5.3-Flash,GLM,Flash,completion_after_external_interruption,hidden2,0.4,58.39263157894737,3.5,5,66.89263157894737,0,0
+R03,GLM-5.3,GLM,Standard,completion_after_external_interruption,public,0.2,58.125,31.5,5,94.625,0,0
+R03,GLM-5.3,GLM,Standard,completion_after_external_interruption,hidden1,0.4,49.84,21.0,5,75.84,0,0
+R03,GLM-5.3,GLM,Standard,completion_after_external_interruption,hidden2,0.4,59.375,17.5,5,81.875,0,0
+R04,MiniMax-M3.1-Flash,MiniMax,Flash,completion_after_external_interruption,public,0.2,60.0,29.75,5,94.75,0,0
+R04,MiniMax-M3.1-Flash,MiniMax,Flash,completion_after_external_interruption,hidden1,0.4,59.5,5.25,5,69.75,0,0
+R04,MiniMax-M3.1-Flash,MiniMax,Flash,completion_after_external_interruption,hidden2,0.4,55.59,7.0,5,67.59,0,0
+R05,MiniMax-M3,MiniMax,Standard,completion_after_external_interruption,public,0.2,59.055,24.5,5,88.555,0,0
+R05,MiniMax-M3,MiniMax,Standard,completion_after_external_interruption,hidden1,0.4,47.873333333333335,8.75,5,61.623333333333335,0,0
+R05,MiniMax-M3,MiniMax,Standard,completion_after_external_interruption,hidden2,0.4,37.87508771929825,8.75,5,51.62508771929825,0,0
 R06,Xiaomi MiMo-V2.6-Pro,Xiaomi,Pro,prospective_comparison,public,0.2,48.715,12.25,5,65.965,0,0
 R06,Xiaomi MiMo-V2.6-Pro,Xiaomi,Pro,prospective_comparison,hidden1,0.4,50.5,1.75,5,57.25,0,0
 R06,Xiaomi MiMo-V2.6-Pro,Xiaomi,Pro,prospective_comparison,hidden2,0.4,49.34,1.75,5,56.09,0,0
+R07,Step-5-Preview,Step,Preview,completion_after_external_interruption,public,0.2,55.875,22.75,5,83.625,0,0
+R07,Step-5-Preview,Step,Preview,completion_after_external_interruption,hidden1,0.4,0.0,0,0,0.0,1,15
+R07,Step-5-Preview,Step,Preview,completion_after_external_interruption,hidden2,0.4,58.266666666666666,0,0,58.266666666666666,1,4

@@ -1,0 +1,10 @@
+configuration_id,model,family,tier,role,case,case_weight,numerical,scientific,delivery,total,returncode,missing_artifacts
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,DeepSeek,Flash,development_calibration_baseline,public,0.2,60.0,26.25,5,91.25,0,0
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,DeepSeek,Flash,development_calibration_baseline,hidden1,0.4,0.0,0,0,0.0,1,15
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,DeepSeek,Flash,development_calibration_baseline,hidden2,0.4,51.0,0,0,51.0,1,4
+R01,DeepSeek-V4-Pro,DeepSeek,Pro,prospective_comparison,public,0.2,60.0,22.75,5,87.75,0,0
+R01,DeepSeek-V4-Pro,DeepSeek,Pro,prospective_comparison,hidden1,0.4,0.0,0,0,0.0,1,15
+R01,DeepSeek-V4-Pro,DeepSeek,Pro,prospective_comparison,hidden2,0.4,60.0,1.75,5,66.75,0,0
+R06,Xiaomi MiMo-V2.6-Pro,Xiaomi,Pro,prospective_comparison,public,0.2,48.715,12.25,5,65.965,0,0
+R06,Xiaomi MiMo-V2.6-Pro,Xiaomi,Pro,prospective_comparison,hidden1,0.4,50.5,1.75,5,57.25,0,0
+R06,Xiaomi MiMo-V2.6-Pro,Xiaomi,Pro,prospective_comparison,hidden2,0.4,49.34,1.75,5,56.09,0,0

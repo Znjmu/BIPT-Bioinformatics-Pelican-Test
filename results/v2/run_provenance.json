@@ -17,7 +17,7 @@
   "platform": "macOS 14.8.7 arm64",
   "openblas_num_threads": 1,
   "optional_extension_condition": "All seven primary newruns settled; authorized remaining>=400",
-  "actual_extension_status": "not_activated_budget_below_predeclared_threshold",
+  "actual_extension_status": "not_in_main_completion_scope",
   "original_submission_archives": [
     {
       "configuration_id": "R01",
@@ -29,32 +29,32 @@
     },
     {
       "configuration_id": "R02",
-      "freeze_record_sha256": "5d50db8e48e4c9be8556750a10cb1b04cf9ff0bca280ca001de060abdcab6366",
-      "archived_file_count": 35,
+      "freeze_record_sha256": "5ad2cff3d24ce6067fc74b2ba3661cf005a38848715de1e677fda8942dde77ed",
+      "archived_file_count": 52,
       "entry_point_present": true,
       "modified_participant_inputs": [],
       "evaluator_repaired_source": false
     },
     {
       "configuration_id": "R03",
-      "freeze_record_sha256": "4818a8564b88b1c6d096d7d5913eaf43a3b7e2e37fb123180251753dfd3a9755",
-      "archived_file_count": 22,
+      "freeze_record_sha256": "ae2d7a2767361294fa26a02193b3177d2462704a0187e4bf45c306cc1f4e04dd",
+      "archived_file_count": 52,
       "entry_point_present": true,
       "modified_participant_inputs": [],
       "evaluator_repaired_source": false
     },
     {
       "configuration_id": "R04",
-      "freeze_record_sha256": "e814c272304e8ffb5a5fa5f12c9f25fd214d74f645c119cc0a5ffb81c3e0039a",
-      "archived_file_count": 32,
-      "entry_point_present": false,
+      "freeze_record_sha256": "1ef6a3427e73eaf819c2528b950f1bcdd66b7d0af39c1d065ca270fafa85b759",
+      "archived_file_count": 44,
+      "entry_point_present": true,
       "modified_participant_inputs": [],
       "evaluator_repaired_source": false
     },
     {
       "configuration_id": "R05",
-      "freeze_record_sha256": "c4390bee41f6969cc165784b5e6b0c75a805cdf734cbd75872dc7f6f1226e896",
-      "archived_file_count": 32,
+      "freeze_record_sha256": "837b2fc4ee947e1f9e8d64d832c81edbbaf012e9312919301073a960c4adcc54",
+      "archived_file_count": 43,
       "entry_point_present": true,
       "modified_participant_inputs": [],
       "evaluator_repaired_source": false
@@ -69,11 +69,115 @@
     },
     {
       "configuration_id": "R07",
-      "freeze_record_sha256": "9513d4faf1994e236f9bcfe0eadc4297e764162c9c738ce0f9021ba3c8074a9b",
-      "archived_file_count": 21,
-      "entry_point_present": false,
+      "freeze_record_sha256": "49385de83a5bb5f5fe431ef179e46812d3ce86b0bd24ade6a4917f30dee312c2",
+      "archived_file_count": 38,
+      "entry_point_present": true,
       "modified_participant_inputs": [],
       "evaluator_repaired_source": false
     }
-  ]
+  ],
+  "completion_followup": {
+    "prepared_at": "2026-11-18T10:40:33.189717+08:00",
+    "generation_credit_cap": null,
+    "generation_wall_clock_cap": null,
+    "common_neutral_prompt_sha256": "db2a6791dec5f870332aae9fce141105fa27091830c1ad438028031f65bf8164",
+    "no_hidden_feedback_or_scientific_corrections": true,
+    "original_capped_manifest_sha256": "e4f2e093d818eb93c0b779f7714c758a6e4b4946be8fdeb080fef28a633eed09",
+    "original_capped_publication_commit": "8f6163cccc2858cf8aada39b688e98dacc5f52ce",
+    "same_frozen_task_and_grader": true,
+    "case_replay_timeout_seconds": 360,
+    "not_independent_generations": true,
+    "runs": [
+      {
+        "configuration_id": "R02",
+        "model": "GLM-5.3-Flash",
+        "original_archive_freeze_sha256": "5d50db8e48e4c9be8556750a10cb1b04cf9ff0bca280ca001de060abdcab6366",
+        "completion_archive_freeze_sha256": "5ad2cff3d24ce6067fc74b2ba3661cf005a38848715de1e677fda8942dde77ed",
+        "neutral_messages": 2,
+        "segments": [
+          {
+            "service_status": "\u5df2\u53d6\u6d88 26m9s",
+            "credits": 84.56,
+            "elapsed": "26m9s"
+          },
+          {
+            "service_status": "\u5df2\u5b8c\u6210 4m33s",
+            "credits": 17.86,
+            "elapsed": "4m33s"
+          }
+        ],
+        "final_status": "completed_scored",
+        "source_repaired_by_evaluator": false
+      },
+      {
+        "configuration_id": "R03",
+        "model": "GLM-5.3",
+        "original_archive_freeze_sha256": "4818a8564b88b1c6d096d7d5913eaf43a3b7e2e37fb123180251753dfd3a9755",
+        "completion_archive_freeze_sha256": "ae2d7a2767361294fa26a02193b3177d2462704a0187e4bf45c306cc1f4e04dd",
+        "neutral_messages": 2,
+        "segments": [
+          {
+            "service_status": "\u5df2\u53d6\u6d88 3m30s",
+            "credits": 147.33,
+            "elapsed": "3m30s"
+          },
+          {
+            "service_status": "\u5df2\u5b8c\u6210 43s",
+            "credits": 23.34,
+            "elapsed": "43s"
+          }
+        ],
+        "final_status": "completed_scored",
+        "source_repaired_by_evaluator": false
+      },
+      {
+        "configuration_id": "R04",
+        "model": "MiniMax-M3.1-Flash",
+        "original_archive_freeze_sha256": "e814c272304e8ffb5a5fa5f12c9f25fd214d74f645c119cc0a5ffb81c3e0039a",
+        "completion_archive_freeze_sha256": "1ef6a3427e73eaf819c2528b950f1bcdd66b7d0af39c1d065ca270fafa85b759",
+        "neutral_messages": 1,
+        "segments": [
+          {
+            "service_status": "\u5df2\u5b8c\u6210 12m5s",
+            "credits": 90.84,
+            "elapsed": "12m5s"
+          }
+        ],
+        "final_status": "completed_scored",
+        "source_repaired_by_evaluator": false
+      },
+      {
+        "configuration_id": "R05",
+        "model": "MiniMax-M3",
+        "original_archive_freeze_sha256": "c4390bee41f6969cc165784b5e6b0c75a805cdf734cbd75872dc7f6f1226e896",
+        "completion_archive_freeze_sha256": "837b2fc4ee947e1f9e8d64d832c81edbbaf012e9312919301073a960c4adcc54",
+        "neutral_messages": 1,
+        "segments": [
+          {
+            "service_status": "\u5df2\u5b8c\u6210 22m7s",
+            "credits": 114.64,
+            "elapsed": "22m7s"
+          }
+        ],
+        "final_status": "completed_scored",
+        "source_repaired_by_evaluator": false
+      },
+      {
+        "configuration_id": "R07",
+        "model": "Step-5-Preview",
+        "original_archive_freeze_sha256": "9513d4faf1994e236f9bcfe0eadc4297e764162c9c738ce0f9021ba3c8074a9b",
+        "completion_archive_freeze_sha256": "49385de83a5bb5f5fe431ef179e46812d3ce86b0bd24ade6a4917f30dee312c2",
+        "neutral_messages": 1,
+        "segments": [
+          {
+            "service_status": "\u5df2\u5b8c\u6210 18m8s",
+            "credits": 177.23,
+            "elapsed": "18m8s"
+          }
+        ],
+        "final_status": "completed_scored",
+        "source_repaired_by_evaluator": false
+      }
+    ]
+  }
 }

@@ -7,12 +7,14 @@ Version 2.0 introduces a synthetic finite-clonal-panel task that combines intege
 - A participant-only ZIP, the exact Chinese task prompt, original public inputs and fourteen-artifact output contract.
 - Prominent participant/evaluator links and a Chinese/English five-step beginner guide.
 - Real WorkBuddy runs in independent directories, using the same frozen task and one fixed evaluator.
-- Within-provider standard/Pro and Flash comparisons where those configurations are offered, plus other built-in configurations. Exact completed/incomplete dispositions appear in the result tables.
+- Within-provider standard/Pro and Flash comparisons where those configurations are offered, plus other built-in configurations. All eight configurations now have final completed scores, including five resumed original tasks.
 - Separate numerical (60), scientific (35) and delivery (5) components; released/held-out case weights of 20%/40%/40%.
 - Evidence-grounded scientific deductions across ten frozen items. Explicit scientific errors receive zero for the relevant item; the same error is not deducted twice.
-- Actual service credits, wall-clock observations, predeclared budget/time limits, operator-overhead disclosure and archive/freeze provenance.
+- Actual initial/continuation credits and displayed service time, historical limits, operator-overhead disclosure and archive/freeze provenance.
 - Component/case comparison figures and within-provider/resource figures, with R source and PDF/SVG/600-dpi PNG exports.
 - Public consistency checks in GitHub Actions, while active hidden inputs, truth and grading implementation remain protected.
+
+The initial capped comparison is preserved separately. After the user removed generation stops, GLM standard/Flash, MiniMax standard/Flash and Step Preview were resumed in their original chats with a common neutral instruction and no scientific feedback. The same task, rubric and replay limit remain frozen. These are resumed completions, not new independent repeats.
 
 The [results and interpretation](docs/v2/RESULTS.md) provide actual totals, per-case exits, pair differences and scientific-review findings. The [limitations](docs/v2/LIMITATIONS.md) explain difficulty-selection bias, the development Flash baseline, single generations, non-matched compute budgets, version differences and evaluator judgment. No score rescaling, significance test or general model-superiority inference is used.
 

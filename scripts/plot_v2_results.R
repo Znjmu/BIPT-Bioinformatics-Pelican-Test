@@ -16,9 +16,12 @@ out <- file.path(root, 'figures', 'v2'); dir.create(out, recursive=TRUE, showWar
 d <- read.csv(file.path(results,'leaderboard.csv'), stringsAsFactors=FALSE, na.strings=c('','NA'))
 cases <- read.csv(file.path(results,'case_scores.csv'), stringsAsFactors=FALSE)
 stopifnot(nrow(d)>=2L, !anyDuplicated(d$configuration_id), all(is.na(d$total) | d$total>=0 & d$total<=100), all(d$credits>=0))
+stopifnot(nrow(d)==8L, all(d$status=='completed_scored'))
+phases <- read.csv(file.path(results,'execution_phases.csv'),stringsAsFactors=FALSE)
 completed <- d$status=='completed_scored'
 d$display <- d$model
 d$display[d$role=='development_calibration_baseline'] <- paste0(d$model[d$role=='development_calibration_baseline'],' *')
+d$display[d$role=='completion_after_external_interruption'] <- paste0(d$model[d$role=='completion_after_external_interruption'],' +')
 d <- d[order(!completed, -ifelse(is.na(d$total),-1,d$total),d$configuration_id),]
 levels_model <- rev(d$display)
 d$display <- factor(d$display, levels=levels_model)
@@ -55,10 +58,10 @@ pb <- ggplot(full,aes(x=case_display,y=display,fill=total))+geom_tile(width=.93,
  scale_fill_gradient(low='#F1F4F7',high='#2166AC',limits=c(0,100),na.value='#DDDDDD',name='Case score')+
  scale_y_discrete(limits=levels_model,drop=FALSE)+
  labs(title='b  Transfer across the same three cases',x=NULL,y=NULL,
-      caption='! Non-zero entry exit; correctly delivered partial results retain their frozen points. NA = externally incomplete.')+
+      caption='! Non-zero entry exit; correctly delivered partial results retain their frozen points. All generation tasks reached normal service completion.')+
  theme(axis.line=element_blank(),axis.ticks=element_blank(),legend.position='right')
 # Preserve exact single-run observations: no error bars or confidence intervals are estimated.
-foot <- '* Development/calibration Flash baseline; task selection was not independent of this model. One generation per configuration.'
+foot <- '* Development Flash baseline (task-selection bias). + Resumed original task with neutral continuation; not independent repeats.'
 draw_grid <- function(plots,heights,title,footnote) {
  grid.newpage();pushViewport(viewport(layout=grid.layout(length(plots)+2,1,heights=unit(c(.10,heights,.12),'null'))))
  grid.text(title,x=.01,y=.5,just='left',vp=viewport(layout.pos.row=1),gp=gpar(fontsize=10,fontface='bold',fontfamily=font))
@@ -108,6 +111,7 @@ if(length(pairrows)) {
 resource <- d[d$status=='completed_scored',]
 short <- c('DeepSeek-V4-Pro'='DeepSeek Pro','DeepSeek-V4.1-Flash'='DeepSeek Flash *','GLM-5.3'='GLM','GLM-5.3-Flash'='GLM Flash','MiniMax-M3'='MiniMax M3','MiniMax-M3.1-Flash'='MiniMax Flash','Xiaomi MiMo-V2.6-Pro'='MiMo Pro','Step-5-Preview'='Step','Kimi-K3.1-Pro'='Kimi Pro')
 resource$short <- unname(short[resource$model]);resource$short[is.na(resource$short)]<-resource$model[is.na(resource$short)]
+resource$short[resource$role=='completion_after_external_interruption'] <- paste0(resource$short[resource$role=='completion_after_external_interruption'],' +')
 resource$label <- paste0(resource$short,'\n',round(resource$elapsed_seconds/60,1),' min')
 resource$baseline <- resource$role=='development_calibration_baseline'
 pr <- ggplot(resource,aes(x=credits,y=total,colour=family))+geom_point(aes(shape=baseline),size=2.2,stroke=.8)+
@@ -115,21 +119,24 @@ pr <- ggplot(resource,aes(x=credits,y=total,colour=family))+geom_point(aes(shape
  scale_shape_manual(values=c('FALSE'=16,'TRUE'=1),guide='none')+scale_colour_manual(values=provider_cols)+
  scale_y_continuous(limits=c(-4,108),breaks=seq(0,100,25))+expand_limits(x=0)+
  labs(title='b  Observed service cost and elapsed time',x='Actual WorkBuddy credits',y='Weighted score / 100',colour='Provider',
- subtitle='Completed scores only; see the resource chart for all bills, including external stops.')
+ subtitle='Total initial + continuation credits; durations are displayed service time, not matched compute.')
 export('paired_and_resource_comparison',list(pc,pr),c(.75,1),'BIPT v2.0 | Configuration contrasts and resources',foot,height_mm=160)
 resource_all <- do.call(rbind,lapply(seq_len(nrow(d)),function(i) {
- data.frame(display=d$display[i],metric=factor(c('a  Actual WorkBuddy credits','b  Service elapsed minutes'),levels=c('a  Actual WorkBuddy credits','b  Service elapsed minutes')),
-            value=c(d$credits[i],d$elapsed_seconds[i]/60),outcome=if(d$status[i]=='completed_scored')'Service completed' else 'External stop / incomplete')
+ ph <- phases[phases$configuration_id==d$configuration_id[i],];stopifnot(nrow(ph)==1L)
+ data.frame(display=d$display[i],metric=factor(rep(c('a  Actual WorkBuddy credits','b  Service elapsed minutes'),each=2),levels=c('a  Actual WorkBuddy credits','b  Service elapsed minutes')),
+            value=c(ph$initial_credits,ph$continuation_credits,ph$initial_elapsed_seconds/60,ph$continuation_elapsed_seconds/60),
+            phase=factor(rep(c('Initial generation','Neutral continuation'),2),levels=c('Initial generation','Neutral continuation')))
 }))
 resource_all$display <- factor(resource_all$display,levels=levels_model)
-resource_all$label <- ifelse(resource_all$metric=='a  Actual WorkBuddy credits',sprintf('%.2f',resource_all$value),sprintf('%.1f',resource_all$value))
-px <- ggplot(resource_all,aes(x=value,y=display,fill=outcome))+geom_col(width=.65)+
- geom_text(aes(label=label),hjust=-.1,family=font,size=2.4)+facet_wrap(~metric,nrow=1,scales='free_x')+
- scale_fill_manual(values=c('Service completed'='#3C5488','External stop / incomplete'='#999999'))+
+resource_totals <- aggregate(value~display+metric,resource_all,sum)
+resource_totals$label <- ifelse(resource_totals$metric=='a  Actual WorkBuddy credits',sprintf('%.2f',resource_totals$value),sprintf('%.1f',resource_totals$value))
+px <- ggplot(resource_all,aes(x=value,y=display,fill=phase))+geom_col(width=.65,position=position_stack(reverse=TRUE))+
+ geom_text(data=resource_totals,inherit.aes=FALSE,mapping=aes(x=value,y=display,label=label),hjust=-.1,family=font,size=2.4)+facet_wrap(~metric,nrow=1,scales='free_x')+
+ scale_fill_manual(values=c('Initial generation'='#3C5488','Neutral continuation'='#E64B35'))+
  scale_y_discrete(limits=levels_model,drop=FALSE)+
  scale_x_continuous(expand=expansion(mult=c(0,.22)))+
- labs(title='All finalized service outcomes',x=NULL,y=NULL,fill=NULL,
-      caption='Time includes generation, tool use and service waiting. These are not compute-matched budgets.')+
+ labs(title='All configurations completed; initial and resumed resource use',x=NULL,y=NULL,fill=NULL,
+      caption='Final segment bills and displayed service durations are summed. Idle calendar time may be excluded.')+
  theme(axis.line.y=element_blank(),axis.ticks.y=element_blank(),strip.background=element_blank(),strip.text=element_text(size=8,face='bold'),legend.position='top')
-export('execution_resources',list(px),c(1),'BIPT v2.0 | Costs of completed and interrupted runs',foot,height_mm=max(105,65+7*nrow(d)))
+export('execution_resources',list(px),c(1),'BIPT v2.0 | Initial and continuation resources',foot,height_mm=max(105,65+7*nrow(d)))
 cat('Rendered finalized data only:',nrow(d),'configurations;',nrow(cases),'case rows\n')

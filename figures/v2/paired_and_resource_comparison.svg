@@ -39,44 +39,58 @@
 <g clip-path='url(#cpMC4wMHw1MTguNzR8MC4wMHw0NTMuNTQ=)'>
 </g>
 <defs>
-  <clipPath id='cpMzIuMjF8NDk2LjA2fDkwLjYwfDE3NC4xOQ=='>
-    <rect x='32.21' y='90.60' width='463.85' height='83.59' />
+  <clipPath id='cpMzQuNTR8NDk2LjA2fDkwLjYwfDE3NC4xOQ=='>
+    <rect x='34.54' y='90.60' width='461.53' height='83.59' />
   </clipPath>
 </defs>
-<g clip-path='url(#cpMzIuMjF8NDk2LjA2fDkwLjYwfDE3NC4xOQ==)'>
-<rect x='32.21' y='90.60' width='463.85' height='83.59' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
-<line x1='32.21' y1='156.58' x2='496.06' y2='156.58' style='stroke-width: 0.75; stroke: #777777; stroke-dasharray: 4.00,4.00; stroke-linecap: butt;' />
-<polyline points='119.18,170.39 264.14,156.58 409.09,94.40 ' style='stroke-width: 1.17; stroke: #3C5488; stroke-linecap: butt;' />
-<circle cx='119.18' cy='170.39' r='2.39' style='stroke-width: 0.52; stroke: #3C5488; fill: #3C5488;' />
-<circle cx='264.14' cy='156.58' r='2.39' style='stroke-width: 0.52; stroke: #3C5488; fill: #3C5488;' />
-<circle cx='409.09' cy='94.40' r='2.39' style='stroke-width: 0.52; stroke: #3C5488; fill: #3C5488;' />
+<g clip-path='url(#cpMzQuNTR8NDk2LjA2fDkwLjYwfDE3NC4xOQ==)'>
+<rect x='34.54' y='90.60' width='461.53' height='83.59' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<line x1='34.54' y1='132.14' x2='496.06' y2='132.14' style='stroke-width: 0.75; stroke: #777777; stroke-dasharray: 4.00,4.00; stroke-linecap: butt;' />
+<polyline points='121.07,140.53 265.30,132.14 409.53,94.40 ' style='stroke-width: 1.17; stroke: #3C5488; stroke-linecap: butt;' />
+<polyline points='121.07,115.28 265.30,112.97 409.53,96.24 ' style='stroke-width: 1.17; stroke: #00A087; stroke-linecap: butt;' />
+<polyline points='121.07,146.98 265.30,151.61 409.53,170.39 ' style='stroke-width: 1.17; stroke: #7E6148; stroke-linecap: butt;' />
+<circle cx='121.07' cy='140.53' r='2.39' style='stroke-width: 0.52; stroke: #3C5488; fill: #3C5488;' />
+<circle cx='265.30' cy='132.14' r='2.39' style='stroke-width: 0.52; stroke: #3C5488; fill: #3C5488;' />
+<circle cx='409.53' cy='94.40' r='2.39' style='stroke-width: 0.52; stroke: #3C5488; fill: #3C5488;' />
+<circle cx='121.07' cy='115.28' r='2.39' style='stroke-width: 0.52; stroke: #00A087; fill: #00A087;' />
+<circle cx='265.30' cy='112.97' r='2.39' style='stroke-width: 0.52; stroke: #00A087; fill: #00A087;' />
+<circle cx='409.53' cy='96.24' r='2.39' style='stroke-width: 0.52; stroke: #00A087; fill: #00A087;' />
+<circle cx='121.07' cy='146.98' r='2.39' style='stroke-width: 0.52; stroke: #7E6148; fill: #7E6148;' />
+<circle cx='265.30' cy='151.61' r='2.39' style='stroke-width: 0.52; stroke: #7E6148; fill: #7E6148;' />
+<circle cx='409.53' cy='170.39' r='2.39' style='stroke-width: 0.52; stroke: #7E6148; fill: #7E6148;' />
 </g>
 <g clip-path='url(#cpMC4wMHw1MTguNzR8MC4wMHw0NTMuNTQ=)'>
-<polyline points='32.21,174.19 32.21,90.60 ' style='stroke-width: 0.64; stroke-linecap: square;' />
-<text x='28.62' y='159.09' text-anchor='end' style='font-size: 7.00px; font-family: "Helvetica";' textLength='3.89px' lengthAdjust='spacingAndGlyphs'>0</text>
-<text x='28.62' y='139.35' text-anchor='end' style='font-size: 7.00px; font-family: "Helvetica";' textLength='3.89px' lengthAdjust='spacingAndGlyphs'>5</text>
-<text x='28.62' y='119.61' text-anchor='end' style='font-size: 7.00px; font-family: "Helvetica";' textLength='7.78px' lengthAdjust='spacingAndGlyphs'>10</text>
-<text x='28.62' y='99.87' text-anchor='end' style='font-size: 7.00px; font-family: "Helvetica";' textLength='7.78px' lengthAdjust='spacingAndGlyphs'>15</text>
-<polyline points='30.22,156.58 32.21,156.58 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
-<polyline points='30.22,136.84 32.21,136.84 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
-<polyline points='30.22,117.10 32.21,117.10 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
-<polyline points='30.22,97.36 32.21,97.36 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
-<polyline points='32.21,174.19 496.06,174.19 ' style='stroke-width: 0.64; stroke-linecap: square;' />
-<polyline points='119.18,176.19 119.18,174.19 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
-<polyline points='264.14,176.19 264.14,174.19 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
-<polyline points='409.09,176.19 409.09,174.19 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
-<text x='119.18' y='182.80' text-anchor='middle' style='font-size: 7.00px; font-family: "Helvetica";' textLength='29.58px' lengthAdjust='spacingAndGlyphs'>Released</text>
-<text x='264.14' y='182.80' text-anchor='middle' style='font-size: 7.00px; font-family: "Helvetica";' textLength='32.28px' lengthAdjust='spacingAndGlyphs'>Held-out 1</text>
-<text x='409.09' y='182.80' text-anchor='middle' style='font-size: 7.00px; font-family: "Helvetica";' textLength='32.28px' lengthAdjust='spacingAndGlyphs'>Held-out 2</text>
+<polyline points='34.54,174.19 34.54,90.60 ' style='stroke-width: 0.64; stroke-linecap: square;' />
+<text x='30.95' y='158.61' text-anchor='end' style='font-size: 7.00px; font-family: "Helvetica";' textLength='10.11px' lengthAdjust='spacingAndGlyphs'>-10</text>
+<text x='30.95' y='134.65' text-anchor='end' style='font-size: 7.00px; font-family: "Helvetica";' textLength='3.89px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='30.95' y='110.69' text-anchor='end' style='font-size: 7.00px; font-family: "Helvetica";' textLength='7.78px' lengthAdjust='spacingAndGlyphs'>10</text>
+<polyline points='32.54,156.10 34.54,156.10 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='32.54,132.14 34.54,132.14 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='32.54,108.18 34.54,108.18 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='34.54,174.19 496.06,174.19 ' style='stroke-width: 0.64; stroke-linecap: square;' />
+<polyline points='121.07,176.19 121.07,174.19 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='265.30,176.19 265.30,174.19 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='409.53,176.19 409.53,174.19 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<text x='121.07' y='182.80' text-anchor='middle' style='font-size: 7.00px; font-family: "Helvetica";' textLength='29.58px' lengthAdjust='spacingAndGlyphs'>Released</text>
+<text x='265.30' y='182.80' text-anchor='middle' style='font-size: 7.00px; font-family: "Helvetica";' textLength='32.28px' lengthAdjust='spacingAndGlyphs'>Held-out 1</text>
+<text x='409.53' y='182.80' text-anchor='middle' style='font-size: 7.00px; font-family: "Helvetica";' textLength='32.28px' lengthAdjust='spacingAndGlyphs'>Held-out 2</text>
 <text transform='translate(17.08,132.40) rotate(-90)' text-anchor='middle' style='font-size: 8.00px; font-family: "Helvetica";' textLength='121.48px' lengthAdjust='spacingAndGlyphs'>Standard/Pro minus Flash (points)</text>
-<rect x='218.15' y='57.38' width='91.97' height='25.25' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
-<text x='222.14' y='72.52' style='font-size: 7.00px; font-family: "Helvetica";' textLength='26.06px' lengthAdjust='spacingAndGlyphs'>Provider</text>
-<rect x='252.18' y='61.36' width='17.28' height='17.28' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
-<line x1='253.91' y1='70.00' x2='267.74' y2='70.00' style='stroke-width: 1.17; stroke: #3C5488; stroke-linecap: butt;' />
-<circle cx='260.82' cy='70.00' r='2.39' style='stroke-width: 0.52; stroke: #3C5488; fill: #3C5488;' />
-<text x='273.45' y='72.52' style='font-size: 7.00px; font-family: "Helvetica";' textLength='32.69px' lengthAdjust='spacingAndGlyphs'>DeepSeek</text>
-<text x='32.21' y='51.85' style='font-size: 7.00px; font-family: "Helvetica";' textLength='292.69px' lengthAdjust='spacingAndGlyphs'>Different version labels within DeepSeek and MiniMax; these are not pure speed-tier ablations.</text>
-<text x='32.21' y='40.84' style='font-size: 9.00px; font-weight: bold; font-family: "Helvetica";' textLength='180.00px' lengthAdjust='spacingAndGlyphs'>a  Matched-case configuration differences</text>
+<rect x='173.46' y='57.38' width='183.69' height='25.25' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<text x='177.44' y='72.52' style='font-size: 7.00px; font-family: "Helvetica";' textLength='26.06px' lengthAdjust='spacingAndGlyphs'>Provider</text>
+<rect x='207.49' y='61.36' width='17.28' height='17.28' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<line x1='209.22' y1='70.00' x2='223.04' y2='70.00' style='stroke-width: 1.17; stroke: #3C5488; stroke-linecap: butt;' />
+<circle cx='216.13' cy='70.00' r='2.39' style='stroke-width: 0.52; stroke: #3C5488; fill: #3C5488;' />
+<rect x='265.43' y='61.36' width='17.28' height='17.28' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<line x1='267.15' y1='70.00' x2='280.98' y2='70.00' style='stroke-width: 1.17; stroke: #00A087; stroke-linecap: butt;' />
+<circle cx='274.07' cy='70.00' r='2.39' style='stroke-width: 0.52; stroke: #00A087; fill: #00A087;' />
+<rect x='305.83' y='61.36' width='17.28' height='17.28' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<line x1='307.56' y1='70.00' x2='321.38' y2='70.00' style='stroke-width: 1.17; stroke: #7E6148; stroke-linecap: butt;' />
+<circle cx='314.47' cy='70.00' r='2.39' style='stroke-width: 0.52; stroke: #7E6148; fill: #7E6148;' />
+<text x='228.75' y='72.52' style='font-size: 7.00px; font-family: "Helvetica";' textLength='32.69px' lengthAdjust='spacingAndGlyphs'>DeepSeek</text>
+<text x='286.69' y='72.52' style='font-size: 7.00px; font-family: "Helvetica";' textLength='15.16px' lengthAdjust='spacingAndGlyphs'>GLM</text>
+<text x='327.10' y='72.52' style='font-size: 7.00px; font-family: "Helvetica";' textLength='26.06px' lengthAdjust='spacingAndGlyphs'>MiniMax</text>
+<text x='34.54' y='51.85' style='font-size: 7.00px; font-family: "Helvetica";' textLength='292.69px' lengthAdjust='spacingAndGlyphs'>Different version labels within DeepSeek and MiniMax; these are not pure speed-tier ablations.</text>
+<text x='34.54' y='40.84' style='font-size: 9.00px; font-weight: bold; font-family: "Helvetica";' textLength='180.00px' lengthAdjust='spacingAndGlyphs'>a  Matched-case configuration differences</text>
 </g>
 <defs>
   <clipPath id='cpMC4wMHw1MTguNzR8MTk1LjY5fDQyNS45Mg=='>
@@ -95,18 +109,38 @@
 </defs>
 <g clip-path='url(#cpMzYuMTB8NDk2LjA2fDI2My4yN3wzOTQuOTI=)'>
 <rect x='36.10' y='263.27' width='459.96' height='131.65' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
-<circle cx='292.11' cy='322.11' r='2.91' style='stroke-width: 1.13; stroke: none; fill: #E64B35;' />
-<circle cx='475.16' cy='337.37' r='2.91' style='stroke-width: 1.13; stroke: none; fill: #3C5488;' />
-<circle cx='207.73' cy='343.36' r='2.91' style='stroke-width: 1.13; stroke: #3C5488;' />
-<line x1='286.79' y1='323.59' x2='291.08' y2='322.40' style='stroke-width: 1.07; stroke: #E64B35;' />
-<line x1='469.92' y1='337.36' x2='474.09' y2='337.37' style='stroke-width: 1.07; stroke: #3C5488;' />
-<line x1='197.67' y1='344.06' x2='206.66' y2='343.43' style='stroke-width: 1.07; stroke: #3C5488;' />
-<text x='270.38' y='325.86' text-anchor='middle' style='font-size: 6.83px;fill: #E64B35; font-family: "Helvetica";' textLength='29.20px' lengthAdjust='spacingAndGlyphs'>MiMo Pro</text>
-<text x='270.38' y='335.70' text-anchor='middle' style='font-size: 6.83px;fill: #E64B35; font-family: "Helvetica";' textLength='26.17px' lengthAdjust='spacingAndGlyphs'>30.5 min</text>
-<text x='445.92' y='334.90' text-anchor='middle' style='font-size: 6.83px;fill: #3C5488; font-family: "Helvetica";' textLength='44.41px' lengthAdjust='spacingAndGlyphs'>DeepSeek Pro</text>
-<text x='445.92' y='344.73' text-anchor='middle' style='font-size: 6.83px;fill: #3C5488; font-family: "Helvetica";' textLength='26.17px' lengthAdjust='spacingAndGlyphs'>22.9 min</text>
-<text x='173.22' y='350.77' text-anchor='middle' style='font-size: 6.83px;fill: #3C5488; font-family: "Helvetica";' textLength='55.03px' lengthAdjust='spacingAndGlyphs'>DeepSeek Flash *</text>
-<text x='173.22' y='360.60' text-anchor='middle' style='font-size: 6.83px;fill: #3C5488; font-family: "Helvetica";' textLength='26.17px' lengthAdjust='spacingAndGlyphs'>21.6 min</text>
+<circle cx='475.16' cy='297.02' r='2.91' style='stroke-width: 1.13; stroke: none; fill: #00A087;' />
+<circle cx='223.85' cy='305.70' r='2.91' style='stroke-width: 1.13; stroke: none; fill: #7E6148;' />
+<circle cx='232.22' cy='308.35' r='2.91' style='stroke-width: 1.13; stroke: none; fill: #00A087;' />
+<circle cx='382.53' cy='317.33' r='2.91' style='stroke-width: 1.13; stroke: none; fill: #7E6148;' />
+<circle cx='112.12' cy='322.11' r='2.91' style='stroke-width: 1.13; stroke: none; fill: #E64B35;' />
+<circle cx='155.03' cy='337.37' r='2.91' style='stroke-width: 1.13; stroke: none; fill: #3C5488;' />
+<circle cx='454.02' cy='341.88' r='2.91' style='stroke-width: 1.13; stroke: none; fill: #8C6BB1;' />
+<circle cx='92.34' cy='343.36' r='2.91' style='stroke-width: 1.13; stroke: #3C5488;' />
+<line x1='469.70' y1='298.53' x2='474.13' y2='297.31' style='stroke-width: 1.07; stroke: #00A087;' />
+<line x1='213.88' y1='305.65' x2='222.78' y2='305.70' style='stroke-width: 1.07; stroke: #7E6148;' />
+<line x1='237.68' y1='309.88' x2='233.25' y2='308.64' style='stroke-width: 1.07; stroke: #00A087;' />
+<line x1='385.75' y1='316.41' x2='383.55' y2='317.04' style='stroke-width: 1.07; stroke: #7E6148;' />
+<line x1='106.67' y1='320.60' x2='111.09' y2='321.83' style='stroke-width: 1.07; stroke: #E64B35;' />
+<line x1='160.49' y1='338.91' x2='156.06' y2='337.66' style='stroke-width: 1.07; stroke: #3C5488;' />
+<line x1='459.51' y1='340.36' x2='455.05' y2='341.60' style='stroke-width: 1.07; stroke: #8C6BB1;' />
+<line x1='79.65' y1='347.72' x2='91.33' y2='343.70' style='stroke-width: 1.07; stroke: #3C5488;' />
+<text x='454.82' y='300.39' text-anchor='middle' style='font-size: 6.83px;fill: #00A087; font-family: "Helvetica";' textLength='20.67px' lengthAdjust='spacingAndGlyphs'>GLM +</text>
+<text x='454.82' y='310.22' text-anchor='middle' style='font-size: 6.83px;fill: #00A087; font-family: "Helvetica";' textLength='26.17px' lengthAdjust='spacingAndGlyphs'>42.8 min</text>
+<text x='191.66' y='294.02' text-anchor='middle' style='font-size: 6.83px;fill: #7E6148; font-family: "Helvetica";' textLength='49.89px' lengthAdjust='spacingAndGlyphs'>MiniMax Flash +</text>
+<text x='191.66' y='303.85' text-anchor='middle' style='font-size: 6.83px;fill: #7E6148; font-family: "Helvetica";' textLength='26.17px' lengthAdjust='spacingAndGlyphs'>32.9 min</text>
+<text x='259.11' y='313.58' text-anchor='middle' style='font-size: 6.83px;fill: #00A087; font-family: "Helvetica";' textLength='39.27px' lengthAdjust='spacingAndGlyphs'>GLM Flash +</text>
+<text x='259.11' y='323.42' text-anchor='middle' style='font-size: 6.83px;fill: #00A087; font-family: "Helvetica";' textLength='20.48px' lengthAdjust='spacingAndGlyphs'>88 min</text>
+<text x='408.88' y='307.32' text-anchor='middle' style='font-size: 6.83px;fill: #7E6148; font-family: "Helvetica";' textLength='42.67px' lengthAdjust='spacingAndGlyphs'>MiniMax M3 +</text>
+<text x='408.88' y='317.15' text-anchor='middle' style='font-size: 6.83px;fill: #7E6148; font-family: "Helvetica";' textLength='26.17px' lengthAdjust='spacingAndGlyphs'>46.8 min</text>
+<text x='90.26' y='313.39' text-anchor='middle' style='font-size: 6.83px;fill: #E64B35; font-family: "Helvetica";' textLength='29.20px' lengthAdjust='spacingAndGlyphs'>MiMo Pro</text>
+<text x='90.26' y='323.22' text-anchor='middle' style='font-size: 6.83px;fill: #E64B35; font-family: "Helvetica";' textLength='26.17px' lengthAdjust='spacingAndGlyphs'>30.5 min</text>
+<text x='184.50' y='343.34' text-anchor='middle' style='font-size: 6.83px;fill: #3C5488; font-family: "Helvetica";' textLength='44.41px' lengthAdjust='spacingAndGlyphs'>DeepSeek Pro</text>
+<text x='184.50' y='353.17' text-anchor='middle' style='font-size: 6.83px;fill: #3C5488; font-family: "Helvetica";' textLength='26.17px' lengthAdjust='spacingAndGlyphs'>22.9 min</text>
+<text x='474.40' y='333.59' text-anchor='middle' style='font-size: 6.83px;fill: #8C6BB1; font-family: "Helvetica";' textLength='19.91px' lengthAdjust='spacingAndGlyphs'>Step +</text>
+<text x='474.40' y='343.42' text-anchor='middle' style='font-size: 6.83px;fill: #8C6BB1; font-family: "Helvetica";' textLength='26.17px' lengthAdjust='spacingAndGlyphs'>57.8 min</text>
+<text x='69.37' y='354.42' text-anchor='middle' style='font-size: 6.83px;fill: #3C5488; font-family: "Helvetica";' textLength='55.03px' lengthAdjust='spacingAndGlyphs'>DeepSeek Flash *</text>
+<text x='69.37' y='364.25' text-anchor='middle' style='font-size: 6.83px;fill: #3C5488; font-family: "Helvetica";' textLength='26.17px' lengthAdjust='spacingAndGlyphs'>21.6 min</text>
 </g>
 <g clip-path='url(#cpMC4wMHw1MTguNzR8MC4wMHw0NTMuNTQ=)'>
 <polyline points='36.10,394.92 36.10,263.27 ' style='stroke-width: 0.64; stroke-linecap: square;' />
@@ -122,26 +156,37 @@
 <polyline points='34.11,277.80 36.10,277.80 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
 <polyline points='36.10,394.92 496.06,394.92 ' style='stroke-width: 0.64; stroke-linecap: square;' />
 <polyline points='57.01,396.91 57.01,394.92 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
-<polyline points='175.13,396.91 175.13,394.92 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
-<polyline points='293.25,396.91 293.25,394.92 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
-<polyline points='411.37,396.91 411.37,394.92 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='149.31,396.91 149.31,394.92 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='241.62,396.91 241.62,394.92 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='333.92,396.91 333.92,394.92 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='426.22,396.91 426.22,394.92 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
 <text x='57.01' y='403.53' text-anchor='middle' style='font-size: 7.00px; font-family: "Helvetica";' textLength='3.89px' lengthAdjust='spacingAndGlyphs'>0</text>
-<text x='175.13' y='403.53' text-anchor='middle' style='font-size: 7.00px; font-family: "Helvetica";' textLength='7.78px' lengthAdjust='spacingAndGlyphs'>30</text>
-<text x='293.25' y='403.53' text-anchor='middle' style='font-size: 7.00px; font-family: "Helvetica";' textLength='7.78px' lengthAdjust='spacingAndGlyphs'>60</text>
-<text x='411.37' y='403.53' text-anchor='middle' style='font-size: 7.00px; font-family: "Helvetica";' textLength='7.78px' lengthAdjust='spacingAndGlyphs'>90</text>
+<text x='149.31' y='403.53' text-anchor='middle' style='font-size: 7.00px; font-family: "Helvetica";' textLength='11.67px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text x='241.62' y='403.53' text-anchor='middle' style='font-size: 7.00px; font-family: "Helvetica";' textLength='11.67px' lengthAdjust='spacingAndGlyphs'>200</text>
+<text x='333.92' y='403.53' text-anchor='middle' style='font-size: 7.00px; font-family: "Helvetica";' textLength='11.67px' lengthAdjust='spacingAndGlyphs'>300</text>
+<text x='426.22' y='403.53' text-anchor='middle' style='font-size: 7.00px; font-family: "Helvetica";' textLength='11.67px' lengthAdjust='spacingAndGlyphs'>400</text>
 <text x='266.08' y='412.81' text-anchor='middle' style='font-size: 8.00px; font-family: "Helvetica";' textLength='91.50px' lengthAdjust='spacingAndGlyphs'>Actual WorkBuddy credits</text>
 <text transform='translate(17.08,329.09) rotate(-90)' text-anchor='middle' style='font-size: 8.00px; font-family: "Helvetica";' textLength='75.48px' lengthAdjust='spacingAndGlyphs'>Weighted score / 100</text>
-<rect x='196.77' y='230.05' width='138.63' height='25.25' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
-<text x='200.75' y='245.19' style='font-size: 7.00px; font-family: "Helvetica";' textLength='26.06px' lengthAdjust='spacingAndGlyphs'>Provider</text>
-<rect x='230.80' y='234.03' width='17.28' height='17.28' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
-<circle cx='239.44' cy='242.67' r='2.91' style='stroke-width: 1.13; stroke: #3C5488; fill: #3C5488;' />
-<rect x='288.74' y='234.03' width='17.28' height='17.28' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
-<circle cx='297.38' cy='242.67' r='2.91' style='stroke-width: 1.13; stroke: #E64B35; fill: #E64B35;' />
-<text x='252.07' y='245.19' style='font-size: 7.00px; font-family: "Helvetica";' textLength='32.69px' lengthAdjust='spacingAndGlyphs'>DeepSeek</text>
-<text x='310.00' y='245.19' style='font-size: 7.00px; font-family: "Helvetica";' textLength='21.41px' lengthAdjust='spacingAndGlyphs'>Xiaomi</text>
-<text x='36.10' y='224.51' style='font-size: 7.00px; font-family: "Helvetica";' textLength='256.62px' lengthAdjust='spacingAndGlyphs'>Completed scores only; see the resource chart for all bills, including external stops.</text>
+<rect x='131.09' y='230.05' width='269.99' height='25.25' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<text x='135.07' y='245.19' style='font-size: 7.00px; font-family: "Helvetica";' textLength='26.06px' lengthAdjust='spacingAndGlyphs'>Provider</text>
+<rect x='165.12' y='234.03' width='17.28' height='17.28' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<circle cx='173.76' cy='242.67' r='2.91' style='stroke-width: 1.13; stroke: #3C5488; fill: #3C5488;' />
+<rect x='223.06' y='234.03' width='17.28' height='17.28' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<circle cx='231.70' cy='242.67' r='2.91' style='stroke-width: 1.13; stroke: #00A087; fill: #00A087;' />
+<rect x='263.46' y='234.03' width='17.28' height='17.28' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<circle cx='272.10' cy='242.67' r='2.91' style='stroke-width: 1.13; stroke: #7E6148; fill: #7E6148;' />
+<rect x='314.78' y='234.03' width='17.28' height='17.28' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<circle cx='323.42' cy='242.67' r='2.91' style='stroke-width: 1.13; stroke: #8C6BB1; fill: #8C6BB1;' />
+<rect x='354.42' y='234.03' width='17.28' height='17.28' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<circle cx='363.06' cy='242.67' r='2.91' style='stroke-width: 1.13; stroke: #E64B35; fill: #E64B35;' />
+<text x='186.39' y='245.19' style='font-size: 7.00px; font-family: "Helvetica";' textLength='32.69px' lengthAdjust='spacingAndGlyphs'>DeepSeek</text>
+<text x='244.32' y='245.19' style='font-size: 7.00px; font-family: "Helvetica";' textLength='15.16px' lengthAdjust='spacingAndGlyphs'>GLM</text>
+<text x='284.73' y='245.19' style='font-size: 7.00px; font-family: "Helvetica";' textLength='26.06px' lengthAdjust='spacingAndGlyphs'>MiniMax</text>
+<text x='336.04' y='245.19' style='font-size: 7.00px; font-family: "Helvetica";' textLength='14.39px' lengthAdjust='spacingAndGlyphs'>Step</text>
+<text x='375.68' y='245.19' style='font-size: 7.00px; font-family: "Helvetica";' textLength='21.41px' lengthAdjust='spacingAndGlyphs'>Xiaomi</text>
+<text x='36.10' y='224.51' style='font-size: 7.00px; font-family: "Helvetica";' textLength='289.48px' lengthAdjust='spacingAndGlyphs'>Total initial + continuation credits; durations are displayed service time, not matched compute.</text>
 <text x='36.10' y='213.51' style='font-size: 9.00px; font-weight: bold; font-family: "Helvetica";' textLength='182.00px' lengthAdjust='spacingAndGlyphs'>b  Observed service cost and elapsed time</text>
-<text x='5.19' y='442.06' style='font-size: 6.50px; font-family: "Helvetica";' textLength='361.50px' lengthAdjust='spacingAndGlyphs'>* Development/calibration Flash baseline; task selection was not independent of this model. One generation per configuration.</text>
+<text x='5.19' y='442.06' style='font-size: 6.50px; font-family: "Helvetica";' textLength='366.73px' lengthAdjust='spacingAndGlyphs'>* Development Flash baseline (task-selection bias). + Resumed original task with neutral continuation; not independent repeats.</text>
 </g>
 </g>
 </svg>

@@ -30,6 +30,12 @@ The evaluator also needs the protected organizer scoring package. It contains hi
 
 私有组织者包包含隐藏输入、答案和评分实现，不能发给待测模型。本公开仓库没有该私有包；没有它可以做公开题试跑和检查已发布数据的一致性，但不能自行声称得到官方隐藏题分数。
 
+## This published completion follow-up / 本次继续完成如何记录
+
+The final comparison includes five original tasks resumed after external credit stops were removed. The same [neutral continuation instruction](CONTINUATION_PROMPT.md) was used without score feedback or scientific corrections. Initial and continuation resources are disclosed separately. These are resumed completions, not independent new trials. New confirmatory tests should declare resources and handling of interruptions prospectively.
+
+本次发布中，五个曾被外部积分限制中止的任务，在取消限制后于原会话继续完成。统一使用中性继续指令，不提供评分或科学纠错。初始阶段与继续阶段的用时、费用分别记录，不能把继续完成当作新的独立试次。新的确认性测试应提前约定资源与中断处理办法。
+
 ## Technical contract for collected code
 
 The submitted project must provide an original entry point:

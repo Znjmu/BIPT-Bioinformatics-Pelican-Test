@@ -1,0 +1,79 @@
+{
+  "prepared_at": "2026-11-18T08:12:34.506186+08:00",
+  "freeze_hashes": {
+    "pretrial_design_sha256": "3ed5772a0750fd331aaf79743a28299702b0eaa6dd4f4f517b5858d1d9d9b4f7",
+    "protocol_sha256": "b71beb8368e9e80215ec7af6d7b58ed457d9a0c12e8b766ba62276fcff5dfd0b",
+    "task_freeze_sha256": "dab8120e256a9cae32e3d6ff83a38c8868bc9b3e9a97fa317e0aa53190739687",
+    "prompt_sha256": "012cb0fb28dd45918f89f6491099514ead78e8f398a18e099d90439f0c9afd2d"
+  },
+  "frozen_task_file_count": 136,
+  "participant_inputs_unchanged": true,
+  "maximum_parallel_generation_jobs": 2,
+  "final_grading_serial": true,
+  "case_replay_timeout_seconds": 360,
+  "python_version": "3.9.6",
+  "numpy_version": "2.0.2",
+  "scipy_version": "1.13.1",
+  "platform": "macOS 14.8.7 arm64",
+  "openblas_num_threads": 1,
+  "optional_extension_condition": "All seven primary newruns settled; authorized remaining>=400",
+  "actual_extension_status": "not_activated_budget_below_predeclared_threshold",
+  "original_submission_archives": [
+    {
+      "configuration_id": "R01",
+      "freeze_record_sha256": "057022f9a853474a3a5c6c03996509cacae4e40d5f9285c39a83d399c109794d",
+      "archived_file_count": 23,
+      "entry_point_present": true,
+      "modified_participant_inputs": [],
+      "evaluator_repaired_source": false
+    },
+    {
+      "configuration_id": "R02",
+      "freeze_record_sha256": "5d50db8e48e4c9be8556750a10cb1b04cf9ff0bca280ca001de060abdcab6366",
+      "archived_file_count": 35,
+      "entry_point_present": true,
+      "modified_participant_inputs": [],
+      "evaluator_repaired_source": false
+    },
+    {
+      "configuration_id": "R03",
+      "freeze_record_sha256": "4818a8564b88b1c6d096d7d5913eaf43a3b7e2e37fb123180251753dfd3a9755",
+      "archived_file_count": 22,
+      "entry_point_present": true,
+      "modified_participant_inputs": [],
+      "evaluator_repaired_source": false
+    },
+    {
+      "configuration_id": "R04",
+      "freeze_record_sha256": "e814c272304e8ffb5a5fa5f12c9f25fd214d74f645c119cc0a5ffb81c3e0039a",
+      "archived_file_count": 32,
+      "entry_point_present": false,
+      "modified_participant_inputs": [],
+      "evaluator_repaired_source": false
+    },
+    {
+      "configuration_id": "R05",
+      "freeze_record_sha256": "c4390bee41f6969cc165784b5e6b0c75a805cdf734cbd75872dc7f6f1226e896",
+      "archived_file_count": 32,
+      "entry_point_present": true,
+      "modified_participant_inputs": [],
+      "evaluator_repaired_source": false
+    },
+    {
+      "configuration_id": "R06",
+      "freeze_record_sha256": "1fa16903bfa2544beb9f4b97b3de3a86c99d315763a297179ccc0dbf3d0e1ba7",
+      "archived_file_count": 39,
+      "entry_point_present": true,
+      "modified_participant_inputs": [],
+      "evaluator_repaired_source": false
+    },
+    {
+      "configuration_id": "R07",
+      "freeze_record_sha256": "9513d4faf1994e236f9bcfe0eadc4297e764162c9c738ce0f9021ba3c8074a9b",
+      "archived_file_count": 21,
+      "entry_point_present": false,
+      "modified_participant_inputs": [],
+      "evaluator_repaired_source": false
+    }
+  ]
+}

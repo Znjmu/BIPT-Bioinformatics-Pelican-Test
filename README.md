@@ -32,19 +32,21 @@ The complete guide explains failed and incomplete runs, output requirements and 
 
 ## Results and analysis
 
-**[Read the comparison, case-level scores, scientific deductions and resource analysis →](docs/v2/RESULTS.md)**
+**[中文完整实测分析 →](docs/v2/RESULTS_ZH.md)** · **[Full English analysis →](docs/v2/RESULTS.md)**
 
 ![BIPT v2.0 component scores and case outcomes](figures/v2/score_and_case_comparison.png)
 
 ![Within-provider configuration differences and actual service resources](figures/v2/paired_and_resource_comparison.png)
 
-![All finalized service costs, including external stops](figures/v2/execution_resources.png)
+![Initial and continuation service costs](figures/v2/execution_resources.png)
 
-The main comparison covers the DeepSeek Pro/Flash configurations, GLM standard/Flash, MiniMax standard/Flash, MiMo Pro and Step Preview. A prospectively specified optional Kimi Pro extension depends on remaining budget after the main runs. The [machine-readable leaderboard](results/v2/leaderboard.csv) records finalized outcomes; incomplete runs have **NA**, not a fabricated completed score. Full values and any optional extension are documented in the analysis.
+The completed comparison covers DeepSeek Pro/Flash, GLM standard/Flash, MiniMax standard/Flash, MiMo Pro and Step Preview. **All eight configurations have final scores; no generation is left as a budget-stopped NA.** GLM standard/Flash, MiniMax standard/Flash and Step were completed by resuming their original chats after generation stopping limits were removed. A plus sign marks these resumed completions; they are not independent new trials. The [historical capped results](docs/v2/HISTORICAL_CAPPED_RESULTS.md) remain available.
 
-**Observed completion coverage:** two of seven fresh configurations completed normally; five were stopped at their predeclared credit limits. Together with the reused development baseline, three configurations have completed scores: **MiMo Pro 58.53, DeepSeek Pro 44.25 and DeepSeek Flash development baseline 38.65**. The GLM and MiniMax completed-score pairs remain unresolved. All eight configurations' actual costs and completion states are reported. Kimi Pro was not activated because the final 377.04-credit remainder was below its predeclared 400-credit eligibility threshold.
+**Observed totals:** GLM-5.3 82.01, MiniMax-M3.1-Flash 73.89, GLM-5.3-Flash 71.41, MiniMax-M3 63.01, Xiaomi MiMo-V2.6-Pro 58.53, DeepSeek-V4-Pro 44.25, Step-5-Preview 40.03, DeepSeek-V4.1-Flash 38.65. See the [full analysis](docs/v2/RESULTS.md) for component scores, all three cases, provider-pair differences, execution exits and scientific deductions.
 
-**The reused DeepSeek-V4.1-Flash result is a development/calibration baseline**, marked with an asterisk in figures. Its feedback helped select task difficulty. It is not a newly blinded comparator. Each configuration has one uncontaminated generation; no confidence interval, significance test or general model-superiority claim is inferred. Different version labels within DeepSeek and MiniMax prevent interpreting the provider pair as a pure speed-tier ablation. Actual costs reflect practical service budgets rather than matched inference compute.
+**The reused DeepSeek-V4.1-Flash result is a development/calibration baseline**, marked with an asterisk. Its feedback helped select task difficulty, so it is not a newly blinded comparator. There is one original generation per configuration, with disclosed neutral continuation messages for five. No confidence interval, significance test or general model-superiority claim is inferred. Cross-version provider labels and different inference resources prevent a causal speed-tier or matched-compute conclusion.
+
+The completion follow-up used the same frozen inputs, rubric, evaluator and 360-second per-case grading limit, without scientific feedback to participating models. Model service completion and successful hidden replay are separate outcomes. The optional Kimi configuration is outside this eight-configuration follow-up.
 
 ## What changed in v2.0
 
@@ -73,7 +75,9 @@ The difficulty target was used during development to add substantive requirement
 | Totals and components | [leaderboard.csv](results/v2/leaderboard.csv) |
 | Case-level scores and replay exits | [case_scores.csv](results/v2/case_scores.csv) |
 | All scientific item points and safe deduction summaries | [scientific_review.csv](results/v2/scientific_review.csv) |
-| Predeclared caps and outcome dispositions | [comparison_plan.csv](results/v2/comparison_plan.csv) |
+| Historical initial caps and outcomes | [comparison_plan.csv](results/v2/comparison_plan.csv) |
+| Initial and continuation costs, service durations and neutral messages | [execution_phases.csv](results/v2/execution_phases.csv) |
+| Exact shared neutral continuation instruction | [Continuation prompt](docs/v2/CONTINUATION_PROMPT.md) |
 | Freeze hashes, runtime and archive provenance | [run_provenance.json](results/v2/run_provenance.json) |
 | Figure source | [R plotting script](scripts/plot_v2_results.R) |
 | Editable and preview figures | [PDF, SVG and 600-dpi PNG](figures/v2/) |

@@ -1,32 +1,34 @@
 # BIPT v2.0 evaluation protocol
 
-This round uses the prospectively frozen BIPT15 finite-clonal-panel task. It is a different scientific and scoring task from v1.0 plant-variant analysis; the two leaderboards must not be merged or interpreted as a common scale.
+This comparison uses the prospectively frozen BIPT15 finite-clonal-panel task. It differs from v1.0 plant-variant analysis; the two leaderboards are not on a common scale.
 
-Every configuration receives the same participant files and byte-identical Chinese prompt in a fresh local WorkBuddy workspace. The hidden cases, reference results, grading program and 0/1.75/3.5 scientific-review rubric remain fixed. The evaluator is the same Codex-primary-common-evaluator throughout. Models receive no hidden data, previous solutions or follow-up corrections. Isolation is by separate directories and explicit access instructions, not an operating-system security boundary.
+Every new configuration initially receives the same participant files and byte-identical Chinese prompt in a fresh local WorkBuddy workspace. The hidden cases, reference results, grader and scientific rubric remain fixed. The same Codex-primary-common-evaluator reviews every submission. Models receive no hidden inputs, previous solutions, score feedback or corrective hints. Separate working directories and explicit access instructions provide workflow isolation, not an operating-system security boundary.
 
-## Score
+## Frozen score
 
-- Numerical correctness: 60 per case, computed by the frozen deterministic grader.
-- Scientific interpretation: ten evidence-grounded items, 3.5 each. Correct core and required case-specific evidence earns 3.5; correct core missing required evidence earns 1.75; missing content or an explicit scientific error earns 0. The same error is assigned once, and correct tables do not cancel contradictory scientific claims.
+- Numerical correctness: 60 per case, computed by the frozen grader.
+- Scientific interpretation: ten R01–R10 items worth 3.5 each. Correct core and required case evidence earns 3.5; correct core with incomplete required evidence earns 1.75; missing content or an explicit scientific error earns 0. The same specific error is assigned once. Correct tables do not erase contradictory scientific prose.
 - Re-execution/delivery: 5 per case, requiring successful exit and all fourteen valid artifacts.
 - Case weights: released 20%, held-out 1 40%, held-out 2 40%.
 
-The 35-point scientific component is reviewed by a fixed evaluator. It is not an entirely deterministic or independently replicated human judgment. Evidence and reasons for deductions accompany the published results. This differs from v1.0's automatic rubric.
+Any feasible optimal mixture, physical witness or valid tight vector certificate is accepted; exact copying of a non-unique reference solution is unnecessary. Original projects are archived before scoring. The evaluator does not repair a submission. All final grading reruns are serial with the same 360-second per-case limit.
 
-Any feasible optimal mixture, physical witness or valid tight vector certificate is accepted; exact copying of an oracle's non-unique solution is unnecessary. A plain notes string is not penalized. All original artifacts are archived before scoring; the evaluator does not repair a submission and then claim the repaired score as the original result.
+## Initial capped phase and completion follow-up
 
-## Execution and resource accounting
+The main comparison comprises seven fresh configurations plus the reused DeepSeek-V4.1-Flash development baseline. The initial phase used predeclared model-specific credit stops and a 60-minute service allowance. Two fresh configurations completed; five were externally stopped before normal completion. That partial report remains preserved in [historical tables](../../results/v2/history_capped/) and [the initial publication](https://github.com/Znjmu/BIPT-Bioinformatics-Pelican-Test/tree/8f6163cccc2858cf8aada39b688e98dacc5f52ce).
 
-The planned main comparison includes the completed DeepSeek-V4.1-Flash development baseline and seven fresh WorkBuddy configurations. Every new run has a maximum 60-minute service wall-clock allowance and a predeclared credit stopping point. Credit ceilings differ by service configuration and are disclosed with actual consumption. Consequently, this is a comparison under practical service budgets, not a token- or compute-matched experiment. At most two generation tasks overlap; all final grading reruns are serial, in the same local environment, with 360 seconds per case.
+The user subsequently removed generation credit/time stopping limits and requested completion of every configuration. The five stopped models were resumed in their original chats and independent directories, using the same [neutral continuation prompt](CONTINUATION_PROMPT.md). The continuation repeats the original access boundary and asks the model to finish; it supplies no scientific correction, result, score or hidden-case information. At most two generation tasks run concurrently. Any further service interruption is recorded, and the identical neutral continuation is used until normal completion. Final evaluation uses the unchanged task and scoring rules.
 
-The predeclared optional Kimi Pro extension is activated only after all seven main new runs are settled and sufficient authorized credit headroom remains. It is not selected based on observed scores. WorkBuddy's exact visible model labels and fee multipliers are recorded; provider weights, upstream model routing and reasoning settings are not independently certified.
+These five results describe **completion after external interruption**, not fresh independent generations or equal-compute trials. They are marked with a plus sign in tables and plots. Their original stopped archives, continuation dispatches and final original projects are retained by the organizer. [Execution phases](../../results/v2/execution_phases.csv) report initial and continuation credits/time separately; totals sum all observed final bills and displayed service durations. Interim credit estimates may jump or reset and are not summed as final charges. Displayed service time need not include all chat-to-chat idle wall time.
 
-An external budget/time stop, provider failure or operator abort is marked incomplete, not presented as a normal completed ability score. A service-completed submission that subsequently fails a hidden rerun receives the frozen artifact score, with the execution failure stated separately. Operator-contaminated runs are excluded from ranking but their actual credit overhead is accounted for.
+Operator overhead is retained separately from model costs. The initial contaminated GLM Flash attempt remains excluded. The historical optional Kimi extension was not activated in the capped phase; it is outside this completion follow-up's eight-configuration scope. The exact WorkBuddy model labels are recorded; underlying weights, upstream routing and hidden reasoning settings are not independently certified.
 
-## Interpretation boundaries
+A normal service completion can still fail a hidden replay. Such a submission receives its actual frozen artifact score, with execution failures stated explicitly. Completion of the service response is distinct from successful scientific transfer.
 
-The Flash development baseline helped calibrate task difficulty before this cross-model comparison. Task selection was therefore not independent of Flash performance. New models see the task only after freezing. A single completion per configuration does not establish statistical model superiority, and three heterogeneous cases are not three random independent biological replicates. Re-executing the same code is a reproducibility check, not an independent generation replicate. No confidence interval or significance test is estimated.
+## Interpretation and reproducibility
 
-DeepSeek V4 Pro versus V4.1 Flash and MiniMax M3 versus M3.1 Flash also differ in version labels. GLM's standard model has no Pro suffix in the menu. These are within-provider configuration comparisons, not controlled ablations of one speed tier.
+The reused Flash baseline helped select task difficulty and is marked with an asterisk. Task selection was not independent of its performance. There is one original generation per configuration, with disclosed follow-up messages for the five resumed tasks. Re-executing code is a reproducibility check, not another generation replicate; heterogeneous cases are not random biological replicates. No confidence interval, significance test or general model-superiority claim is inferred.
 
-The public release contains only released-case inputs, prompts, methods, aggregate results and non-sensitive audit summaries. Hidden inputs, true counts, scoring source and original private workspaces remain organizer-held. Do not give the evaluator prompt or results discussion to participating models during a fresh test.
+DeepSeek V4 Pro versus V4.1 Flash and MiniMax M3 versus M3.1 Flash also differ in version labels. GLM standard has no Pro suffix in the menu. Provider pairs compare configurations, not a causal speed-tier effect. Credits are observed service bills, not tokens or matched compute.
+
+The 35 scientific points require fixed-evaluator judgment. Published item decisions and artifact hashes support auditability, but do not establish inter-rater reliability. Public validation checks published arithmetic and file integrity; official hidden scoring requires the protected organizer package. Public results reveal task characteristics, so future blind tests should use fresh undisclosed instances. Do not give the evaluator prompt or results discussion to participating models.

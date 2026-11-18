@@ -1,0 +1,9 @@
+configuration_id,model,initial_credits,continuation_credits,total_credits,initial_elapsed_seconds,continuation_elapsed_seconds,total_elapsed_seconds,neutral_continuation_messages,final_status
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,38.28,0,38.28,1298,0,1298,0,completed_scored
+R01,DeepSeek-V4-Pro,106.2,0,106.2,1374,0,1374,0,completed_scored
+R02,GLM-5.3-Flash,87.4,102.42,189.82,3436,1842,5278,2,completed_scored
+R03,GLM-5.3,282.34,170.67,453.01,2316,253,2569,2,completed_scored
+R04,MiniMax-M3.1-Flash,89.91,90.84,180.75,1250,725,1975,1,completed_scored
+R05,MiniMax-M3,238.02,114.64,352.66,1482,1327,2809,1,completed_scored
+R06,Xiaomi MiMo-V2.6-Pro,59.71,0,59.71,1831,0,1831,0,completed_scored
+R07,Step-5-Preview,252.88,177.23,430.11,2380,1088,3468,1,completed_scored

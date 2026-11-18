@@ -15,25 +15,27 @@ def main():
     details = json.loads((R / 'score_details.json').read_text())
     completed = sorted((r for r in rows if r['status'] == 'completed_scored'), key=lambda r: -fnum(r, 'total'))
     incomplete = [r for r in rows if r['status'] != 'completed_scored']
+    assert len(rows) == 8 and len(completed) == 8 and not incomplete, 'Completion release requires all eight final scores'
+    phases = read('execution_phases.csv')
     cases = read('case_scores.csv')
     reviews = read('scientific_review.csv')
     lines = [
         '# BIPT v2.0 — observed results and interpretation', '',
-        f'The released dataset contains {len(rows)} finalized configurations: {len(completed)} completed scored submissions and {len(incomplete)} externally incomplete submissions. One uncontaminated generation was collected per configuration. The DeepSeek Flash development baseline is reused and marked with an asterisk; it is not a newly blinded run.', '',
+        f'All {len(rows)} configurations have reached normal service completion and have final frozen scores. Five initially stopped tasks were resumed with the same neutral continuation instruction; these are marked with a plus sign. They are completions of the original generations, not independent new trials. The DeepSeek Flash development baseline is reused and marked with an asterisk.', '',
         '**These are exact single-run observations on a selected synthetic task, not a statistically established general model ranking.** Version 1.0 scores use a different task and scale and are excluded.', '',
         '## Scores and case transfer', '',
         '| Configuration | Total / 100 | Numerical / 60 | Scientific / 35 | Delivery / 5 | Released | Held-out 1 | Held-out 2 |',
         '|---|---:|---:|---:|---:|---:|---:|---:|'
     ]
     for r in completed:
-        name = r['model'] + (' *' if r['role'] == 'development_calibration_baseline' else '')
+        name = r['model'] + (' *' if r['role'] == 'development_calibration_baseline' else ' +' if r['role'] == 'completion_after_external_interruption' else '')
         values = [f'{fnum(r,k):.2f}' for k in ['total','numerical','scientific','delivery','public_total','hidden1_total','hidden2_total']]
         lines.append('| '+name+' | '+' | '.join(values)+' |')
     for r in incomplete:
         lines.append(f"| {r['model']} ({r['status']}) | NA | NA | NA | NA | NA | NA | NA |")
-    lines += ['', 'Case totals are unweighted 100-point case scores; component columns are weighted across cases. The final total uses 20% released and 40% for each held-out case. NA means externally incomplete, not zero capability. A normal service completion can still fail a hidden replay and receive its actual frozen artifact points.', '',
+    lines += ['', 'Case totals are unweighted 100-point case scores; component columns are weighted across cases. The final total uses 20% released and 40% for each held-out case. Every generation is service-completed. A subsequent hidden replay can still fail and receive its actual frozen artifact points; entry failures are shown separately.', '',
               '![Component scores and case outcomes](../../figures/v2/score_and_case_comparison.png)', '']
-    lines += [f'**Completion coverage:** only {sum(r["role"]=="prospective_comparison" for r in completed)} of the seven fresh configurations reached normal service completion within their predeclared limits. The five externally stopped configurations do not have completed ability scores. Thus the planned broad score comparison and two provider pairs remain unresolved; the released evidence supports a limited completed-submission comparison plus an all-configuration service-outcome comparison.', '']
+    lines += ['**Completion follow-up:** GLM standard/Flash, MiniMax standard/Flash and Step Preview were resumed after the user removed generation credit/time stops. Original chats, partial projects and model labels were preserved. No hidden feedback or scientific corrections were supplied. [Initial capped results](HISTORICAL_CAPPED_RESULTS.md) and [phase accounting](../../results/v2/execution_phases.csv) preserve that history. All three planned provider pairs now have final scores.', '']
     if completed:
         best = completed[0]
         lines += [f"The highest observed completed total is {fnum(best,'total'):.2f} for {best['model']}. This is conditional on this task, this submission and this rubric. Numerical correctness, scientific explanation and execution are separate outcomes; the component table is required to understand the total.", '']
@@ -55,16 +57,21 @@ def main():
         else:
             lines.append(f'| {family} | {a} | {b} | NA | NA | NA | NA |')
     lines += [''] + [text+'\n' for text in pair_details]
-    lines += ['Differences compare the same three fixed cases. They do not isolate a causal speed-tier effect: DeepSeek and MiniMax labels also differ in version, GLM standard has no Pro suffix, practical credit ceilings differ, and the DeepSeek Flash result helped select task difficulty. An unavailable completed pair remains NA. No significance test or confidence interval is attached.', '',
+    lines += ['Differences compare the same three fixed cases. They do not isolate a causal speed-tier effect: DeepSeek and MiniMax labels also differ in version, GLM standard has no Pro suffix, initial budgets and continuation histories differ, and the DeepSeek Flash result helped select task difficulty. No significance test or confidence interval is attached.', '',
               '![Matched-case differences and actual resource observations](../../figures/v2/paired_and_resource_comparison.png)', '',
-              '## Execution and resource observations', '', '![All actual service costs, including externally interrupted runs](../../figures/v2/execution_resources.png)', '', '| Configuration | Status | Credits | Service minutes | Successful case exits |', '|---|---|---:|---:|---:|']
+              '## Execution and resource observations', '', '![Total observed service costs across initial and continuation phases](../../figures/v2/execution_resources.png)', '', '| Configuration | Status | Credits | Service minutes | Successful case exits |', '|---|---|---:|---:|---:|']
     for r in rows:
         successes = sum(int(x['returncode']) == 0 for x in cases if x['configuration_id'] == r['configuration_id'])
         exits = f'{successes}/3' if r['status'] == 'completed_scored' else 'NA'
         lines.append(f"| {r['model']} | {r['status']} | {fnum(r,'credits'):.2f} | {fnum(r,'elapsed_seconds')/60:.1f} | {exits} |")
-    lines += ['', f"New comparison runs plus declared operator overhead consumed {details['new_comparison_credits_settled']:.2f} settled WorkBuddy credits. The reused Flash baseline's 38.28 credits belong to its earlier development run. Operator overhead is {details['operator_overhead_credits']:.2f} credits and is excluded from model scores.", '',
-              'The authorized combined comparison allowance was 1494.28 credits; 377.04 remained after all seven fresh main runs settled. The optional Kimi Pro run was not activated because the predeclared eligibility threshold was 400 remaining credits. These values describe this release\'s settled ledger, not the account balance.', '',
-              'Credits are observed service bills, not tokens or matched compute. All new jobs have a 60-minute external service allowance with predeclared model-specific credit stops. At most two generation jobs overlap; final scoring reruns are serial with 360 seconds per case. See [the disclosed plan](../../results/v2/comparison_plan.csv).', '',
+    lines += ['', f"Initial new comparison runs plus operator overhead consumed {details['original_capped_phase_credits']:.2f} credits; the completion follow-up consumed {details['completion_phase_credits']:.2f}; combined comparison cost is {details['new_comparison_credits_settled']:.2f}. The reused Flash baseline's 38.28 credits belong to development and are outside that total. Operator overhead is {details['operator_overhead_credits']:.2f} and excluded from model scores.", '',
+              'The user removed generation credit/time stops before the completion follow-up. No task was terminated to preserve the old allowance. These totals are observed bills, not an account balance or compute-matched budget. The optional Kimi run is outside this eight-configuration follow-up.', '',
+              '| Configuration | Initial credits | Continuation credits | Total credits | Initial service min | Continuation service min | Neutral messages |',
+              '|---|---:|---:|---:|---:|---:|---:|']
+    for ph in phases:
+        lines.append(f"| {ph['model']} | {float(ph['initial_credits']):.2f} | {float(ph['continuation_credits']):.2f} | {float(ph['total_credits']):.2f} | {float(ph['initial_elapsed_seconds'])/60:.1f} | {float(ph['continuation_elapsed_seconds'])/60:.1f} | {ph['neutral_continuation_messages']} |")
+    lines += ['', 'Only final segment bills are summed. Displayed service time can reset after a continuation and does not necessarily include all calendar waiting time. Both GLM configurations required a second identical neutral continuation after a cancelled segment; those segments are retained in cost accounting. No scientific feedback accompanied those messages.', '',
+              'At most two generation tasks overlap. Final scoring reruns remain serial with 360 seconds per case. [The original capped plan](../../results/v2/history_capped/comparison_plan.csv), [completion protocol](EVALUATION_PROTOCOL.md) and [phase table](../../results/v2/execution_phases.csv) distinguish generation resources from the unchanged evaluation rules.', '',
               '## Scientific-error audit', '',
               'The following summaries come from the fixed evaluator\'s case-specific item decisions. They distinguish missing reports, incomplete required evidence and explicit scientific contradictions. They do not imply a recurring error rate for the underlying model.', '']
     for r in completed:
@@ -83,7 +90,7 @@ def main():
     lines += ['The [item-level review table](../../results/v2/scientific_review.csv) records all R01–R10 points. Missing hidden reports are not replaced by released-case prose. A correct non-unique mixture or certificate retains numerical credit; the same underlying scientific error is not deducted again under R10.', '',
               '## Reading the outcome responsibly', '',
               'The task separates successful numerical optimization from faithful scientific reporting and transfer to changed inputs. Case-to-case differences can reflect different structural requirements as well as robustness; three cases do not support a generalization-rate estimate. An apparent price/score trade-off in the resource figure is descriptive and is not a compute-controlled efficiency frontier.', '',
-              'The development process targeted lower Flash scores through harder scientific requirements, which introduces task-selection bias. Once frozen, every prospective configuration received the same files and prompt and the same evaluation rules. No post hoc scaling was used to force a requested score. A future confirmatory study should use fresh undisclosed instances, prospective runs for every configuration and independent repeats and reviewers.', '',
+              'The development process targeted lower Flash scores through harder scientific requirements, which introduces task-selection bias. Once frozen, every prospective configuration received the same files and prompt and the same evaluation rules. No post hoc scaling was used to force a requested score. The five resumed results additionally depend on partial original context and neutral follow-up messages. A future confirmatory study should use fresh undisclosed instances, uninterrupted prospective runs for every configuration and independent repeats and reviewers.', '',
               'Read the full [limitations](LIMITATIONS.md), [scoring policy](TASK_AND_SCORING.md), [execution protocol](EVALUATION_PROTOCOL.md) and [provenance summary](../../results/v2/run_provenance.json) before reusing a rank or figure. The protected organizer package is required to rerun official hidden scoring. Public validation establishes published-artifact consistency, not an independent replication of scientific judgment.', '']
     (ROOT / 'docs/v2/RESULTS.md').write_text('\n'.join(lines), encoding='utf-8')
     print(f'Wrote analysis of {len(rows)} finalized configurations.')

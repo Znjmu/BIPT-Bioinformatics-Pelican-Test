@@ -1,29 +1,27 @@
-# Final comparison-figure quality checks
+# Final completed-comparison figure quality checks
 
-Checked 2026-11-18 after all seven fresh main runs were archived and their bills settled. All three figures use the final eight-configuration table: three completed scores, including the explicitly marked development baseline, and five externally interrupted configurations.
+Checked 2026-11-18 after all eight configurations reached normal generation completion and all24 case replays were attempted. The dataset contains240 scientific-item decisions. Five resumed original generations are marked +; the development Flash baseline is marked *.
 
-## Data and scientific encoding
+## Data and visual checks
 
-| Figure | Panel checks |
+| Figure | Checks |
 |---|---|
-| `score_and_case_comparison` | Weighted numerical/scientific/delivery components sum to each completed total within rounding; model order is fixed consistently in both panels. The case matrix uses unweighted case scores. A nonzero replay exit is marked `!`; externally interrupted generations remain grey NA and have no fabricated score. |
-| `paired_and_resource_comparison` | Only the finalized DeepSeek pair has three matched-case differences. The missing GLM and MiniMax completed-score pairs are not inferred. The resource scatter contains only three completed scores and explicitly directs readers to the all-outcome cost chart. Labels, provider colors and elapsed times match source rows. |
-| `execution_resources` | All eight finalized configurations appear in both credit and elapsed-time panels, including all five external stops. Costs and times match recorded service bills; the historical baseline cost is separate from the new comparison ledger. Completion status uses a distinct grey/blue legend. |
+| score_and_case_comparison | All8 totals decompose into weighted numerical/scientific/delivery components; model order is consistent across panels. All24 unweighted case scores are shown, including failed replays marked !. Partial numeric results retain frozen credit. No unfinished-generation NA remains. |
+| paired_and_resource_comparison | All3 provider pairs have3 matched-case differences. Scatter uses all8 actual scores and total initial+continuation bills. Resumed labels and development marker are explicit. Labels, leader lines, axes and legends were inspected. |
+| execution_resources | All8 model bills and displayed service durations match source rows; bars separate original and neutral-continuation phases. Original interrupted segments remain in total cost. Calendar idle time and compute equivalence are not inferred. |
 
-The actual exported PNGs were opened and inspected panel by panel. Model labels, legends, captions, values, axes and footnotes fit without overlapping one another or clipping. All plots state the development-baseline limitation; no error bars, confidence intervals or significance tests are added. Cross-version provider pairs are not represented as controlled speed-tier experiments.
+Every actual exported PNG was opened and inspected across the complete figure and each panel. Titles, axes, totals, heatmap cells, labels, footnotes and legends fit without clipping or overlapping. All data derive from final original-submission scores and settled observed bills; no synthetic placeholders, confidence intervals or significance tests are drawn.
 
-## Export checks
+## Export and font checks
 
-All drawing and rendering uses R (`ggplot2`, base `grid`, `svglite`, `ggrepel`, `ragg`). Each figure has an editable-text PDF, editable-text SVG and 600-dpi PNG. No raster artwork is substituted for the PDF text.
+R/ggplot2/grid produces editable-text PDF, editable-text SVG and600-dpi PNG for every figure. Source parsing passed; the source preflight reports18passes,2warnings,0failures. Warnings concern the generic request to run R parsing (performed) and missing TIFF (this GitHub package supplies PDF/SVG/PNG, not a journal TIFF submission).
 
-| Figure | PDF pages | Extractable text spans | Effective text sizes |
+| Figure | Pages | Extractable text spans | Effective point range |
 |---|---:|---:|---|
-| execution_resources | 1 | 40 | 7–10 pt |
-| paired_and_resource_comparison | 1 | 36 | 7–10 pt |
+| execution_resources | 1 | 43 | 7–10 pt |
+| paired_and_resource_comparison | 1 | 51 | 7–10 pt |
 | score_and_case_comparison | 1 | 71 | 7–10 pt |
 
-The final R source passed parsing and the figure-source preflight returned 18 passes, two warnings and zero failures. The warnings were the generic request to run R parsing, which was done, and the absence of a TIFF submission raster. This GitHub release supplies the requested preview and editable formats; it is not a journal-specific TIFF submission package.
+The raw PDF text-operator checker was run on all3 PDFs and reports normalized Tf=1, below its simple threshold. Base-R PDF applies the actual scale through the text transformation matrix, so Tf alone is not displayed glyph size. Separate effective-text extraction gives7–10pt in every figure, above the5pt floor. Actual PNGs were also visually checked. The raw-operator result is recorded as an audit-tool limitation, not silently reported as passed.
 
-The simple PDF content-stream audit reports a normalized `Tf` value of 1 in base-R PDFs. This alone is not the displayed glyph size: R applies the font scale in the text transformation matrix. A separate effective-text inspection using PyMuPDF extracted 7–10 pt spans in every figure, above the 5 pt floor. The actual rendered images were also checked. The normalized-operator finding is therefore recorded as an audit-tool limitation rather than mislabeled as a passed raw-operator check.
-
-The public release validator checks PNG signatures, PDF signatures, editable SVG text, source-table arithmetic and the public task hashes. These checks verify the published artifacts, not the correctness of protected hidden truth or the reliability of scientific judgment.
+The public validator confirms all8 completed-generation rows,24 case rows,240 scientific items, phase arithmetic, exact neutral-prompt hash, frozen released inputs and ZIP, figure signatures and editable SVG text. It verifies published consistency, not independent correctness of protected hidden truth or inter-rater reliability.

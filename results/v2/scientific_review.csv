@@ -59,6 +59,126 @@ R01,DeepSeek-V4-Pro,hidden2,R07,0,3.5,Constrained and unconstrained optimality c
 R01,DeepSeek-V4-Pro,hidden2,R08,0,3.5,The cost and error-experiment numerical explanation is from the released case.
 R01,DeepSeek-V4-Pro,hidden2,R09,0,3.5,The explanation reports different multipliers and bounds from its valid certificate.
 R01,DeepSeek-V4-Pro,hidden2,R10,0,3.5,The safety probability threshold is drawn on a utility axis.
+R02,GLM-5.3-Flash,public,R01,1.75,3.5,Correct finite-panel core; actual residual/envelope evidence is incomplete.
+R02,GLM-5.3-Flash,public,R02,3.5,3.5,Correct identification and outer-relaxation explanation with actual case evidence.
+R02,GLM-5.3-Flash,public,R03,1.75,3.5,Correct biological and shared-batch core; actual joint-read comparison is incomplete.
+R02,GLM-5.3-Flash,public,R04,1.75,3.5,Correct sampling/selection core; numerical joint-enrollment and posterior evidence is incomplete.
+R02,GLM-5.3-Flash,public,R05,3.5,3.5,Complete structural-path audit evidence.
+R02,GLM-5.3-Flash,public,R06,1.75,3.5,Correct common-panel core; required certificate-support evidence is incomplete.
+R02,GLM-5.3-Flash,public,R07,1.75,3.5,Correct optimization and ratio core; per-layer cap evidence is incomplete in the explanation.
+R02,GLM-5.3-Flash,public,R08,1.75,3.5,Correct cost/reset comparison; required structural path-cost explanation is incomplete.
+R02,GLM-5.3-Flash,public,R09,1.75,3.5,Correct tight-certificate core; original-observation residual and endpoint evidence is incomplete.
+R02,GLM-5.3-Flash,public,R10,3.5,3.5,"Consistent scientific quantities, units and limits in the figure."
+R02,GLM-5.3-Flash,hidden1,R01,1.75,3.5,Correct finite-panel core; actual residual/envelope evidence is incomplete.
+R02,GLM-5.3-Flash,hidden1,R02,0,3.5,The concrete query and outer-bound examples are copied from another case.
+R02,GLM-5.3-Flash,hidden1,R03,0,3.5,Incorrect biological exposure claim and nonexistent case-specific channel evidence.
+R02,GLM-5.3-Flash,hidden1,R04,0,3.5,The enrollment and sampling examples do not belong to the supplied case.
+R02,GLM-5.3-Flash,hidden1,R05,0,3.5,The explanation applies the wrong path-budget threshold.
+R02,GLM-5.3-Flash,hidden1,R06,0,3.5,The common-panel comparison is incorrectly described as equal.
+R02,GLM-5.3-Flash,hidden1,R07,0,3.5,Incorrectly denies strict randomization gain and calls an over-cap risk compliant.
+R02,GLM-5.3-Flash,hidden1,R08,0,3.5,Incorrectly describes unequal reset-batch and persistent-batch values as equal.
+R02,GLM-5.3-Flash,hidden1,R09,1.75,3.5,Correct tight-certificate core; original-observation residual and endpoint evidence is incomplete.
+R02,GLM-5.3-Flash,hidden1,R10,0,3.5,The displayed utility coefficient does not match the supplied case.
+R02,GLM-5.3-Flash,hidden2,R01,0,3.5,The stated support assumption contradicts the supplied support table.
+R02,GLM-5.3-Flash,hidden2,R02,0,3.5,The concrete denominator and outer-bound examples are copied from another case.
+R02,GLM-5.3-Flash,hidden2,R03,0,3.5,Incorrect biological exposure claim and nonexistent case-specific channel evidence.
+R02,GLM-5.3-Flash,hidden2,R04,0,3.5,The enrollment and sampling evidence uses the wrong cohorts and layer proportions.
+R02,GLM-5.3-Flash,hidden2,R05,0,3.5,The explanation applies the wrong path-budget threshold.
+R02,GLM-5.3-Flash,hidden2,R06,0,3.5,The common-panel comparison is incorrectly described as equal.
+R02,GLM-5.3-Flash,hidden2,R07,0,3.5,Incorrectly denies strict randomization gain and calls an over-cap risk compliant.
+R02,GLM-5.3-Flash,hidden2,R08,1.75,3.5,Correct cost/reset comparison; structural path-cost explanation is incomplete.
+R02,GLM-5.3-Flash,hidden2,R09,1.75,3.5,Correct tight-certificate core; original-observation residual and endpoint evidence is incomplete.
+R02,GLM-5.3-Flash,hidden2,R10,0,3.5,The displayed utility coefficient does not match the supplied case.
+R03,GLM-5.3,public,R01,3.5,3.5,Correct finite-panel specification with complete case evidence.
+R03,GLM-5.3,public,R02,3.5,3.5,"Correct identification, denominator and outer-relaxation explanation."
+R03,GLM-5.3,public,R03,1.75,3.5,Correct event/count and shared-batch core; biological event definitions are incomplete.
+R03,GLM-5.3,public,R04,3.5,3.5,"Correct sampling, joint enrollment and batch-posterior case evidence."
+R03,GLM-5.3,public,R05,1.75,3.5,Correct structural-path core; required details for every invalid protocol are incomplete.
+R03,GLM-5.3,public,R06,3.5,3.5,Correct information order with actual common-panel and certificate evidence.
+R03,GLM-5.3,public,R07,3.5,3.5,Correct pure/mixed optimization and undefined conditional-safety interpretation.
+R03,GLM-5.3,public,R08,3.5,3.5,Correct same-mixture cost and persistent-batch diagnostics.
+R03,GLM-5.3,public,R09,3.5,3.5,Verified integer witnesses and complete tight vector certificates.
+R03,GLM-5.3,public,R10,3.5,3.5,"Figure uses appropriate quantities, units and thresholds; previously assigned errors are not counted again."
+R03,GLM-5.3,hidden1,R01,3.5,3.5,Correct finite-panel specification with complete case evidence.
+R03,GLM-5.3,hidden1,R02,0,3.5,The concrete denominator example and outer-relaxation comparison are false.
+R03,GLM-5.3,hidden1,R03,0,3.5,Incorrectly declares positive baseline exposure and harm absent.
+R03,GLM-5.3,hidden1,R04,0,3.5,The sampling explanation gives the wrong size for the second layer.
+R03,GLM-5.3,hidden1,R05,1.75,3.5,Correct structural-path core; required details for every invalid protocol are incomplete.
+R03,GLM-5.3,hidden1,R06,3.5,3.5,Correct information order with actual common-panel and certificate evidence.
+R03,GLM-5.3,hidden1,R07,1.75,3.5,Correct optimization and ratio core; required conditional-rate case evidence is incomplete.
+R03,GLM-5.3,hidden1,R08,3.5,3.5,Correct same-mixture cost and persistent-batch diagnostics.
+R03,GLM-5.3,hidden1,R09,3.5,3.5,Verified integer witnesses and complete tight vector certificates.
+R03,GLM-5.3,hidden1,R10,3.5,3.5,"Figure uses appropriate quantities, units and thresholds; previously assigned errors are not counted again."
+R03,GLM-5.3,hidden2,R01,0,3.5,The explanation falsely states that all types satisfy the support restriction.
+R03,GLM-5.3,hidden2,R02,0,3.5,The stated zero-to-positive denominator example actually has denominator one.
+R03,GLM-5.3,hidden2,R03,0,3.5,Incorrectly declares positive baseline exposure and harm absent.
+R03,GLM-5.3,hidden2,R04,0,3.5,Without replacement does not prohibit two different members of the same type.
+R03,GLM-5.3,hidden2,R05,1.75,3.5,Correct structural-path core; required details for every invalid protocol are incomplete.
+R03,GLM-5.3,hidden2,R06,3.5,3.5,Correct information order with actual common-panel and certificate evidence.
+R03,GLM-5.3,hidden2,R07,1.75,3.5,Correct optimization and ratio core; required conditional-rate case evidence is incomplete.
+R03,GLM-5.3,hidden2,R08,3.5,3.5,Correct same-mixture cost and persistent-batch diagnostics.
+R03,GLM-5.3,hidden2,R09,3.5,3.5,Verified integer witnesses and complete tight vector certificates.
+R03,GLM-5.3,hidden2,R10,3.5,3.5,"Figure uses appropriate quantities, units and thresholds; previously assigned errors are not counted again."
+R04,MiniMax-M3.1-Flash,public,R01,3.5,3.5,Correct integer-panel specification and exhaustive case evidence.
+R04,MiniMax-M3.1-Flash,public,R02,3.5,3.5,Correct identification and outer-relaxation evidence.
+R04,MiniMax-M3.1-Flash,public,R03,3.5,3.5,"Correct biological events, member counts and joint-read evidence."
+R04,MiniMax-M3.1-Flash,public,R04,1.75,3.5,Correct sampling and selection core; required numerical joint-enrollment denominator evidence is incomplete.
+R04,MiniMax-M3.1-Flash,public,R05,3.5,3.5,Correct all-path audit with every invalid protocol documented.
+R04,MiniMax-M3.1-Flash,public,R06,3.5,3.5,Correct common-panel information order and certificate interpretation.
+R04,MiniMax-M3.1-Flash,public,R07,3.5,3.5,Correct pure/mixed results and conditional-safety boundary.
+R04,MiniMax-M3.1-Flash,public,R08,0,3.5,The explanation incorrectly treats unchanged action order as unchanged read-path probabilities.
+R04,MiniMax-M3.1-Flash,public,R09,3.5,3.5,Complete verified witnesses and tight vector certificate evidence.
+R04,MiniMax-M3.1-Flash,public,R10,3.5,3.5,Correctly dimensioned figure and explicit undefined-state labels.
+R04,MiniMax-M3.1-Flash,hidden1,R01,0,3.5,The stated enumeration dimensions and per-layer candidate counts are wrong.
+R04,MiniMax-M3.1-Flash,hidden1,R02,1.75,3.5,Correct query and relaxation core; denominator-boundary explanation is incomplete.
+R04,MiniMax-M3.1-Flash,hidden1,R03,0,3.5,Incorrectly declares existing baseline exposure and harm absent.
+R04,MiniMax-M3.1-Flash,hidden1,R04,0,3.5,The concrete member-pair probabilities and cohort example do not match this case.
+R04,MiniMax-M3.1-Flash,hidden1,R05,3.5,3.5,Correct all-path audit with every invalid protocol documented.
+R04,MiniMax-M3.1-Flash,hidden1,R06,0,3.5,Explains a strict common-panel advantage as single-protocol equality.
+R04,MiniMax-M3.1-Flash,hidden1,R07,0,3.5,Incorrectly denies the strict randomized-design gain shown by its own values.
+R04,MiniMax-M3.1-Flash,hidden1,R08,0,3.5,The explanation incorrectly treats unchanged action order as unchanged read-path probabilities.
+R04,MiniMax-M3.1-Flash,hidden1,R09,0,3.5,The reported certificate-violation evidence contradicts the claim of a valid global proof.
+R04,MiniMax-M3.1-Flash,hidden1,R10,0,3.5,The figure labels the utility with the wrong cost coefficient.
+R04,MiniMax-M3.1-Flash,hidden2,R01,0,3.5,The stated exhaustive-enumeration sizes and per-layer candidate counts are wrong.
+R04,MiniMax-M3.1-Flash,hidden2,R02,0,3.5,The stated case-specific outer-relaxation bounds and widening count are wrong.
+R04,MiniMax-M3.1-Flash,hidden2,R03,0,3.5,Incorrectly declares existing baseline exposure and harm absent.
+R04,MiniMax-M3.1-Flash,hidden2,R04,0,3.5,The concrete pair-sampling probabilities and observation-envelope interpretation are wrong.
+R04,MiniMax-M3.1-Flash,hidden2,R05,3.5,3.5,Correct all-path audit with every invalid protocol documented.
+R04,MiniMax-M3.1-Flash,hidden2,R06,0,3.5,Explains a strict common-panel advantage as single-protocol equality.
+R04,MiniMax-M3.1-Flash,hidden2,R07,0,3.5,Incorrectly denies the strict randomized-design gain shown by its own values.
+R04,MiniMax-M3.1-Flash,hidden2,R08,0,3.5,The explanation incorrectly treats unchanged action order as unchanged read-path probabilities.
+R04,MiniMax-M3.1-Flash,hidden2,R09,0,3.5,The reported certificate-violation evidence contradicts the claim of a valid global proof.
+R04,MiniMax-M3.1-Flash,hidden2,R10,3.5,3.5,"Appropriate figure quantities, units and limits; earlier assigned errors are not counted again."
+R05,MiniMax-M3,public,R01,3.5,3.5,Correct finite-panel constraints and exhaustive evidence.
+R05,MiniMax-M3,public,R02,0,3.5,Incorrectly claims that most queries widen under the outer relaxation.
+R05,MiniMax-M3,public,R03,1.75,3.5,Correct biological and shared-batch core; actual joint-read evidence is incomplete.
+R05,MiniMax-M3,public,R04,0,3.5,The stated enrollment posterior is wrong for a cohort with constant capture.
+R05,MiniMax-M3,public,R05,3.5,3.5,Complete structural-path audit with every invalid candidate documented.
+R05,MiniMax-M3,public,R06,3.5,3.5,Correct common-panel information order and actual comparison.
+R05,MiniMax-M3,public,R07,3.5,3.5,Correct optimization and conditional-safety evidence.
+R05,MiniMax-M3,public,R08,3.5,3.5,Correct same-mixture cost and reset-batch comparison.
+R05,MiniMax-M3,public,R09,3.5,3.5,Verified tight certificates and feasible integer witnesses.
+R05,MiniMax-M3,public,R10,1.75,3.5,The figure omits visible point-identified bounds for multiple query rows.
+R05,MiniMax-M3,hidden1,R01,0,3.5,The enumeration and normalization explanation uses the wrong layer sizes.
+R05,MiniMax-M3,hidden1,R02,0,3.5,The denominator example and claimed relaxation widening are false.
+R05,MiniMax-M3,hidden1,R03,0,3.5,Incorrectly declares positive baseline exposure absent and conditional rates undefined.
+R05,MiniMax-M3,hidden1,R04,0,3.5,The sampling comparison and enrollment posterior are scientifically incorrect.
+R05,MiniMax-M3,hidden1,R05,3.5,3.5,Complete structural-path audit with every invalid candidate documented.
+R05,MiniMax-M3,hidden1,R06,3.5,3.5,Correct common-panel information order and actual comparison.
+R05,MiniMax-M3,hidden1,R07,0,3.5,Incorrectly denies randomization benefit and states an over-cap risk meets the cap.
+R05,MiniMax-M3,hidden1,R08,0,3.5,The conclusion contradicts the explicitly unequal diagnostic utilities.
+R05,MiniMax-M3,hidden1,R09,0,3.5,The robust certificate does not satisfy the claimed all-protocol inequality.
+R05,MiniMax-M3,hidden1,R10,1.75,3.5,The figure omits visible point-identified bounds for multiple query rows.
+R05,MiniMax-M3,hidden2,R01,0,3.5,The enumeration and support explanation contradict the actual case.
+R05,MiniMax-M3,hidden2,R02,0,3.5,The denominator example and claimed majority of widened bounds are false.
+R05,MiniMax-M3,hidden2,R03,0,3.5,Incorrectly declares positive baseline exposure absent and conditional rates undefined.
+R05,MiniMax-M3,hidden2,R04,0,3.5,Incorrect pair-sampling probabilities and enrollment posterior.
+R05,MiniMax-M3,hidden2,R05,3.5,3.5,Complete structural-path audit with every invalid candidate documented.
+R05,MiniMax-M3,hidden2,R06,3.5,3.5,Correct common-panel information order and actual comparison.
+R05,MiniMax-M3,hidden2,R07,0,3.5,Incorrectly denies randomization benefit and states an over-cap risk meets the cap.
+R05,MiniMax-M3,hidden2,R08,0,3.5,The cited protocol has the wrong action sequence and cost in the explanation.
+R05,MiniMax-M3,hidden2,R09,0,3.5,The claimed physical witnesses and global proofs fail validation against the original case.
+R05,MiniMax-M3,hidden2,R10,1.75,3.5,The figure omits visible point-identified bounds for multiple query rows.
 R06,Xiaomi MiMo-V2.6-Pro,public,R01,1.75,3.5,Correct finite-panel core; required residual and envelope evidence is incomplete.
 R06,Xiaomi MiMo-V2.6-Pro,public,R02,0,3.5,Incorrectly states that all outer-relaxation bounds equal the integer bounds.
 R06,Xiaomi MiMo-V2.6-Pro,public,R03,1.75,3.5,Correct shared-batch and event/count core; required biological and joint-read evidence is incomplete.
@@ -89,3 +209,33 @@ R06,Xiaomi MiMo-V2.6-Pro,hidden2,R07,1.75,3.5,"Correct actual optimal values; ri
 R06,Xiaomi MiMo-V2.6-Pro,hidden2,R08,0,3.5,The stated across-protocol cost range is incorrect and the required diagnostic comparison is missing.
 R06,Xiaomi MiMo-V2.6-Pro,hidden2,R09,0,3.5,The claimed global certificate violates the required all-protocol upper inequalities.
 R06,Xiaomi MiMo-V2.6-Pro,hidden2,R10,0,3.5,The text states different safety limits from the actual input and plotted limits.
+R07,Step-5-Preview,public,R01,3.5,3.5,Correct complete integer-panel constraints and exhaustive case evidence.
+R07,Step-5-Preview,public,R02,0,3.5,The stated outer-relaxation sharp bounds are incorrect.
+R07,Step-5-Preview,public,R03,3.5,3.5,"Correct biological events, expected counts and shared-batch joint-read evidence."
+R07,Step-5-Preview,public,R04,1.75,3.5,Correct sampling/selection core; numerical joint-denominator and posterior evidence is incomplete.
+R07,Step-5-Preview,public,R05,3.5,3.5,Complete structural-path audit and illegal-candidate evidence.
+R07,Step-5-Preview,public,R06,3.5,3.5,Correct common-panel information order and physical/certificate distinction.
+R07,Step-5-Preview,public,R07,3.5,3.5,Correct pure/mixed optimization and undefined conditional-safety explanation.
+R07,Step-5-Preview,public,R08,0,3.5,Unchanged biological action sets do not imply unchanged read-path probabilities.
+R07,Step-5-Preview,public,R09,3.5,3.5,Verified feasible witnesses and tight global certificate evidence.
+R07,Step-5-Preview,public,R10,0,3.5,The figure incorrectly labels expected cost and utility as probabilities.
+R07,Step-5-Preview,hidden1,R01,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden1,R02,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden1,R03,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden1,R04,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden1,R05,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden1,R06,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden1,R07,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden1,R08,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden1,R09,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden1,R10,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden2,R01,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden2,R02,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden2,R03,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden2,R04,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden2,R05,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden2,R06,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden2,R07,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden2,R08,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden2,R09,0,3.5,No case-specific scientific report was delivered after the original entry failed.
+R07,Step-5-Preview,hidden2,R10,0,3.5,No case-specific scientific report was delivered after the original entry failed.

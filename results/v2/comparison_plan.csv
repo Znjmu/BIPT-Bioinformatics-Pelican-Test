@@ -1,8 +1,8 @@
-configuration_id,model,family,tier,fee_multiplier_at_inventory,credit_allocation,displayed_credit_stop,wall_clock_limit_minutes,status,submitted_at,completion_observed_at,stop_reason
-R01,DeepSeek-V4-Pro,DeepSeek,Pro,0.51,300,270,60,completed_scored,2026-11-18T08:15:54.963773+08:00,2026-11-18T08:39:26.472100+08:00,
-R02,GLM-5.3-Flash,GLM,Flash,0.08,100,85,60,incomplete_settled,2026-11-18T08:24:42.839426+08:00,2026-11-18T09:22:04.177662+08:00,predeclared_credit_limit
-R03,GLM-5.3,GLM,Standard,0.69,300,270,60,incomplete_settled,2026-11-18T08:40:11.168267+08:00,2026-11-18T09:18:53.893576+08:00,predeclared_credit_limit
-R04,MiniMax-M3.1-Flash,MiniMax,Flash,0.08,100,85,60,incomplete_settled,2026-11-18T09:19:17.470371+08:00,2026-11-18T09:40:13.130388+08:00,predeclared_credit_limit
-R05,MiniMax-M3,MiniMax,Standard,0.25,250,225,60,incomplete_settled,2026-11-18T09:22:26.145891+08:00,2026-11-18T09:47:22.572361+08:00,predeclared_credit_limit
-R06,Xiaomi MiMo-V2.6-Pro,Xiaomi,Pro,0.13,120,105,60,completed_scored,2026-11-18T09:40:50.057528+08:00,2026-11-18T10:11:43.956438+08:00,
-R07,Step-5-Preview,Step,Preview,0.33,280,250,60,incomplete_settled,2026-11-18T09:48:07.451362+08:00,2026-11-18T10:27:53.783240+08:00,predeclared_credit_limit
+configuration_id,model,family,tier,fee_multiplier_at_inventory,credit_allocation,displayed_credit_stop,wall_clock_limit_minutes,status,submitted_at,completion_observed_at,stop_reason,plan_phase,final_completion_status,completion_generation_credit_cap,completion_generation_time_cap
+R01,DeepSeek-V4-Pro,DeepSeek,Pro,0.51,300,270,60,completed_scored,2026-11-18T08:15:54.963773+08:00,2026-11-18T08:39:26.472100+08:00,,initial_capped_phase_only,completed_scored,none,none
+R02,GLM-5.3-Flash,GLM,Flash,0.08,100,85,60,incomplete_settled,2026-11-18T08:24:42.839426+08:00,2026-11-18T09:22:04.177662+08:00,predeclared_credit_limit,initial_capped_phase_only,completed_scored,none,none
+R03,GLM-5.3,GLM,Standard,0.69,300,270,60,incomplete_settled,2026-11-18T08:40:11.168267+08:00,2026-11-18T09:18:53.893576+08:00,predeclared_credit_limit,initial_capped_phase_only,completed_scored,none,none
+R04,MiniMax-M3.1-Flash,MiniMax,Flash,0.08,100,85,60,incomplete_settled,2026-11-18T09:19:17.470371+08:00,2026-11-18T09:40:13.130388+08:00,predeclared_credit_limit,initial_capped_phase_only,completed_scored,none,none
+R05,MiniMax-M3,MiniMax,Standard,0.25,250,225,60,incomplete_settled,2026-11-18T09:22:26.145891+08:00,2026-11-18T09:47:22.572361+08:00,predeclared_credit_limit,initial_capped_phase_only,completed_scored,none,none
+R06,Xiaomi MiMo-V2.6-Pro,Xiaomi,Pro,0.13,120,105,60,completed_scored,2026-11-18T09:40:50.057528+08:00,2026-11-18T10:11:43.956438+08:00,,initial_capped_phase_only,completed_scored,none,none
+R07,Step-5-Preview,Step,Preview,0.33,280,250,60,incomplete_settled,2026-11-18T09:48:07.451362+08:00,2026-11-18T10:27:53.783240+08:00,predeclared_credit_limit,initial_capped_phase_only,completed_scored,none,none

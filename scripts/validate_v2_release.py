@@ -25,6 +25,29 @@ def main():
    for k in component:component[k]+=d['weights'][x['case']]*float(x[k])
   check(abs(weighted-float(r['total']))<=.00501,'Weighted case total mismatch')
   for k in component:check(abs(component[k]-float(r[k]))<1e-5,'Weighted component mismatch')
+ if d.get('completion_followup'):
+  check(len(rows)==8 and all(r['status']=='completed_scored' for r in rows),'Completion release contains unfinished configurations')
+  check(d['all_generation_tasks_normally_completed'] and d['all_case_replays_attempted'],'Completion/replay status unclear')
+  check(all((r['all_case_entries_succeeded'].lower()=='true')==all(int(x['returncode'])==0 for x in cases if x['configuration_id']==r['configuration_id']) for r in rows),'Case entry success flag mismatch')
+  check(d['credit_limits_removed_by_user'] and d['generation_credit_cap_completion_phase'] is None and d['generation_wall_clock_cap_completion_phase'] is None,'Completion limits incorrectly reported')
+  ph=table('execution_phases.csv');check(len(ph)==8 and {x['configuration_id'] for x in ph}==set(by),'Missing phase accounting')
+  for x in ph:
+   r=by[x['configuration_id']]
+   for suffix in ['credits','elapsed_seconds']:
+    check(abs(float(x['initial_'+suffix])+float(x['continuation_'+suffix])-float(x['total_'+suffix]))<1e-6,'Initial/continuation sum mismatch')
+    check(abs(float(x['total_'+suffix])-float(r[suffix]))<1e-6,'Phase/main resource mismatch')
+   resumed=r['role']=='completion_after_external_interruption'
+   check(int(x['neutral_continuation_messages'])>=1 if resumed else int(x['neutral_continuation_messages'])==0,'Neutral-message role mismatch')
+  check(abs(sum(float(x['continuation_credits']) for x in ph)-d['completion_phase_credits'])<1e-6,'Completion cost mismatch')
+  fresh=sum(float(x['total_credits']) for x in ph if x['configuration_id']!='DS_FLASH_DEV')+d['operator_overhead_credits']
+  check(abs(fresh-d['new_comparison_credits_settled'])<1e-6,'Comparison cost mismatch')
+  check(abs(d['original_capped_phase_credits']+d['completion_phase_credits']-d['new_comparison_credits_settled'])<1e-6,'Overall phase total mismatch')
+  prov=json.loads((R/'run_provenance.json').read_text());cp=prov['completion_followup']
+  prompt=(ROOT/'docs/v2/CONTINUATION_PROMPT.md').read_bytes()
+  check(hashlib.sha256(prompt).hexdigest()==cp['common_neutral_prompt_sha256']==d['neutral_continuation_prompt_sha256'],'Neutral prompt changed')
+  check(cp['same_frozen_task_and_grader'] and cp['case_replay_timeout_seconds']==360 and cp['no_hidden_feedback_or_scientific_corrections'],'Completion evaluation provenance missing')
+  check(len(cp['runs'])==5 and all(x['final_status']=='completed_scored' and not x['source_repaired_by_evaluator'] for x in cp['runs']),'Resumed original projects incomplete')
+  hist=table('history_capped/leaderboard.csv');check(sum(x['status']!='completed_scored' for x in hist)==5,'Capped history lost')
  released_hashes=json.loads((R/'released_input_hashes.json').read_text())
  for rel,digest in released_hashes.items():
   p=ROOT/'docs/v2/PARTICIPANT_PROMPT.md' if rel=='PARTICIPANT_PROMPT.txt' else ROOT/'benchmark'/rel
