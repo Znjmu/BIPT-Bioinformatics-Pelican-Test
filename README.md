@@ -1,36 +1,53 @@
-# BIPT v2.0 — Bioinformatics Pelican Test
+# BIPT v2.0｜给 AI 做一场生信推理考试
 
-**A frozen finite-panel scientific-reasoning task, tested through real WorkBuddy runs.**
+**给不同 AI 同一份题，让它们各自写代码、算结果、解释结论，再用同一套规则和同一个固定评分模型打分。** 你不必先看懂全部数学，照下面操作就能开始试跑。
 
-Version 2.0 evaluates finite-population identification, persistent shared technical batches, selection enrichment, adaptive experiments and robust randomized design. It separates **numerical correctness (60)**, **scientific interpretation (35)** and **re-execution/delivery (5)**. This is a different task and scoring scale from [historical v1.0](README_v1.0.md).
+## 第一次来？先选你要做什么
 
-## 🚀 START HERE / 先看这两个入口
+| 你想做什么 | 直接点这里 |
+|---|---|
+| **我想拿一个模型试试** | **[① 下载参测包](https://github.com/Znjmu/BIPT-Bioinformatics-Pelican-Test/releases/download/v2.0/BIPT_v2.0_participant.zip)** → **[② 打开要发给模型的任务提示](docs/v2/PARTICIPANT_PROMPT.md)** |
+| 我想一步一步照着做 | **[打开傻瓜式操作指南](docs/v2/QUICK_START.md)** |
+| 我只想先读懂原理 | **[读约 400 字的通俗说明](docs/v2/PLAIN_GUIDE_ZH.md)** |
+| 我想看谁得分高、为什么扣分 | [中文实测分析和对比图](docs/v2/RESULTS_ZH.md) |
+| 我是负责评分的人 | [打开固定评分者提示](docs/v2/GRADING_AGENT_PROMPT.md)；还需要组织者提供的私有评分包 |
+| 我想下载全部公开资料 | [v2.0 正式发布页](https://github.com/Znjmu/BIPT-Bioinformatics-Pelican-Test/releases/tag/v2.0) |
 
-| ① For the model being tested / 发给待测模型 | ② For the fixed evaluator / 发给固定评分者 |
-|:---|:---|
-| **[📋 OPEN THE TASK PROMPT / 打开任务提示 →](docs/v2/PARTICIPANT_PROMPT.md)** | **[📊 OPEN THE EVALUATOR PROMPT / 打开评分提示 →](docs/v2/GRADING_AGENT_PROMPT.md)** |
-| Send this exact prompt once, together with the participant package below, in a fresh working directory. | Collect the original project first. The evaluator also needs the protected organizer scoring package, which is not in this public repository. |
+> **最容易拿错的两个文件：**
+> - **任务提示**＝考卷要求，发给**待测模型**。参测 ZIP 中的 `PARTICIPANT_PROMPT.txt` 就是同一段提示。
+> - **评分提示**＝阅卷要求，只发给**固定评分者**。不要发给待测模型，也不要把整仓库交给它。
 
-### **[📦 v2.0 VERSION DOWNLOADS / 正式版本下载](https://github.com/Znjmu/BIPT-Bioinformatics-Pelican-Test/releases/tag/v2.0)**
+## 它到底考什么？
 
-### **[⬇ DOWNLOAD v2.0 PARTICIPANT ZIP / 下载参测包](releases/BIPT_v2.0_participant.zip)**
+可以把它想成：给 AI 一批虚拟生物样本的检测线索，让它找出“哪些情况说得准、哪些只能给范围、哪些根本无法判断”，再选一个满足题目风险限制的实验方案。题里故意放入容易混淆的情况，例如同一样本重复测量、不同样本抽取，以及整场实验共用的检测偏差。AI 既要算对，也要把证据和结论讲对。
 
-### **[🧭 OPEN THE BEGINNER GUIDE / 打开傻瓜式逐步指导](docs/v2/QUICK_START.md)**
+数据全部为合成数据。题中的“伤害”和“安全”是数学实验里的定义，不能直接解释成真实临床疗效或安全性。这套测试反映模型在本题上的表现。
 
-> [!IMPORTANT]
-> **ONE FIXED EVALUATOR FOR EVERY MODEL. / 所有模型交同一个固定评估者。** Keep the same task, prompt, hidden cases, scoring software, runtime and scientific-review rules for every submission. The v2.0 numerical and delivery components are computed by the frozen grader; the 35 scientific points require case-specific evidence review by the same evaluator. An automatic subtotal is not a final score.
+## 用 WorkBuddy，照这 5 步做
 
-## Five steps / 五步上手
+1. **建空文件夹。** 每个模型单独建一个，例如“模型A_第1次”“模型B_第1次”。每次新试跑也用新文件夹、新任务会话。
+2. **解压参测包。** 只解压上面下载的 `BIPT_v2.0_participant.zip`。应看到 `Finite_Panel_Rescue` 文件夹和 `PARTICIPANT_PROMPT.txt`。
+3. **选目录、选模型、发任务。** 在 WorkBuddy 打开对应工作目录，确认实际模型名称。打开 `PARTICIPANT_PROMPT.txt`，全文复制到输入框，发送一次。不同模型收到完全相同的内容。
+4. **等它做完，原样保存。** 保留整个项目和完成状态，记下模型名称、用时、积分及中断情况。代码和结果先归档，不替模型修正；失败的尝试也保留。
+5. **交给同一个固定评分模型。** 把原始项目交给评分者，由它按统一规则复跑、检查科学解释和图片，最后汇总。具体材料和常见问题见[操作指南](docs/v2/QUICK_START.md)。
 
-| Step | What to do |
-|:---:|---|
-| **1** | Create a new empty folder for each model and attempt. / 每个模型、每次试跑各建一个新目录。 |
-| **2** | Extract **only the participant ZIP** into it. / 只解压参测包，不把整仓库、评分材料或旧答案交给模型。 |
-| **3** | Select that folder and the intended built-in model in WorkBuddy; send the full task prompt once. / 选目录和型号，任务提示全文发送一次。 |
-| **4** | Preserve the complete original project, completion status, actual credits and elapsed time. / 保存原始代码、产物、完成状态、用时与积分；先归档，不代修。 |
-| **5** | Give every project to the same fixed evaluator with the protected organizer package; inspect component and hidden-case results. / 统一复跑、逐项审科学解释和实际图片，再比较总分。 |
+> **公平规则：所有待评估模型的产物，都交给同一个固定评分模型，使用相同的评分提示、评分程序、隐藏题、运行环境和科学审核标准。** 不给某个模型额外答案或纠错提示。
 
-The complete guide explains failed and incomplete runs, output requirements and role separation. **Do not give a participating model the evaluator prompt, results discussion, hidden data, prior solutions or the whole repository.** Public results reveal task characteristics; future blind trials should use fresh undisclosed instances.
+## 分数怎么来的？
+
+| 每套题满分 100 分 | 怎么检查 |
+|---|---|
+| **算得对：60 分** | 冻结的评分程序核对数值、约束、方案和证明材料 |
+| **讲得对：35 分** | 同一个固定评分模型逐项核对本题证据、报告和图片；明确科学错误，该项为 0 分，同一错误不重复扣 |
+| **能复跑、交得全：5 分** | 原代码能否正常运行并产出全部 14 项要求文件 |
+
+一个模型会在 **1 套公开题＋2 套隐藏题** 上复跑原代码，最终分数是：**公开题 × 20%＋隐藏题 1 × 40%＋隐藏题 2 × 40%**。隐藏题检查代码能否处理换过的数据，避免只记住公开答案。科学解释未审完，不能把程序算出的部分分数当成最终总分。
+
+**只有公开包，也能试跑；要得到完整正式评分，还需要组织者保存的私有评分包。** 该包包含隐藏输入、参考答案和评分程序，不在公开仓库。公开的检查脚本只检查已发布资料是否一致，不能代替正式评分。
+
+---
+
+下面保留详细结果和技术资料，第一次使用可先读到这里。
 
 ## Results and analysis
 

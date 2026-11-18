@@ -1,47 +1,123 @@
-# Beginner guide / 傻瓜式操作指导
+# BIPT v2.0 傻瓜式操作指南
 
-## Start with these two prompts / 先看这两个入口
+**照着做：下载参测包 → 每个模型建新目录 → 复制任务提示 → 保存原始项目 → 统一评分。** 不用先弄懂全部公式，题目会让模型自己阅读详细要求。
 
-| Give the participant / 发给待测模型 | Give the fixed evaluator / 发给固定评估者 |
-|---|---|
-| **[① TASK PROMPT / 任务提示](PARTICIPANT_PROMPT.md)** | **[② EVALUATOR PROMPT / 评分提示](GRADING_AGENT_PROMPT.md)** |
+## 先分清三个东西
 
-**[DOWNLOAD THE PARTICIPANT ZIP / 下载参测包](../../releases/BIPT_v2.0_participant.zip)**
+| 名称 | 你拿它做什么 | 给谁 |
+|---|---|---|
+| **[参测包 ZIP](https://github.com/Znjmu/BIPT-Bioinformatics-Pelican-Test/releases/download/v2.0/BIPT_v2.0_participant.zip)** | 下载并解压，里面是公开题数据和任务提示 | 待测模型 |
+| **[任务提示](PARTICIPANT_PROMPT.md)** | 全文复制，作为这次任务的消息；与包内 `PARTICIPANT_PROMPT.txt` 相同 | 待测模型 |
+| **[评分提示](GRADING_AGENT_PROMPT.md)** | 说明怎样复跑、核对科学解释、算分 | 固定评分者 |
 
-The evaluator also needs the protected organizer scoring package. It contains hidden inputs and reference answers and is **not included in the public repository**. Do not give that package to a participant.
+**私有评分包是第四样材料，由组织者保存。** 里面有隐藏题、参考答案和评分程序，公开仓库不提供。普通使用者可以先做公开题试跑；没有私有包，不能得到完整正式的隐藏题总分。
 
-## Five steps
+## 第 1 步：下载正确的包
 
-1. **Make a new folder for each model.** In your project area, create a separate empty folder such as `BIPT20_ModelName_Trial1`. A different model or attempt needs a different folder.
-2. **Extract only the participant ZIP there.** It contains `Finite_Panel_Rescue/` and `PARTICIPANT_PROMPT.txt`. Do not give an agent the entire GitHub repository: results, evaluator instructions and other submissions are not participant context.
-3. **Open that folder in WorkBuddy.** Select the intended built-in model. Copy the complete participant prompt without edits and send it once. Record the exact visible model name, fee multiplier, start time and agreed external time/credit limit. Use the same task/prompt for all models; do not help one model with corrective follow-ups.
-4. **Collect the whole project.** Wait for the service to finish, save its original code and outputs, and record actual elapsed time and credits. Keep failed and incomplete attempts too. Do not fix code before archiving. An operator mistake must be declared and excluded; a clean replacement must use a new directory.
-5. **Grade everything with one fixed evaluator.** Give all original projects to the same evaluator configuration, the same organizer package and the evaluator prompt. It reruns all three cases, reads the actually delivered scientific reports and images, and reports numerical/scientific/delivery components separately. Read failure labels and limitations before comparing totals.
+打开 **[v2.0 发布页](https://github.com/Znjmu/BIPT-Bioinformatics-Pelican-Test/releases/tag/v2.0)**，在附件区找到 **`BIPT_v2.0_participant.zip`** 并下载。也可以直接点上表的参测包链接。
 
-**Fairness rule: all model artifacts must go to the same evaluation model, with the same frozen task, scoring software, hidden cases, runtime and scientific-review rules.** The v2.0 35-point scientific component uses evidence-grounded evaluator judgment; an automatic numerical score is not yet a final total.
+- 要给模型做题：下载带 **participant** 的包。
+- 要自己查资料、看分数和图：下载 `BIPT_v2.0_public_release.zip`，或直接看[中文实测分析](RESULTS_ZH.md)。
+- `Source code` 是整个仓库的源码下载，不是参测包。
 
-## 中文逐步说明
+不要把完整公开包、整个仓库、排行榜分析或其他模型答案放进待测模型的任务目录。
 
-1. 在“工程”下给每个模型建一个全新文件夹；不同模型、不同试次不要共用目录。
-2. 只把上面的**参测包**解压进去。文件夹里应有`Finite_Panel_Rescue`和`PARTICIPANT_PROMPT.txt`，不要把整个仓库、评分材料或旧答案一起交给模型。
-3. 在WorkBuddy选择这个目录和要测试的内置模型，全文复制任务提示，发送一次。记下型号、费率、开始时间和预先约定的时间/积分限制，不给某个模型额外纠错提示。
-4. 显示完成后保留整个项目，包括`run.sh`、源代码和产物，记录实际用时与积分；失败也保留。先归档，再评分，不替模型改代码。操作污染要单独说明并排除，干净重试使用新目录。
-5. 所有模型产物交给**同一个固定评估者**，使用同一冻结私有包、同一环境和规则。先自动复跑，再逐项读科学解释并看实际图片；科学没审完只能报区间。对比时同时看总分、隐藏题、错误类型和资源消耗。
+## 第 2 步：每个模型建一个新家
 
-私有组织者包包含隐藏输入、答案和评分实现，不能发给待测模型。本公开仓库没有该私有包；没有它可以做公开题试跑和检查已发布数据的一致性，但不能自行声称得到官方隐藏题分数。
+在你平时放工程的地方建空文件夹。例如：
 
-## This published completion follow-up / 本次继续完成如何记录
+```text
+工程/
+  模型A_第1次/      ← 解压一份参测包
+  模型B_第1次/      ← 再解压同一个参测包
+```
 
-The final comparison includes five original tasks resumed after external credit stops were removed. The same [neutral continuation instruction](CONTINUATION_PROMPT.md) was used without score feedback or scientific corrections. Initial and continuation resources are disclosed separately. These are resumed completions, not independent new trials. New confirmatory tests should declare resources and handling of interruptions prospectively.
+解压后，在各自工作目录中应找到：
 
-本次发布中，五个曾被外部积分限制中止的任务，在取消限制后于原会话继续完成。统一使用中性继续指令，不提供评分或科学纠错。初始阶段与继续阶段的用时、费用分别记录，不能把继续完成当作新的独立试次。新的确认性测试应提前约定资源与中断处理办法。
+```text
+模型A_第1次/
+  PARTICIPANT_PROMPT.txt
+  Finite_Panel_Rescue/
+    PROJECT_REQUEST.md
+    DATA_DICTIONARY.md
+    RESULT_FORMAT.md
+    ……其余输入文件
+```
 
-## Technical contract for collected code
+有些解压工具会额外套一层同名文件夹；选择能看到上述提示文件和数据文件夹的那层作为工作目录。模型换了，或重新试跑，就换新的空目录和新的任务会话。不同工作目录用于避免互相读到答案，本身不等于系统权限隔离；不要主动授权访问其他模型目录。
 
-The submitted project must provide an original entry point:
+## 第 3 步：在 WorkBuddy 发出任务
+
+1. 新建任务，并选择刚才的工作目录。
+2. 在模型选择处确认要测试的型号，记录界面显示的完整名称和费率。Pro 和 Flash 分开记录。
+3. 打开 `PARTICIPANT_PROMPT.txt`，**全选、复制、粘贴到任务输入框，发送一次**。网页上的[任务提示](PARTICIPANT_PROMPT.md)内容相同，也可以全文复制。
+4. 让模型自行阅读文件、写代码并完成任务。不需要自己把数学题再解释一遍。
+
+多模型比较时，事先统一资源和中断处理规则，使用同一份题、同一段提示、同样的可用工具。不要给某个模型单独讲答案、指出科学错误或替它修代码。
+
+## 第 4 步：等完成，保存整个项目
+
+以服务界面的完成状态为依据，同时保留它实际生成的文件；模型说“做好了”不等于已经通过检查。不要只保存聊天回复或一张截图。
+
+保存整个工作目录，包括原始 `run.sh`、源代码、依赖说明和全部产物。题目要求交付 14 项文件，详细列表在[输出要求](../../benchmark/Finite_Panel_Rescue/RESULT_FORMAT.md)。操作者不必代做这些文件，由模型负责。
+
+每次至少记录：**模型全名、任务版本、完成状态、实际用时、实际积分、是否中断或继续、归档目录**。失败也保存。先给原始项目做归档，再进入评分，不把修过的文件冒充原始提交。
+
+- 服务仍在运行：继续等待并查看进度，不要重复发送同一个任务。
+- 服务中断：记录原因，按事先约定的规则处理。若继续，只使用统一的[中性继续指令](CONTINUATION_PROMPT.md)，不要反馈分数或科学答案，并记录追加资源。
+- 已完成但缺文件或复跑失败：如实进入评分，由冻结规则扣分。
+- 操作者选错模型或交错资料：单独声明并排除受污染尝试；重新测试须用新目录、新会话。
+
+## 第 5 步：把所有项目交给同一个固定评分模型
+
+**不要让各个待测模型给自己评分，也不要一份交给模型甲、另一份交给模型乙阅卷。** 所有待评估模型的产物，必须交给同一个固定评分模型，使用相同配置、同一评分提示、同一评分程序、同一隐藏题、同一环境和科学审核规则。
+
+由评分者在独立评分会话中接收这些材料：
+
+1. 待评分模型的**完整原始项目归档**及运行记录。
+2. [固定评分者提示](GRADING_AGENT_PROMPT.md)全文。
+3. 组织者提供的**私有评分包**，包括隐藏输入、参考答案和冻结的评分实现。
+
+私有评分包不能放回待测模型目录。评分者先保护原始归档，再按评分提示复跑原代码：公开题一次、两套隐藏题各一次，每套复跑上限 360 秒。这个上限是评分阶段的复跑规则，不是要求模型在 360 秒内完成整场生成。
+
+每套题按下面三部分评分：
+
+| 部分 | 满分 | 普通话解释 |
+|---|---:|---|
+| 数值 | 60 | 计算、方案、约束和证明材料对不对，由冻结程序核对 |
+| 科学解释 | 35 | 报告和图片是否按本题证据正确解释；由固定评分模型逐项审核 |
+| 运行与交付 | 5 | 原始入口能否正常运行，并交齐 14 项有效文件 |
+
+科学部分共 10 项，每项 3.5 分：核心正确且本题证据齐全得 3.5；核心正确但证据不足得 1.75；缺失或有明确科学错误得 0。同一错误不重复扣，正确表格也不能抵消正文里的相反错误结论。
+
+**最终总分＝公开题得分 × 20%＋隐藏题 1 得分 × 40%＋隐藏题 2 得分 × 40%。** 科学解释没有审完，就不能报一个已完成的最终总分。代码在隐藏题失败，也要保留退出状态和按规则取得的实际分数。
+
+## 四个常见问题
+
+**我只想看看模型会不会做，必须有私有包吗？**
+
+不必。用公开参测包就能试跑，查看代码、报告和图片。想复现完整正式总分，才需要组织者的私有评分包。请勿把公开题自测分标成官方总分。
+
+**双击哪个文件开始？**
+
+你负责打开 WorkBuddy、选工作目录、发送任务提示。`run.sh` 是模型要编写的运行入口，刚解压时没有它是正常的。
+
+**网页的检查脚本能给新模型打分吗？**
+
+不能。它只检查已发布的分数计算、文件和输入校验值是否一致；显示 PASS 不代表新的模型通过科学评分。
+
+**分数高就代表所有生信任务都强吗？**
+
+只能说明它在这套冻结任务上的表现。这里全部是合成数据；题目里的风险指标不等于临床安全证明。v1 与 v2 题目和评分不同，不能把两版总分直接比较。
+
+## 给复跑人员的技术信息
+
+模型应交付的入口是：
 
 ```bash
 bash run.sh INPUT_DIR OUTPUT_DIR
 ```
 
-For a released-case replay, `INPUT_DIR` is the supplied `Finite_Panel_Rescue` directory, which directly contains the TSV/JSON inputs. The output directory should not exist before the call. Fourteen artifacts are required; see the participant [output specification](../../benchmark/Finite_Panel_Rescue/RESULT_FORMAT.md). Hidden cases are supplied only by the organizer. A successful repeat execution is a reproducibility check, not a new independent model-generation replicate.
+`INPUT_DIR` 直接包含题目 TSV/JSON 输入；公开题对应参测包中的 `Finite_Panel_Rescue`。`OUTPUT_DIR` 在运行前不应存在。完整规范以[原始题目](../../benchmark/Finite_Panel_Rescue/PROJECT_REQUEST.md)和[输出要求](../../benchmark/Finite_Panel_Rescue/RESULT_FORMAT.md)为准，本指南不增加新评分条件。
+
+本次已发布的 8 个配置均有最终得分。其中 5 个曾受外部限制中断的原任务，后来使用统一中性指令继续完成；追加用时与费用单列。这些是原会话的继续完成，不是新的一次独立测试，详见[中文分析](RESULTS_ZH.md)。
