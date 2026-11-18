@@ -11,6 +11,8 @@ Version 2.0 evaluates finite-population identification, persistent shared techni
 | **[📋 OPEN THE TASK PROMPT / 打开任务提示 →](docs/v2/PARTICIPANT_PROMPT.md)** | **[📊 OPEN THE EVALUATOR PROMPT / 打开评分提示 →](docs/v2/GRADING_AGENT_PROMPT.md)** |
 | Send this exact prompt once, together with the participant package below, in a fresh working directory. | Collect the original project first. The evaluator also needs the protected organizer scoring package, which is not in this public repository. |
 
+### **[📦 v2.0 VERSION DOWNLOADS / 正式版本下载](https://github.com/Znjmu/BIPT-Bioinformatics-Pelican-Test/releases/tag/v2.0)**
+
 ### **[⬇ DOWNLOAD v2.0 PARTICIPANT ZIP / 下载参测包](releases/BIPT_v2.0_participant.zip)**
 
 ### **[🧭 OPEN THE BEGINNER GUIDE / 打开傻瓜式逐步指导](docs/v2/QUICK_START.md)**
