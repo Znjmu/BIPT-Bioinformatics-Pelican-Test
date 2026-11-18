@@ -1,0 +1,6 @@
+action_id	operation	response_column	cost
+A2NQRPH	vehicle_control	Y0	0.45
+AE58H5X	rescue_A	YA	0.8
+A3MFGUK	rescue_B	YB	1.0
+AEDZY3C	dual_rescue_AB	YAB	1.25
+A3GJJZH	bypass_R	YR	0.9

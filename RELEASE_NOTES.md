@@ -1,3 +1,25 @@
+# BIPT v2.0 — Frozen finite-panel comparison
+
+Version 2.0 introduces a synthetic finite-clonal-panel task that combines integer identification, selection-conditioned observations, one persistent shared technical batch and robust adaptive rescue design. It addresses the ceiling effect of the earlier task through new scientific requirements and a new scoring scale. Version 1.0 results remain historical and cannot be directly compared with v2.0 scores.
+
+## Included in v2.0
+
+- A participant-only ZIP, the exact Chinese task prompt, original public inputs and fourteen-artifact output contract.
+- Prominent participant/evaluator links and a Chinese/English five-step beginner guide.
+- Real WorkBuddy runs in independent directories, using the same frozen task and one fixed evaluator.
+- Within-provider standard/Pro and Flash comparisons where those configurations are offered, plus other built-in configurations. Exact completed/incomplete dispositions appear in the result tables.
+- Separate numerical (60), scientific (35) and delivery (5) components; released/held-out case weights of 20%/40%/40%.
+- Evidence-grounded scientific deductions across ten frozen items. Explicit scientific errors receive zero for the relevant item; the same error is not deducted twice.
+- Actual service credits, wall-clock observations, predeclared budget/time limits, operator-overhead disclosure and archive/freeze provenance.
+- Component/case comparison figures and within-provider/resource figures, with R source and PDF/SVG/600-dpi PNG exports.
+- Public consistency checks in GitHub Actions, while active hidden inputs, truth and grading implementation remain protected.
+
+The [results and interpretation](docs/v2/RESULTS.md) provide actual totals, per-case exits, pair differences and scientific-review findings. The [limitations](docs/v2/LIMITATIONS.md) explain difficulty-selection bias, the development Flash baseline, single generations, non-matched compute budgets, version differences and evaluator judgment. No score rescaling, significance test or general model-superiority inference is used.
+
+The historical v1.0 README and hash manifest are preserved as `README_v1.0.md` and `SHA256SUMS_v1.0.txt`. Other original task, result and plotting materials remain in their existing paths.
+
+---
+
 # BIPT v1.0 — Public methodology and results release
 
 **Release scope:** synthetic plant-genetics task, documentation, raw released dataset,

@@ -1,0 +1,17 @@
+query_id	stratum_id	scientific_label
+Q5VHNX4	*	baseline_prevalence
+QNETYXJ	*	help_A
+QPJVYKH	*	help_B
+QYSVRNC	*	help_AB
+Q4TRDQB	*	help_R
+QNEB7W7	SEMP4VJ	help_A_stratum
+Q6JDD9C	*	synergy_AB
+QP8DX8W	*	rescue_A_or_B
+QVGXNS5	*	harm_A
+Q7QATJJ	*	bypass_given_A_failure
+QJDNLJH	*	bypass_given_A_harm
+Q6GME9F	*	all_positive
+Q915347A	*	majority_three_rescues
+Q915347B	*	R_given_A_positive_AB_negative
+Q915347C	*	harm_R
+Q915347D	*	all_rescues_positive_given_all_rescues_positive

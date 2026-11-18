@@ -1,0 +1,21 @@
+{
+  "horizon": 4,
+  "budget": 3.0,
+  "harm_limit": 0.1,
+  "cost_penalty": 0.04,
+  "population": "synthetic_finite_clonal_panel",
+  "support_assumption": "no_monotonicity_assumed",
+  "probability_semantics": "exact_repeated_measurement_expectations_over_uniform_panel_members_not_realized_sampling_frequencies",
+  "version": "BIPT15-development-not-frozen",
+  "unknown_law": "integer_type_counts_with_known_panel_sizes",
+  "sampling": "select_stratum_once_then_uniformly_allocate_two_distinct_members_without_replacement",
+  "randomization_unit": "one_two_member_experiment_before_member_types_or_readouts_are_seen",
+  "persistent_shared_batch": true,
+  "batch_sampling": "one hidden batch per entire measurement or rescue experiment, retained across all members and adaptive branches",
+  "batch_prior": "known stratum-specific, independent of biological type before capture",
+  "capture_changes_batch_posterior": true,
+  "channels_semantics": "channels.tsv is prior marginal diagnostic only; batch_channels.tsv and batch_capture.tsv are authoritative joint model",
+  "distinct_observation_semantics": "same_stratum_uniform_ordered_distinct_members_then_independent_capture_by_slot_cohort_condition_on_both_captured_certified_expectation_envelopes_not_confidence_intervals",
+  "relaxation": "continuous_single_member_q_and_arbitrary_symmetric_pair_coupling_with_q_marginals_all_observations_retained_no_finite_census_quadratic_relation",
+  "capture_semantics": "capture.tsv is prior marginal diagnostic; batch_capture.tsv authoritative jointly with batch_channels.tsv"
+}

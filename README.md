@@ -1,250 +1,110 @@
-# BIPT v1.0 — Bioinformatics Pelican Test
+# BIPT v2.0 — Bioinformatics Pelican Test
 
-**An author-led, reproducible stress test for AI agents conducting bioinformatics research**  
-*Retrospective evaluation: 11 submitted configurations · 10 valid submissions · 1 synthetic plant-genetics task · 100-point automatic rubric*
+**A frozen finite-panel scientific-reasoning task, tested through real WorkBuddy runs.**
 
-## 🚀 START HERE — Two essential prompts
+Version 2.0 evaluates finite-population identification, persistent shared technical batches, selection enrichment, adaptive experiments and robust randomized design. It separates **numerical correctness (60)**, **scientific interpretation (35)** and **re-execution/delivery (5)**. This is a different task and scoring scale from [historical v1.0](README_v1.0.md).
 
-| ① **For the AI being tested** | ② **For the independent evaluator** |
+## 🚀 START HERE / 先看这两个入口
+
+| ① For the model being tested / 发给待测模型 | ② For the fixed evaluator / 发给固定评分者 |
 |:---|:---|
-| **[📋 OPEN THE TASK PROMPT →](docs/PARTICIPANT_PROMPT.md)** | **[📊 OPEN THE SCORING PROMPT →](docs/GRADING_AGENT_PROMPT.md)** |
-| Copy and send this neutral research instruction to a participating AI agent, together with the [task files](benchmark/Leaf_Pigment_Genetics/). | Give this instruction to an **independent scoring agent** after collecting submissions. It runs the frozen automatic grader; **the private scoring package is required and is not in this public repository**. |
+| **[📋 OPEN THE TASK PROMPT / 打开任务提示 →](docs/v2/PARTICIPANT_PROMPT.md)** | **[📊 OPEN THE EVALUATOR PROMPT / 打开评分提示 →](docs/v2/GRADING_AGENT_PROMPT.md)** |
+| Send this exact prompt once, together with the participant package below, in a fresh working directory. | Collect the original project first. The evaluator also needs the protected organizer scoring package, which is not in this public repository. |
 
-## 🧭 Quick Start — Beginner's 5-Step Guide
+### **[⬇ DOWNLOAD v2.0 PARTICIPANT ZIP / 下载参测包](releases/BIPT_v2.0_participant.zip)**
 
-**New to AI-agent benchmarking? Follow these five steps.** No need to read the full methodology first.
-
-| Step | What to do | Open |
-|:---:|---|---|
-| **1. Download** | Click **Code → Download ZIP**; extract **only** `benchmark/Leaf_Pigment_Genetics/` for the participant. | [Task files](benchmark/Leaf_Pigment_Genetics/) |
-| **2. Run** | Give that folder and the **same Prompt A** to each AI Agent. Allow a fixed **30-minute** external time limit. | [📋 Task Prompt A](docs/PARTICIPANT_PROMPT.md) |
-| **3. Collect** | Save each agent's complete analysis project (including `run.sh` and outputs) in a separate folder or ZIP. | [Submission requirements](docs/QUICK_START.md) |
-| **4. Grade** | Give **all submissions** to **one fixed independent evaluation AI**, using **Prompt B**, the **same frozen Python grader**, and a protected scoring environment. | [📊 Scoring Prompt B](docs/GRADING_AGENT_PROMPT.md) |
-| **5. Compare** | Read scorer-generated JSON and the leaderboard; inspect lost points and limitations. | [Published results](results/leaderboard.csv) |
-
-**👉 [OPEN THE FULL BEGINNER-FRIENDLY TUTORIAL — CLICK HERE](docs/QUICK_START.md)**
+### **[🧭 OPEN THE BEGINNER GUIDE / 打开傻瓜式逐步指导](docs/v2/QUICK_START.md)**
 
 > [!IMPORTANT]
-> **FAIRNESS RULE — ONE EVALUATION MODEL FOR EVERY SUBMISSION.** Send **all tested models' final artifacts to the same independent evaluating model** (same version, reasoning mode, system instructions, and Prompt B). Keep **identical grading software, hidden cases, computing environment, and scoring rules** throughout. **The evaluation AI runs and summarizes the tests; it does not subjectively assign marks. Only the deterministic grader calculates numeric scores.**
+> **ONE FIXED EVALUATOR FOR EVERY MODEL. / 所有模型交同一个固定评估者。** Keep the same task, prompt, hidden cases, scoring software, runtime and scientific-review rules for every submission. The v2.0 numerical and delivery components are computed by the frozen grader; the 35 scientific points require case-specific evidence review by the same evaluator. An automatic subtotal is not a final score.
 
-> [!WARNING]
-> **Important availability limitation:** the public GitHub repository contains the **task**, but **not the private hidden-data scoring package**. You can try the task without it; official hidden-data scores require the organizer's scoring environment. Since historical v1.0 is now public, a genuinely new blind test requires new undisclosed cases.
+## Five steps / 五步上手
 
-> [!CAUTION]
-> **KEEP THE TWO ROLES SEPARATE.** Do **not** show Prompt ②, hidden data, the scorer, or this repository's benchmark explanations to an agent during a blind evaluation. The original v1.0 task is already public; new blind trials require new undisclosed instances.
+| Step | What to do |
+|:---:|---|
+| **1** | Create a new empty folder for each model and attempt. / 每个模型、每次试跑各建一个新目录。 |
+| **2** | Extract **only the participant ZIP** into it. / 只解压参测包，不把整仓库、评分材料或旧答案交给模型。 |
+| **3** | Select that folder and the intended built-in model in WorkBuddy; send the full task prompt once. / 选目录和型号，任务提示全文发送一次。 |
+| **4** | Preserve the complete original project, completion status, actual credits and elapsed time. / 保存原始代码、产物、完成状态、用时与积分；先归档，不代修。 |
+| **5** | Give every project to the same fixed evaluator with the protected organizer package; inspect component and hidden-case results. / 统一复跑、逐项审科学解释和实际图片，再比较总分。 |
 
-> [!IMPORTANT]
-> **Author's views disclaimer:** All scores, rankings, conclusions, and interpretations reported here **represent the author's views only**. BIPT is an **independent evaluation** and is **not an official judgment, endorsement, or certification** by any model provider, university, journal, or other organization. A score on one synthetic task is **not a general measure** of scientific or bioinformatics ability.
+The complete guide explains failed and incomplete runs, output requirements and role separation. **Do not give a participating model the evaluator prompt, results discussion, hidden data, prior solutions or the whole repository.** Public results reveal task characteristics; future blind trials should use fresh undisclosed instances.
 
-> [!WARNING]
-> **Benchmark disclosure:** The v1.0 round is complete. The public repository contains the task and historical results. The optional *full reproducibility archive* contains the v1.0 hidden-instance generation and scoring source; **publishing that archive retires v1.0 for future blind tests**. Do not distribute the organizer archive to models participating in an ongoing evaluation.
+## Results and analysis
 
-> [!NOTE]
-> **Special thanks to [BioMamba Bioinformatics Base (Biomamba 生信基地)](https://biomamba.top/index.html).** We appreciate its public bioinformatics tutorials, educational outreach, and efforts to make practical bioinformatics methods accessible to the research community. This is an **acknowledgment of educational inspiration**, not a claim that BioMamba designed, conducted, funded, reviewed, or endorsed this evaluation. See [Acknowledgments](ACKNOWLEDGEMENTS.md).
+**[Read the comparison, case-level scores, scientific deductions and resource analysis →](docs/v2/RESULTS.md)**
 
-## At a glance
+![BIPT v2.0 component scores and case outcomes](figures/v2/score_and_case_comparison.png)
 
-| Property | BIPT v1.0 |
+![Within-provider configuration differences and actual service resources](figures/v2/paired_and_resource_comparison.png)
+
+![All finalized service costs, including external stops](figures/v2/execution_resources.png)
+
+The main comparison covers the DeepSeek Pro/Flash configurations, GLM standard/Flash, MiniMax standard/Flash, MiMo Pro and Step Preview. A prospectively specified optional Kimi Pro extension depends on remaining budget after the main runs. The [machine-readable leaderboard](results/v2/leaderboard.csv) records finalized outcomes; incomplete runs have **NA**, not a fabricated completed score. Full values and any optional extension are documented in the analysis.
+
+**Observed completion coverage:** two of seven fresh configurations completed normally; five were stopped at their predeclared credit limits. Together with the reused development baseline, three configurations have completed scores: **MiMo Pro 58.53, DeepSeek Pro 44.25 and DeepSeek Flash development baseline 38.65**. The GLM and MiniMax completed-score pairs remain unresolved. All eight configurations' actual costs and completion states are reported. Kimi Pro was not activated because the final 377.04-credit remainder was below its predeclared 400-credit eligibility threshold.
+
+**The reused DeepSeek-V4.1-Flash result is a development/calibration baseline**, marked with an asterisk in figures. Its feedback helped select task difficulty. It is not a newly blinded comparator. Each configuration has one uncontaminated generation; no confidence interval, significance test or general model-superiority claim is inferred. Different version labels within DeepSeek and MiniMax prevent interpreting the provider pair as a pure speed-tier ablation. Actual costs reflect practical service budgets rather than matched inference compute.
+
+## What changed in v2.0
+
+| Area | v2.0 behavior |
 |---|---|
-| Purpose | Test **biological reasoning**, variant analysis, statistical independence, and the reproducibility of AI-generated pipelines |
-| Task | Prioritize a candidate locus for a synthetic pale-leaf phenotype using **FASTA + GFF3 + VCF + phenotype data** |
-| Domain | Diploid plant genetics; **not oncology, clinical diagnosis, or real experimental samples** |
-| Design | A naturalistic research request with **no explicit list of hidden failure modes** |
-| Time budget | **30 minutes per agent**, planned as an externally controlled wall-clock limit; complete per-run time logs were not archived for this report |
-| Scoring | **100 points**; fixed, deterministic Python rubric; **no second AI judge and no manual image aesthetics scoring** |
-| Evaluation | One released dataset plus **two held-out generated instances**, all requiring pipeline re-execution |
-| Submissions | 11 archives supplied; **10 executable**, 1 lacked an analysis deliverable |
-| Reproduction | Historical scores, input data, scripts for checking published artifacts; full scoring source supplied separately for controlled disclosure |
+| Scientific task | Finite clonal-panel inference and rescue design, using exact synthetic technical expectations. |
+| Evidence reconciliation | Single reads, same-member cloned pairs and distinct-member selected pairs must agree with a common integer panel. |
+| Shared technical noise | One unobserved batch persists for the full experiment; conditioning and path integration must preserve it. |
+| Identification | Distinguish point, partial and undefined queries; compare physical integer bounds with a specified symmetric-pair outer relaxation. |
+| Experimental decisions | Audit all protocol paths and optimize one common randomized design under overall and layer-specific risk constraints. |
+| Mathematical proof | Deliver physical witnesses and valid tight global vector certificates; accept non-unique valid solutions. |
+| Scientific scoring | Ten evidence-grounded R01–R10 items; explicit scientific errors receive zero for the corresponding item. Correct tables do not erase contradictory prose. |
+| Transfer testing | Re-execute unchanged submitted code on the released case and two held-out cases, weighted 20% / 40% / 40%. |
+| Reporting | Separate score components, execution failures, external stops, operator overhead, actual credits and elapsed time. |
 
-**Why 'Pelican'?** The name denotes an intentionally challenging, multi-layered scientific task rather than a standard programming quiz. It is an informal project name, **not a claim of official benchmark standardization**.
+The difficulty target was used during development to add substantive requirements. **Frozen evaluation scores are not adjusted to reach a desired number.** Read [the task and scoring guide](docs/v2/TASK_AND_SCORING.md) for the exact categories and [limitations](docs/v2/LIMITATIONS.md) for calibration bias and other boundaries.
 
-## Results — historical BIPT v1.0 round
+## Data and reproducibility
 
-![BIPT v1.0 total-score leaderboard](figures/leaderboard.png)
-
-The ranking below reports **observed rule-based scores** from a single historical task. Labels and reasoning settings were supplied for the submitted configurations; their upstream provenance and provider-reported version metadata were **not independently certified**.
-
-| Rank | Submitted configuration | Reported reasoning setting | BIPT v1.0 score |
-|---:|---|---|---:|
-| **1** | **DeepSeek V4 Pro** | Ultra-high | **99.62** |
-| **2** | **GPT-6 Luna (Codex Max)** | Max | **97.56** |
-| 3 = | MiniMax M3.1 Flash | Extreme | 93.25 |
-| 3 = | HY4 | High | 93.25 |
-| 3 = | Space-Bunny | Extreme | 93.25 |
-| 3 = | Kimi K3.1 Pro | Extreme | 93.25 |
-| 3 = | GPT-6.1 Sol (Codex High) | High | 93.25 |
-| 8 | GLM-5.3 Flash | Extreme | 91.26 |
-| 9 | Xiaomi MiMo V2.6 Pro | Default | 90.81 |
-| 10 | DeepSeek V4.1 Flash | Extreme | 89.58 |
-| — | GPT-5.6 Luna (Codex Light) | Light | **N/A — missing analysis deliverable** |
-
-> [!NOTE]
-> The automated scoring software records **0.00** for an archive without the required analysis entry point. For publication this is marked **N/A**, since **missing deliverable ≠ measured zero scientific capability**. Scores are not normalized for inference budget, computational expense, hardware, or independently measured time.
-
-The **10 valid submissions** scored between **89.58 and 99.62** (mean **93.51**, median **93.25**, population SD **2.86**). Their relatively high scores suggest a **ceiling effect** on several routine annotation and delivery checks. **Eight of ten** selected a different top locus than the scorer in *held-out instance 1*. This one criterion accounts for a substantial part of the observed separation.
-
-![Performance across released and held-out instances](figures/public_vs_hidden.png)
-
-**Read the interpretation before using this ranking:**
-- **DeepSeek V4 Pro** ranked first **under the frozen BIPT v1.0 rubric**; **GPT-6 Luna (Codex Max)** ranked second.
-- **All ten valid submissions re-executed successfully** on the released and both held-out instances in the final scoring environment.
-- The reference ranking rule prefers **more pale-phenotype accessions with predicted biallelic disruption**, then **fewer green controls with biallelic disruption**. Alternative candidate-ranking priorities, especially a stronger penalty for affected controls, can be scientifically defensible. This **limits the interpretation of the first-place margin**.
-- Image scoring checks **file existence, PNG integrity, resolution, and nonempty content**, *not* plotting correctness or human aesthetics.
-- No uncertainty interval over independent repetitions is estimated; the results **should not be treated as statistically established model superiority**.
-
-**More detail:** [full results and score decomposition](docs/RESULTS.md) · [limitations](docs/LIMITATIONS.md) · [machine-readable leaderboard](results/leaderboard.csv) · [per-model aggregate JSON](results/score_details.json).
-
-## The scientific task
-
-The agent receives a concise research request about pale versus green leaves in a synthetic diploid model plant. The data consist of candidate genomic regions, transcript annotations, cohort variants, and phenotype measurements. It must identify plausible disruptive alleles and use their **phased haplotype configurations** and **segregation across independent accessions** to prioritize a locus for subsequent validation.
-
-**The prompt intentionally does not name each of the technical pitfalls.** Its fixed deliverables are required for automatic evaluation, but the candidate is expected to choose and implement a scientifically sound analysis pipeline.
-
-| Input | Meaning |
+| Material | Location |
 |---|---|
-| `draft_reference.fa` | Candidate-region nucleotide sequences |
-| `genes.gff3` | Transcript-specific coding segments, coordinates, phase, and strand |
-| `gene_catalog.tsv` | Functional descriptions and primary / alternative transcript IDs |
-| `cohort_variants.vcf` | Variants, ALT alleles, genotype phase, depth/quality, and site filters |
-| `phenotypes.tsv` | Leaf pigment measurements, visual phenotype class, technical repeats |
+| Released task, data dictionary and output contract | [Finite_Panel_Rescue](benchmark/Finite_Panel_Rescue/) |
+| Byte-identical participant prompt | [Participant prompt](docs/v2/PARTICIPANT_PROMPT.md) |
+| Fixed-evaluator procedure | [Evaluator prompt](docs/v2/GRADING_AGENT_PROMPT.md) |
+| Execution, scoring and interpretation policy | [Evaluation protocol](docs/v2/EVALUATION_PROTOCOL.md) |
+| Totals and components | [leaderboard.csv](results/v2/leaderboard.csv) |
+| Case-level scores and replay exits | [case_scores.csv](results/v2/case_scores.csv) |
+| All scientific item points and safe deduction summaries | [scientific_review.csv](results/v2/scientific_review.csv) |
+| Predeclared caps and outcome dispositions | [comparison_plan.csv](results/v2/comparison_plan.csv) |
+| Freeze hashes, runtime and archive provenance | [run_provenance.json](results/v2/run_provenance.json) |
+| Figure source | [R plotting script](scripts/plot_v2_results.R) |
+| Editable and preview figures | [PDF, SVG and 600-dpi PNG](figures/v2/) |
 
-An [English translation of the original task](benchmark/Leaf_Pigment_Genetics/README_EN.md) is included for readers. **Historical replay should use the original Chinese participant-facing files**, not the translated versions.
-
-The released synthetic input has **14 candidate genes, 71 VCF records (72 ALT alleles), 20 independent accessions and 40 phenotype measurements**. **Technical repeat measurements do not create additional independent accessions.**
-
-### Common failure modes intentionally tested
-
-| Failure mode | Consequence of an incorrect pipeline |
-|---|---|
-| VCF 1-based positions / GFF3 coordinates | Mislocated coding variants; incorrect predicted amino-acid consequences |
-| Negative-strand transcript reconstruction | Incorrect codons, start/stop annotations, and inferred loss of function |
-| Multiple isoforms and CDS phase | A consequence on a secondary isoform incorrectly treated as primary-transcript disruption |
-| Multiallelic `ALT` records | `1|2` mistakenly interpreted as two copies of the same ALT |
-| Phased heterozygous variants | **Cis** (`0|1` + `0|1`) mistakenly called **trans** (`0|1` + `1|0`) |
-| `FILTER=PASS` with REF mismatch | A reference-inconsistent VCF record falsely accepted |
-| Low DP/GQ | Unreliable genotypes counted as strong segregation support |
-| Repeated phenotype measurements | Technical replicates counted as extra biological accessions |
-| Gene function narratives | A plausible-sounding annotation used instead of genotype and segregation evidence |
-| Correlation versus causality | Predicted variant effects treated as experimental confirmation of a causal gene |
-
-These are **standards-derived failure categories**, not a claim that any named model makes each mistake frequently. Supporting sources are collected in [technical references](docs/REFERENCES.md).
-
-## Methodology and scoring
-
-The score is **not generated by an LLM**. A deterministic grader runs each submitted analysis code on the same released input and two hidden instances, compares its tabular and JSON output with generator-derived reference results, and aggregates points under a frozen rubric.
-
-**Scientific checks: 93 points per dataset.**
-
-| Category | Maximum points per dataset |
-|---|---:|
-| Transcript-specific consequences for key variants | 22 |
-| Consequences for remaining variants | 13 |
-| REF validation and low-quality site handling | 7 |
-| Genotype QC and independent high-confidence carrier counts | 6 |
-| Phased primary-candidate haplotype burden | 13 |
-| Cis-decoy haplotype handling | 7 |
-| Background-gene burden | 3 |
-| Candidate-gene priority and supporting alleles | 14 |
-| Interpretation, sample independence, and causal-evidence boundary | 8 |
-| **Science subtotal** | **93** |
-
-The grader combines the three science scores as
-
-$$
-\text{Total}=0.25S_{\text{released}}+0.375S_{\text{held-out 1}}+0.375S_{\text{held-out 2}}+R+A
-$$
-
-where `S` is scored out of 93, `R` is **hidden re-execution (0–4)**, and `A` is **artifact integrity (0–3)**. The maximum total is **100**. Explicitly unsupported causal certainty and repeated top-candidate failures may activate **predeclared score caps**; see [scoring methodology](docs/SCORING.md).
-
-> [!IMPORTANT]
-> **Scientific quality takes priority over presentation.** The grade intentionally focuses on sequence interpretation and evidence reconciliation. Only **3/100 points** measure file/figure delivery integrity, and **none** constitute a subjective visual-design rating.
-
-## Prompt files and reproduction
-
-The two copy-ready prompts are highlighted in **[START HERE](#-start-here--two-essential-prompts)** at the top of this README. They are reusable templates, not verified verbatim transcripts of historical model conversations. Consult the [evaluation protocol](docs/EVALUATION_PROTOCOL.md) for controlled execution and scoring details.
-
-## How to run the supplied research task
-
-Download or clone the repository. The input task is under:
-
-`benchmark/Leaf_Pigment_Genetics/`
-
-Give only that directory, with its original `PROJECT_REQUEST.md`, to an analysis agent. The required program contract is:
+To check the published tables, score arithmetic, public task hashes and exported figure files:
 
 ```bash
-bash run.sh /absolute/path/to/benchmark/Leaf_Pigment_Genetics/data /absolute/path/to/output
+python3 scripts/validate_v2_release.py
 ```
 
-Expected output files:
+To regenerate the comparison figures from the published result tables, use R with `ggplot2`, `svglite`, `ggrepel` and `ragg` installed:
 
-```text
-output/
-├── variant_consequences.tsv
-├── variant_qc.tsv
-├── accession_gene_burden.tsv
-├── summary.json
-├── segregation.png
-└── interpretation.md
+```bash
+Rscript scripts/plot_v2_results.R
+python3 scripts/write_v2_analysis.py
 ```
 
-The `run.sh` should be portable across new input instances and must **not** rely on memorized gene IDs, sample IDs, or reference answers. Models should receive **identical prompts, permissions, software resources, and execution time**, and must be prevented from reading other submissions or the organizer scorer.
+These are **published-artifact checks**, not a reproduction of hidden scoring or an independent scientific review. The protected organizer package contains the hidden inputs, reference answers and grading implementation and remains organizer-held. Without that package, readers can try the public task and verify published consistency, but cannot claim a new official hidden-case score.
 
-> [!CAUTION]
-> **Do not run untrusted AI-generated shell scripts directly on your personal machine.** Use an isolated container/VM, no network, read-only input, restricted privileges, and separate writable output. The scoring source is distributed in a **separate retrospective archive**, not in this blind-safe GitHub publication package.
+The participant's executable contract is:
 
-For scoring execution, hidden-instance generation, and repository archive options, see [evaluation protocol](docs/EVALUATION_PROTOCOL.md) and [reproducibility](docs/REPRODUCIBILITY.md).
-
-## Repository contents
-
-```text
-BIPT_v1_GitHub_Release/
-├── README.md                     # This page; method and results
-├── NOTICE.md                     # Independence and author's-views disclaimer
-├── ACKNOWLEDGEMENTS.md           # BioMamba acknowledgment and no-endorsement clarification
-├── benchmark/
-│   └── Leaf_Pigment_Genetics/   # Original v1.0 task and synthetic input files
-├── docs/
-│   ├── BENCHMARK_DESIGN.md       # Biological and computational challenge
-│   ├── SCORING.md                # Exact point composition and score caps
-│   ├── EVALUATION_PROTOCOL.md    # Running agents and isolated scoring
-│   ├── REPRODUCIBILITY.md        # What can and cannot be independently repeated
-│   ├── RESULTS.md                # Interpretive analysis of all 11 archives
-│   ├── LIMITATIONS.md            # Caveats and disputed answer definition
-│   ├── REFERENCES.md             # Github/format-specification source links
-│   ├── PUBLISHING.md             # How to make a GitHub repository
-│   └── CITATION_AND_LICENSE.md   # Publication checklist and citation template
-├── results/
-│   ├── leaderboard.csv
-│   ├── score_details.json
-│   └── submission_manifest.csv
-├── figures/
-│   ├── leaderboard.png
-│   └── public_vs_hidden.png
-├── scripts/
-│   ├── validate_release.py
-│   └── plot_results.py
-└── .github/workflows/validate-release.yml
+```bash
+bash run.sh INPUT_DIR OUTPUT_DIR
 ```
 
-**The 11 agents' raw code submissions are not included in this public package.** Historical agent-level replay requires the original submission archives, which remain external to this release; the CSV/JSON files preserve the reported outputs and grading metadata.
+`INPUT_DIR` directly contains the supplied TSV/JSON inputs; `OUTPUT_DIR` must not exist beforehand. The full [output specification](benchmark/Finite_Panel_Rescue/RESULT_FORMAT.md) requires fourteen artifacts. Separate working directories are workflow isolation, not an operating-system security boundary.
 
-## Interpretation and responsible use
+## Historical release and project scope
 
-**BIPT v1.0 is one task, one synthetic generator family, and one completed comparison.** It does **not** establish comparative accuracy on medical data, single-cell RNA-seq, proteomics, or real clinical workflows. The scores are sensitive to a preselected candidate-ranking criterion. A new benchmark version should use new held-out tasks, realistic uncertain outcomes, and advance-registered answer acceptability criteria.
+The [v1.0 README](README_v1.0.md), original [v1.0 results](results/leaderboard.csv), plant-genetics task and plotting scripts remain available. **Do not merge v1.0 and v2.0 leaderboards or interpret their score difference as a model improvement or decline.** The historical v1.0 hash manifest is preserved separately as [SHA256SUMS_v1.0.txt](SHA256SUMS_v1.0.txt).
 
-- The numerical scores are **reproducible within the reported rubric**, conditional on the original submissions, environment, and held-out seeds.
-- The **interpretation and ranking claims represent the author's views only** and are **not official assessments** of the listed models.
-- The dataset is **synthetic**, and predicted disruption is **not proof of a causal biological mechanism**.
-- Differences in reasoning modes, adapters, model settings, and computational budgets remain potentially confounded.
+“Pelican” is an informal project name. All inputs are synthetic; this is not clinical evidence, an experimental validation claim or an official standardized benchmark. **All results and interpretations represent the author's views only.** The project is independent of, and is not endorsed or certified by, any listed model provider, university, journal or other institution.
 
-**Further reading:** [results](docs/RESULTS.md) · [methods](docs/BENCHMARK_DESIGN.md) · [limitations](docs/LIMITATIONS.md) · [project notice](NOTICE.md).
-
-## Acknowledgments
-
-**Special thanks to [BioMamba Bioinformatics Base (Biomamba 生信基地)](https://biomamba.top/index.html)** for its contributions to bioinformatics education, practical tutorials, and open knowledge-sharing in the research community. This recognition is solely an acknowledgment of educational resources and inspiration; **BioMamba is not claimed to have participated in the benchmark or endorsed these rankings**. See [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md).
-
-## Attribution, license, and contact
-
-This is an **independent author-led repository**. Its author may provide a preferred name, affiliation, contact, publication DOI, and license before release. **No formal journal peer review or DOI is claimed** by this draft. The project and model names are used for identification only; see [NOTICE](NOTICE.md). Before publishing, review the [citation and licensing checklist](docs/CITATION_AND_LICENSE.md).
-
-> **Disclaimer (required): The results and interpretations presented here reflect only the author's views. They are not endorsed by, and do not represent the official views of, any AI model developer, company, institution, or other organization.**
+Special thanks to **[BioMamba Bioinformatics Base / Biomamba 生信基地](https://biomamba.top/index.html)** for public bioinformatics education. This acknowledgment does not imply participation in or endorsement of the evaluation. See [Acknowledgments](ACKNOWLEDGEMENTS.md), [Notice](NOTICE.md) and [release notes](RELEASE_NOTES.md).

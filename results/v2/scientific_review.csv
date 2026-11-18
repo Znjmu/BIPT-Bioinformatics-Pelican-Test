@@ -1,0 +1,91 @@
+configuration_id,model,case,item,points,maximum,public_note
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,public,R01,3.5,3.5,Core statement and required case evidence accepted.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,public,R02,0,3.5,Incorrectly attributes wider same-member query bounds to mixing integer panels and to changing pair coupling at fixed member distribution.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,public,R03,3.5,3.5,Core statement and required case evidence accepted.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,public,R04,3.5,3.5,Core statement and required case evidence accepted.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,public,R05,3.5,3.5,Core statement and required case evidence accepted.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,public,R06,3.5,3.5,Core statement and required case evidence accepted.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,public,R07,3.5,3.5,Core statement and required case evidence accepted.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,public,R08,0,3.5,An explicit pooled-confirmation counterexample contradicts the actual event probabilities; correct mixture diagnostics do not cancel that false claim.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,public,R09,3.5,3.5,Core statement and required case evidence accepted.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,public,R10,1.75,3.5,Identified point bounds are invisible in the actual query plot because zero-length intervals have no point markers.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden1,R01,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden1,R02,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden1,R03,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden1,R04,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden1,R05,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden1,R06,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden1,R07,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden1,R08,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden1,R09,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden1,R10,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden2,R01,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden2,R02,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden2,R03,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden2,R04,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden2,R05,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden2,R06,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden2,R07,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden2,R08,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden2,R09,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,hidden2,R10,0,3.5,No case-specific scientific report or required figure was delivered after the original hidden replay failed.
+R01,DeepSeek-V4-Pro,public,R01,3.5,3.5,"Correct complete-panel constraints, enumeration and case evidence."
+R01,DeepSeek-V4-Pro,public,R02,1.75,3.5,Correct identification/relaxation core; denominator and reachable-value evidence incomplete.
+R01,DeepSeek-V4-Pro,public,R03,1.75,3.5,Correct event/count and shared-batch definitions; actual channel/joint-read evidence incomplete.
+R01,DeepSeek-V4-Pro,public,R04,1.75,3.5,Correct sampling and selection definitions; joint-denominator and batch-posterior evidence incomplete.
+R01,DeepSeek-V4-Pro,public,R05,3.5,3.5,All illegal protocols and full structural-path rules correctly reported.
+R01,DeepSeek-V4-Pro,public,R06,3.5,3.5,Correct common-panel information order and physical/certificate distinction.
+R01,DeepSeek-V4-Pro,public,R07,3.5,3.5,"Correct actual optimal sets, risk boundary and conditional-rate interpretation."
+R01,DeepSeek-V4-Pro,public,R08,0,3.5,Explicit reset-batch example reports incorrect utility values.
+R01,DeepSeek-V4-Pro,public,R09,3.5,3.5,Valid attainable integer witnesses and tight global certificate.
+R01,DeepSeek-V4-Pro,public,R10,0,3.5,The safety probability threshold is drawn on a utility axis.
+R01,DeepSeek-V4-Pro,hidden1,R01,0,3.5,No scientific report was delivered after the original entry failed.
+R01,DeepSeek-V4-Pro,hidden1,R02,0,3.5,No scientific report was delivered after the original entry failed.
+R01,DeepSeek-V4-Pro,hidden1,R03,0,3.5,No scientific report was delivered after the original entry failed.
+R01,DeepSeek-V4-Pro,hidden1,R04,0,3.5,No scientific report was delivered after the original entry failed.
+R01,DeepSeek-V4-Pro,hidden1,R05,0,3.5,No scientific report was delivered after the original entry failed.
+R01,DeepSeek-V4-Pro,hidden1,R06,0,3.5,No scientific report was delivered after the original entry failed.
+R01,DeepSeek-V4-Pro,hidden1,R07,0,3.5,No scientific report was delivered after the original entry failed.
+R01,DeepSeek-V4-Pro,hidden1,R08,0,3.5,No scientific report was delivered after the original entry failed.
+R01,DeepSeek-V4-Pro,hidden1,R09,0,3.5,No scientific report was delivered after the original entry failed.
+R01,DeepSeek-V4-Pro,hidden1,R10,0,3.5,No scientific report was delivered after the original entry failed.
+R01,DeepSeek-V4-Pro,hidden2,R01,0,3.5,"Population size, support and census explanation were copied from the released case."
+R01,DeepSeek-V4-Pro,hidden2,R02,1.75,3.5,"Correct identification core, but case-specific numerical examples are missing."
+R01,DeepSeek-V4-Pro,hidden2,R03,0,3.5,The hidden case is incorrectly described as having no baseline-positive members or exposure.
+R01,DeepSeek-V4-Pro,hidden2,R04,0,3.5,The claimed case observation records and cohorts do not exist in the supplied case.
+R01,DeepSeek-V4-Pro,hidden2,R05,0,3.5,The scientific explanation names the wrong illegal protocols.
+R01,DeepSeek-V4-Pro,hidden2,R06,0,3.5,The stated selected strategy and common-panel comparison contradict the delivered tables.
+R01,DeepSeek-V4-Pro,hidden2,R07,0,3.5,Constrained and unconstrained optimality claims contradict the actual computed results.
+R01,DeepSeek-V4-Pro,hidden2,R08,0,3.5,The cost and error-experiment numerical explanation is from the released case.
+R01,DeepSeek-V4-Pro,hidden2,R09,0,3.5,The explanation reports different multipliers and bounds from its valid certificate.
+R01,DeepSeek-V4-Pro,hidden2,R10,0,3.5,The safety probability threshold is drawn on a utility axis.
+R06,Xiaomi MiMo-V2.6-Pro,public,R01,1.75,3.5,Correct finite-panel core; required residual and envelope evidence is incomplete.
+R06,Xiaomi MiMo-V2.6-Pro,public,R02,0,3.5,Incorrectly states that all outer-relaxation bounds equal the integer bounds.
+R06,Xiaomi MiMo-V2.6-Pro,public,R03,1.75,3.5,Correct shared-batch and event/count core; required biological and joint-read evidence is incomplete.
+R06,Xiaomi MiMo-V2.6-Pro,public,R04,1.75,3.5,Correct sampling core; ordered-cohort and selection-posterior evidence is incomplete.
+R06,Xiaomi MiMo-V2.6-Pro,public,R05,0,3.5,The explanation attributes an invalid protocol to the wrong structural violation.
+R06,Xiaomi MiMo-V2.6-Pro,public,R06,1.75,3.5,Correct common-panel information order; numerical comparison and certificate-support evidence is incomplete.
+R06,Xiaomi MiMo-V2.6-Pro,public,R07,1.75,3.5,"Correct actual optimal values; risk, mixture-support and conditional-rate explanation is incomplete."
+R06,Xiaomi MiMo-V2.6-Pro,public,R08,0,3.5,The stated across-protocol cost range excludes the zero-cost STOP protocol.
+R06,Xiaomi MiMo-V2.6-Pro,public,R09,1.75,3.5,Correct public upper-bound core; complete vector-certificate evidence and required sides are incomplete.
+R06,Xiaomi MiMo-V2.6-Pro,public,R10,1.75,3.5,"The figure omits required outer bounds, per-query undefined labels and actual risk quantities."
+R06,Xiaomi MiMo-V2.6-Pro,hidden1,R01,0,3.5,Panel sizes and support assumptions in the explanation are from the released case.
+R06,Xiaomi MiMo-V2.6-Pro,hidden1,R02,0,3.5,The concrete query and identification examples are copied from the released case.
+R06,Xiaomi MiMo-V2.6-Pro,hidden1,R03,0,3.5,The claimed batch-channel example does not exist in the supplied case.
+R06,Xiaomi MiMo-V2.6-Pro,hidden1,R04,0,3.5,The member-pair example refers to types absent from the supplied case.
+R06,Xiaomi MiMo-V2.6-Pro,hidden1,R05,0,3.5,The prose uses the wrong path budget and structural violation description.
+R06,Xiaomi MiMo-V2.6-Pro,hidden1,R06,0,3.5,The claimed number of feasible physical panels contradicts the case and its own summary.
+R06,Xiaomi MiMo-V2.6-Pro,hidden1,R07,1.75,3.5,"Correct actual optimal values; risk, mixture-support and conditional-rate explanation is incomplete."
+R06,Xiaomi MiMo-V2.6-Pro,hidden1,R08,0,3.5,The stated across-protocol cost range is incorrect and the required diagnostic comparison is missing.
+R06,Xiaomi MiMo-V2.6-Pro,hidden1,R09,0,3.5,The claimed global certificate violates the required all-protocol upper inequalities.
+R06,Xiaomi MiMo-V2.6-Pro,hidden1,R10,0,3.5,The text states different safety limits from the actual input and plotted limits.
+R06,Xiaomi MiMo-V2.6-Pro,hidden2,R01,0,3.5,Panel sizes and support assumptions in the explanation are from the released case.
+R06,Xiaomi MiMo-V2.6-Pro,hidden2,R02,0,3.5,The concrete query and identification examples are copied from the released case.
+R06,Xiaomi MiMo-V2.6-Pro,hidden2,R03,0,3.5,The claimed batch-channel example does not exist in the supplied case.
+R06,Xiaomi MiMo-V2.6-Pro,hidden2,R04,0,3.5,The member-pair example refers to types absent from the supplied case.
+R06,Xiaomi MiMo-V2.6-Pro,hidden2,R05,0,3.5,The prose uses the wrong path budget and structural violation description.
+R06,Xiaomi MiMo-V2.6-Pro,hidden2,R06,0,3.5,The claimed number of feasible physical panels contradicts the case and its own summary.
+R06,Xiaomi MiMo-V2.6-Pro,hidden2,R07,1.75,3.5,"Correct actual optimal values; risk, mixture-support and conditional-rate explanation is incomplete."
+R06,Xiaomi MiMo-V2.6-Pro,hidden2,R08,0,3.5,The stated across-protocol cost range is incorrect and the required diagnostic comparison is missing.
+R06,Xiaomi MiMo-V2.6-Pro,hidden2,R09,0,3.5,The claimed global certificate violates the required all-protocol upper inequalities.
+R06,Xiaomi MiMo-V2.6-Pro,hidden2,R10,0,3.5,The text states different safety limits from the actual input and plotted limits.

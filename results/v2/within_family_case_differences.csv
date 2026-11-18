@@ -1,0 +1,4 @@
+"family","premium_model","flash_model","case","premium_score","flash_score","difference","case_display"
+"DeepSeek","DeepSeek-V4-Pro","DeepSeek-V4.1-Flash","public",87.75,91.25,-3.5,"Released"
+"DeepSeek","DeepSeek-V4-Pro","DeepSeek-V4.1-Flash","hidden1",0,0,0,"Held-out 1"
+"DeepSeek","DeepSeek-V4-Pro","DeepSeek-V4.1-Flash","hidden2",66.75,51,15.75,"Held-out 2"

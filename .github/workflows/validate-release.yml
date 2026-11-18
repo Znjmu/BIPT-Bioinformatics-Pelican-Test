@@ -12,3 +12,5 @@ jobs:
           python-version: '3.11'
       - name: Validate leaderboard and files
         run: python scripts/validate_release.py
+      - name: Validate v2.0 comparison data and published task
+        run: python scripts/validate_v2_release.py

@@ -12,7 +12,7 @@ this repository represent **the author's views only**. They do not express the
 views of model providers or other organizations and must not be interpreted as a
 universal assessment of any system's bioinformatics capability.
 
-The study uses **synthetic plant-genetics data**. There are no real patient,
+Version1.0 uses **synthetic plant-genetics data**; version2.0 uses **synthetic finite-clonal-panel and assay-batch data**. There are no real patient,
 clinical, participant, or experimental-plant records in this dataset. The
 scenario's biological findings are simulation artifacts, not discoveries about
 real species.

@@ -1,0 +1,9 @@
+configuration_id,model,family,tier,role,status,total,numerical,scientific,delivery,credits,elapsed_seconds,fee_multiplier,generation_replicates,source_score_sha256,public_total,public_returncode,hidden1_total,hidden1_returncode,hidden2_total,hidden2_returncode,all_cases_replayed
+DS_FLASH_DEV,DeepSeek-V4.1-Flash,DeepSeek,Flash,development_calibration_baseline,completed_scored,38.65,32.400000000000006,5.25,1.0,38.28,1298,0.11,1,2512aa73c4212e7b7aa6b174a1a9cd994653fce5b53b34d2ca7338294968eeac,91.25,0,0.0,1,51.0,1,False
+R01,DeepSeek-V4-Pro,DeepSeek,Pro,prospective_comparison,completed_scored,44.25,36.0,5.25,3.0,106.2,1374,0.51,1,bdc2801ec4d365150d761f15e5beb38457cce60d11fbb60865bf1cdc5c561a5b,87.75,0,0.0,1,66.75,0,False
+R02,GLM-5.3-Flash,GLM,Flash,prospective_comparison,incomplete_settled,,,,,87.4,3436,0.08,1,,,,,,,,False
+R03,GLM-5.3,GLM,Standard,prospective_comparison,incomplete_settled,,,,,282.34,2316,0.69,1,,,,,,,,False
+R04,MiniMax-M3.1-Flash,MiniMax,Flash,prospective_comparison,incomplete_settled,,,,,89.91,1250,0.08,1,,,,,,,,False
+R05,MiniMax-M3,MiniMax,Standard,prospective_comparison,incomplete_settled,,,,,238.02,1482,0.25,1,,,,,,,,False
+R06,Xiaomi MiMo-V2.6-Pro,Xiaomi,Pro,prospective_comparison,completed_scored,58.53,49.67900000000001,3.8500000000000005,5.0,59.71,1831,0.13,1,0717a4d66f59fdb52966d688f27bed59610b0ed465889c523cea7ab5b33f0a2b,65.965,0,57.25,0,56.09,0,True
+R07,Step-5-Preview,Step,Preview,prospective_comparison,incomplete_settled,,,,,252.88,2380,0.33,1,,,,,,,,False
